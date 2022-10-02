@@ -1,0 +1,33 @@
+{
+  "name": "travel-html-scss",
+  "version": "1.0.0",
+  "description": "верстка проекта Туризма:Кисловодск",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:compile": "node-sass --include-path sass scss/main.scss -w dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exxxar/travel-html-scss.git"
+  },
+  "keywords": [
+    "Travel",
+    "Html",
+    "Scss",
+    "Css"
+  ],
+  "author": "Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exxxar/travel-html-scss/issues"
+  },
+  "homepage": "https://github.com/exxxar/travel-html-scss#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "scss-reset": "^1.2.2"
+  }
+}
