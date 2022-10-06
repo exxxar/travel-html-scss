@@ -1,0 +1,73 @@
+.dt-btn-white {
+  margin-left: 40px;
+  width: 162px;
+  height: 60px;
+  background: $color-white;
+  border-radius: 5px;
+
+  span {
+    color: $color-blue;
+    font-family: $font-family-bold;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    background: $color-blue !important;
+    box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3);
+
+    span {
+      color: $color-white;
+    }
+  }
+}
+
+.dt-btn-blue {
+  width: 220px;
+  height: 70px;
+  background: $color-blue;
+  border-radius: 5px;
+
+  span {
+    font-size: 14px;
+    font-family: $font-family-bold;
+    color: $color-white;
+  }
+
+  &:hover {
+    background: $color-blue !important;
+    box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3);
+  }
+}
+
+.dt-btn-text {
+  color: #222425;
+  font-family: $font-family-bold;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:after {
+    content: '❯';
+    color: $color-blue;
+    padding-left: 8px;
+  }
+
+  &:hover {
+    color: $color-blue;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 568px) {
+  .dt-btn-white {
+    height: 50px;
+    span {
+      font-size: 12px;
+    }
+  }
+}

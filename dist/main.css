@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url(../node_modules/bootstrap/dist/css/bootstrap.css);
 :root {
   --mo-blue: #0d6efd;
   --mo-indigo: #6610f2;
@@ -94,40 +96,40 @@ hr {
   border-top: 1px solid;
   opacity: 0.25; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2; }
 
-h1 {
+h1, .h1 {
   font-size: calc(1.375rem + 1.5vw); }
   @media (min-width: 1200px) {
-    h1 {
+    h1, .h1 {
       font-size: 2.5rem; } }
 
-h2 {
+h2, .h2 {
   font-size: calc(1.325rem + 0.9vw); }
   @media (min-width: 1200px) {
-    h2 {
+    h2, .h2 {
       font-size: 2rem; } }
 
-h3 {
+h3, .h3 {
   font-size: calc(1.3rem + 0.6vw); }
   @media (min-width: 1200px) {
-    h3 {
+    h3, .h3 {
       font-size: 1.75rem; } }
 
-h4 {
+h4, .h4 {
   font-size: calc(1.275rem + 0.3vw); }
   @media (min-width: 1200px) {
-    h4 {
+    h4, .h4 {
       font-size: 1.5rem; } }
 
-h5 {
+h5, .h5 {
   font-size: 1.25rem; }
 
-h6 {
+h6, .h6 {
   font-size: 1rem; }
 
 p {
@@ -174,10 +176,10 @@ b,
 strong {
   font-weight: bolder; }
 
-small {
+small, .small {
   font-size: 0.875em; }
 
-mark {
+mark, .mark {
   padding: 0.1875em;
   background-color: var(--mo-highlight-bg); }
 
@@ -1448,6 +1450,113 @@ progress {
   min-height: 1em;
   background-color: currentcolor;
   opacity: 0.25; }
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300; }
+
+.display-1 {
+  font-size: calc(1.625rem + 4.5vw);
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (min-width: 1200px) {
+    .display-1 {
+      font-size: 5rem; } }
+
+.display-2 {
+  font-size: calc(1.575rem + 3.9vw);
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (min-width: 1200px) {
+    .display-2 {
+      font-size: 4.5rem; } }
+
+.display-3 {
+  font-size: calc(1.525rem + 3.3vw);
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (min-width: 1200px) {
+    .display-3 {
+      font-size: 4rem; } }
+
+.display-4 {
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (min-width: 1200px) {
+    .display-4 {
+      font-size: 3.5rem; } }
+
+.display-5 {
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (min-width: 1200px) {
+    .display-5 {
+      font-size: 3rem; } }
+
+.display-6 {
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (min-width: 1200px) {
+    .display-6 {
+      font-size: 2.5rem; } }
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none; }
+
+.list-inline {
+  padding-left: 0;
+  list-style: none; }
+
+.list-inline-item {
+  display: inline-block; }
+  .list-inline-item:not(:last-child) {
+    margin-right: 0.5rem; }
+
+.initialism {
+  font-size: 0.875em;
+  text-transform: uppercase; }
+
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem; }
+  .blockquote > :last-child {
+    margin-bottom: 0; }
+
+.blockquote-footer {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  font-size: 0.875em;
+  color: #6c757d; }
+  .blockquote-footer::before {
+    content: "\2014\00A0"; }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid var(--mo-border-color);
+  border-radius: 0.375rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  max-width: 100%;
+  height: auto; }
+
+.figure {
+  display: inline-block; }
+
+.figure-img {
+  margin-bottom: 0.5rem;
+  line-height: 1; }
+
+.figure-caption {
+  font-size: 0.875em;
+  color: #6c757d; }
 
 .align-baseline {
   vertical-align: baseline !important; }
@@ -4283,13 +4392,7 @@ div,
 span,
 applet,
 object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+iframe, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 p,
 blockquote,
 pre,
@@ -4308,8 +4411,7 @@ ins,
 kbd,
 q,
 s,
-samp,
-small,
+samp, small, .small,
 strike,
 strong,
 sub,
@@ -4354,8 +4456,7 @@ output,
 ruby,
 section,
 summary,
-time,
-mark,
+time, mark, .mark,
 audio,
 video {
   font-size: 100%;
@@ -4607,7 +4708,7 @@ samp {
 /**
   * Add the correct font size in all browsers.
   */
-small {
+small, .small {
   font-size: 75%; }
 
 /**
@@ -4791,3 +4892,364 @@ template {
   font-style: normal;
   font-weight: 200;
   src: url("../../dist/fonts/thin.otf") format("opentype"); }
+
+.dt-page-header {
+  background: url("/dist/img/header-bg.png") no-repeat; }
+  .dt-page-header__actions {
+    border-bottom: 1px solid #f6f6f6; }
+    .dt-page-header__actions .dt-actions__links {
+      padding-left: 40px; }
+    .dt-page-header__actions .dt-links__list li:not(:last-child) {
+      padding-right: 40px; }
+    .dt-page-header__actions .dt-buttons .dt-btn-entry {
+      padding: 22px 32px;
+      border-left: 1px solid #f6f6f6; }
+      .dt-page-header__actions .dt-buttons .dt-btn-entry:last-child {
+        border-right: none; }
+
+.dt-link:hover, .dt-link.active {
+  color: #f73637 !important; }
+
+.dt-page-footer {
+  background: url("/dist/img/footer-bg.png") no-repeat; }
+  .dt-page-footer ul.dt-sitemap__links {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 120px; }
+    .dt-page-footer ul.dt-sitemap__links li:not(:last-child) {
+      padding-right: 55px; }
+      .dt-page-footer ul.dt-sitemap__links li:not(:last-child) a.dt-link {
+        display: inline; }
+  .dt-page-footer .dt-years-payments {
+    padding-bottom: 15px; }
+    .dt-page-footer .dt-years-payments .dt-payments .dt-payments__item {
+      padding-right: 15px; }
+      .dt-page-footer .dt-years-payments .dt-payments .dt-payments__item img.dt-payment {
+        height: 16px; }
+
+@media screen and (max-width: 768px) {
+  .dt-page-footer {
+    background-size: cover; }
+    .dt-page-footer .dt-sitemap__links {
+      display: block !important; }
+      .dt-page-footer .dt-sitemap__links li {
+        padding-right: 0 !important; }
+        .dt-page-footer .dt-sitemap__links li:not(:last-child) {
+          padding-bottom: 20px; }
+    .dt-page-footer .dt-years-payments .row {
+      display: flex; }
+      .dt-page-footer .dt-years-payments .row .dt-order-name {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; }
+      .dt-page-footer .dt-years-payments .row .dt-order-payments {
+        order: -1;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; }
+      .dt-page-footer .dt-years-payments .row .dt-order-privacy {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; } }
+
+.dt-travel-card .card-header .card-img {
+  height: 200px; }
+  .dt-travel-card .card-header .card-img .dt-excursion__image {
+    height: 100%;
+    width: inherit;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0; }
+
+.dt-travel-card .card-header .dt-excursion-type {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  background: #0071eb;
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  color: #ffffff; }
+
+.dt-travel-card .card-header .dt-like {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px; }
+  .dt-travel-card .card-header .dt-like svg {
+    padding-top: 2px;
+    fill: #222425;
+    opacity: 0.15; }
+  .dt-travel-card .card-header .dt-like:hover svg, .dt-travel-card .card-header .dt-like.active svg {
+    fill: #0071eb !important;
+    box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3); }
+
+.dt-travel-card .card-header .dt-price {
+  bottom: 0;
+  padding: 15px 35px 15px;
+  border-top: 1px solid #f6f6f6; }
+  .dt-travel-card .card-header .dt-price h5, .dt-travel-card .card-header .dt-price .h5 {
+    letter-spacing: 3px; }
+  .dt-travel-card .card-header .dt-price__title {
+    font-size: 8px; }
+
+.dt-travel-card .card-body {
+  padding: 32px 30px;
+  max-height: 250px; }
+  .dt-travel-card .card-body__excursion {
+    max-height: 100px;
+    overflow: hidden;
+    margin-bottom: 30px; }
+  .dt-travel-card .card-body__excursion-rating {
+    margin-bottom: 30px; }
+    .dt-travel-card .card-body__excursion-rating .dt-rating__star img {
+      width: 16px;
+      height: 16px; }
+  .dt-travel-card .card-body__excursion-name {
+    margin-bottom: 15px;
+    line-height: 19px; }
+  .dt-travel-card .card-body__excursion-description {
+    font-family: "Manrope Light"; }
+
+.dt-travel-card .card-footer {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.dt-travel-card__action {
+  color: #222425;
+  font-family: "Manrope Bold";
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-decoration: none; }
+
+@media screen and (max-width: 768px) {
+  .dt-travel-card .dt-rating__star img {
+    width: 14px;
+    height: 14px; } }
+
+.dt-header__title {
+  font-size: 30px;
+  font-family: "Manrope Bold"; }
+
+.dt-header__subtitle {
+  font-family: "Manrope Light";
+  font-size: 14px; }
+
+.dt-page-main .dt-online-register {
+  color: white;
+  background: url("/dist/img/3.jpg") no-repeat 50% 45%;
+  background-size: cover;
+  height: 100px;
+  border-radius: 5px;
+  margin: 30px 0 0; }
+  .dt-page-main .dt-online-register .dt-wrapper {
+    background: #222425;
+    opacity: 0.7;
+    border-radius: 5px; }
+  .dt-page-main .dt-online-register__info {
+    z-index: 1; }
+
+.dt-page-main .dt-popular__tabs a.nav-link {
+  text-decoration: none;
+  color: #222425;
+  background: white;
+  border-radius: 5px;
+  padding: 23px;
+  font-size: 12px; }
+  .dt-page-main .dt-popular__tabs a.nav-link.active {
+    background: #0071eb;
+    box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3);
+    color: white; }
+
+.dt-page-main .dt-popular__tabs .dt-popular-list {
+  margin-bottom: 35px; }
+  .dt-page-main .dt-popular__tabs .dt-popular-list li.nav-item {
+    height: 63px; }
+    .dt-page-main .dt-popular__tabs .dt-popular-list li.nav-item:not(:last-child) {
+      margin-right: 0.25rem; }
+
+.dt-page-main .dt-popular__tabs .dt-excursion__flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px -30px; }
+  .dt-page-main .dt-popular__tabs .dt-excursion__flex .dt-card {
+    background: white;
+    border-radius: 5px; }
+
+.dt-page-main .dt-popular__tabs .dt-card {
+  width: 25%;
+  padding: 0 15px 30px; }
+
+.dt-page-main .dt-popular__action {
+  margin-top: 40px; }
+
+.dt-page-main .dt-advantages {
+  margin-bottom: 80px; }
+  .dt-page-main .dt-advantages__content .dt-advantage__card {
+    padding: 40px; }
+    .dt-page-main .dt-advantages__content .dt-advantage__card img {
+      width: 50px;
+      height: 100%;
+      margin-right: 30px; }
+    .dt-page-main .dt-advantages__content .dt-advantage__card .dt-card__text {
+      font-family: "Manrope Bold"; }
+    .dt-page-main .dt-advantages__content .dt-advantage__card .dt-card__subtitle {
+      font-family: "Manrope Thin"; }
+
+@media screen and (max-width: 768px) {
+  .dt-page-main .dt-online-register {
+    height: auto; }
+    .dt-page-main .dt-online-register__info {
+      flex-wrap: wrap;
+      padding: 25px 30px; }
+    .dt-page-main .dt-online-register-title {
+      margin-bottom: 15px; }
+    .dt-page-main .dt-online-register-btn {
+      width: 100%;
+      margin: 0; }
+  .dt-page-main .dt-popular__header {
+    padding-right: 25px;
+    padding-left: 25px; }
+    .dt-page-main .dt-popular__header .dt-header__title {
+      margin-bottom: 15px; }
+  .dt-page-main .dt-advantages__header {
+    padding-right: 25px;
+    padding-left: 25px; }
+    .dt-page-main .dt-advantages__header .dt-header__title {
+      margin-bottom: 15px; }
+  .dt-page-main .dt-advantages__content .dt-advantage__card img {
+    width: 40px;
+    margin-right: 10px;
+    padding-top: 6px; } }
+
+.dt-btn-white {
+  margin-left: 40px;
+  width: 162px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 5px; }
+  .dt-btn-white span {
+    color: #0071eb;
+    font-family: "Manrope Bold";
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 14px; }
+  .dt-btn-white:hover {
+    background: #0071eb !important;
+    box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3); }
+    .dt-btn-white:hover span {
+      color: #ffffff; }
+
+.dt-btn-blue {
+  width: 220px;
+  height: 70px;
+  background: #0071eb;
+  border-radius: 5px; }
+  .dt-btn-blue span {
+    font-size: 14px;
+    font-family: "Manrope Bold";
+    color: #ffffff; }
+  .dt-btn-blue:hover {
+    background: #0071eb !important;
+    box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3); }
+
+.dt-btn-text {
+  color: #222425;
+  font-family: "Manrope Bold";
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-decoration: none; }
+  .dt-btn-text:after {
+    content: '❯';
+    color: #0071eb;
+    padding-left: 8px; }
+  .dt-btn-text:hover {
+    color: #0071eb; }
+
+@media screen and (max-width: 568px) {
+  .dt-btn-white {
+    height: 50px; }
+    .dt-btn-white span {
+      font-size: 12px; } }
+
+.dt-form {
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  width: 100%; }
+  .dt-form > * {
+    flex-shrink: 0;
+    margin-top: var(--bs-gutter-y);
+    padding-left: 5px;
+    padding-right: 5px; }
+  .dt-form.bordered {
+    gap: 0 !important;
+    padding: 0 !important; }
+    .dt-form.bordered > * {
+      padding: 0;
+      border: 1px solid #e5e6e6; }
+
+.dt-block-header {
+  padding-top: 81px;
+  padding-bottom: 40px; }
+
+.dt-wrapper-gradient {
+  background: linear-gradient(to top, #222425, transparent);
+  opacity: 0.75;
+  height: 100%;
+  width: 100%; }
+
+.color-black {
+  color: #222425 !important; }
+
+.text-muted-black {
+  color: #222425 !important;
+  opacity: 0.4; }
+
+.text-muted-white {
+  color: #ffffff !important;
+  opacity: 0.5; }
+
+@media screen and (max-width: 768px) {
+  .dt-block-header {
+    padding-top: 60px;
+    padding-bottom: 30px; } }
+
+body {
+  background: #f6f6f6;
+  font-family: "Manrope Regular" !important;
+  font-weight: 400;
+  letter-spacing: 0; }
+
+h1, .h1 {
+  font-size: 30px;
+  margin-bottom: 0; }
+
+h3, .h3 {
+  font-size: 20px;
+  margin-bottom: 0; }
+
+h4, .h4 {
+  font-size: 16px;
+  margin-bottom: 0; }
+
+h5, .h5 {
+  font-size: 12px;
+  margin-bottom: 0; }
+
+h6, .h6 {
+  font-size: 10px;
+  margin-bottom: 0; }
+
+@media screen and (max-width: 768px) {
+  h1, .h1 {
+    font-size: 20px !important; }
+  h3, .h3 {
+    font-size: 12px !important; }
+  h5, .h5 {
+    font-size: 10px !important; } }
