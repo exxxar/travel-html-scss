@@ -1,0 +1,71 @@
+body {
+    background-color: $color-light-gray;
+}
+
+main {
+    margin: 40px 0 80px;
+}
+
+h1 {
+    font-family: "Manrope bold";
+    font-size: 1.5em;
+}
+
+h2 {
+    color: rgba($color-black, 0.4);
+    margin-bottom: 80px;
+    letter-spacing: 3px;
+    font-size: 0.7rem;
+}
+
+.expand_right {
+    transform: rotate(-90deg);
+}
+
+.button {
+    position: relative;
+    display: flex;
+    border-radius: 6px;
+}
+
+.default {
+    background-color: $color-white;
+    color: $color-black;
+}
+
+.green {
+    background-color: $color-green;
+    color: $color-white;
+}
+
+.menu_item {
+    height: 70px;
+    width: 100%;
+    font-family: "Manrope semibold";
+    padding: 30px;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+}
+
+.active {
+    background-color: $color-blue;
+    color: $color-white;
+    box-shadow: 0 10px 30px 7px rgba($color-blue, 0.3);
+    z-index: 1;
+}
+
+.main-block {
+    margin-left: 60px;
+}
+
+.main-block__name {
+    margin-bottom: 40px;
+    line-height: 1;
+}
+
+.excursion-type {
+    
+}

@@ -4791,3 +4791,61 @@ template {
   font-style: normal;
   font-weight: 200;
   src: url("../../dist/fonts/thin.otf") format("opentype"); }
+
+* {
+  font-family: "Manrope"; }
+
+body {
+  background-color: #f6f6f6; }
+
+main {
+  margin: 40px 0 80px; }
+
+h1 {
+  font-family: "Manrope bold";
+  font-size: 1.5em; }
+
+h2 {
+  color: rgba(34, 36, 37, 0.4);
+  margin-bottom: 80px;
+  letter-spacing: 3px;
+  font-size: 0.7rem; }
+
+.expand_right {
+  transform: rotate(-90deg); }
+
+.button {
+  position: relative;
+  display: flex;
+  border-radius: 6px; }
+
+.default {
+  background-color: #ffffff;
+  color: #222425; }
+
+.green {
+  background-color: #65c350;
+  color: #ffffff; }
+
+.menu_item {
+  height: 70px;
+  width: 100%;
+  font-family: "Manrope semibold";
+  padding: 30px; }
+
+.icon {
+  width: 18px;
+  height: 18px; }
+
+.active {
+  background-color: #0071eb;
+  color: #ffffff;
+  box-shadow: 0 10px 30px 7px rgba(0, 113, 235, 0.3);
+  z-index: 1; }
+
+.main-block {
+  margin-left: 60px; }
+
+.main-block__name {
+  margin-bottom: 40px;
+  line-height: 1; }
