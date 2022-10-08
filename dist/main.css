@@ -4795,6 +4795,36 @@ template {
 * {
   font-family: "Manrope"; }
 
+@media (min-width: 1600px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container-xxl {
+    max-width: 1420px; } }
+
+* {
+  color: #222425; }
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  padding-right: 0;
+  padding-left: 0; }
+
+.main.row {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0; }
+
+.main.row > * {
+  padding: 0; }
+
 body {
   background-color: #f6f6f6; }
 
@@ -4803,21 +4833,25 @@ main {
 
 h1 {
   font-family: "Manrope bold";
-  font-size: 1.5em; }
+  font-size: 1.3em; }
 
 h2 {
   color: rgba(34, 36, 37, 0.4);
-  margin-bottom: 80px;
   letter-spacing: 3px;
   font-size: 0.7rem; }
 
-.expand_right {
-  transform: rotate(-90deg); }
+a,
+button,
+span,
+p {
+  font-size: 0.8rem; }
 
-.button {
-  position: relative;
-  display: flex;
-  border-radius: 6px; }
+a {
+  text-decoration: none;
+  color: #222425; }
+
+a:hover {
+  color: #222425; }
 
 .default {
   background-color: #ffffff;
@@ -4827,25 +4861,78 @@ h2 {
   background-color: #65c350;
   color: #ffffff; }
 
-.menu_item {
+.menu-item {
   height: 70px;
   width: 100%;
-  font-family: "Manrope semibold";
-  padding: 30px; }
+  font-family: "Manrope semibold"; }
+
+.menu-item__name {
+  font-size: 0.9rem; }
 
 .icon {
-  width: 18px;
-  height: 18px; }
+  width: 20px;
+  height: 20px; }
 
-.active {
+.active, .active > * {
   background-color: #0071eb;
   color: #ffffff;
   box-shadow: 0 10px 30px 7px rgba(0, 113, 235, 0.3);
   z-index: 1; }
 
-.main-block {
-  margin-left: 60px; }
+.expand-blue {
+  color: #0071eb; }
 
-.main-block__name {
-  margin-bottom: 40px;
-  line-height: 1; }
+.star {
+  width: 16px;
+  height: 16px; }
+
+.excursion__splitted {
+  position: relative; }
+
+.excursion__splitted::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #f6f6f6; }
+
+.excursion__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 0.375rem 0.375rem 0; }
+
+.excursion__description {
+  color: rgba(34, 36, 37, 0.8); }
+
+.excursion__type, .excursion__number, .excursion__rating, .excursion__menu {
+  font-size: 0.7rem; }
+
+.excursion__number, .excursion__menu {
+  font-family: "Manrope bold";
+  letter-spacing: 3px; }
+
+.excursion__type {
+  color: #ffffff;
+  background-color: #0071eb; }
+
+.excursion__rating {
+  color: rgba(34, 36, 37, 0.4); }
+
+.excursion__smalltext {
+  font-size: 0.5rem; }
+
+.excursion__to-archive {
+  position: relative;
+  color: #f73637; }
+
+.excursion__to-archive::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(247, 54, 55, 0.07); }
