@@ -14,46 +14,58 @@
         <h2 class="col-lg-3 mb-5">ГЛАВНАЯ &gt; КАБИНЕТ ГИДА</h2>
         <div class="main row">
             <div class="col-3">
-                <button class="menu-item default d-flex rounded p-4 mb-2 justify-content-between align-items-center active">
+                <button
+                    class="menu-item default d-flex rounded p-4 mb-2 justify-content-between align-items-center active">
                     <span class="menu-item__name">Мои экскурсии</span>
-                    <img class="icon" src="./img/icons/route_FILL0_wght600_GRAD0_opsz48.svg" alt=""/>
+                    <img class="icon" src="./img/icons/route_FILL0_wght600_GRAD0_opsz48.svg" alt="" />
                 </button>
                 <button class="menu-item default d-flex rounded p-4 mb-2 justify-content-between align-items-center">
                     <span class="menu-item__name">Мои объекты</span>
-                    <img class="icon" src="./img/icons/flag_FILL0_wght600_GRAD0_opsz48.svg" alt=""/>
+                    <img class="icon" src="./img/icons/flag_FILL0_wght600_GRAD0_opsz48.svg" alt="" />
                 </button>
                 <button class="menu-item default d-flex rounded p-4 mb-2 justify-content-between align-items-center">
                     <span class="menu-item__name">Транзакции</span>
-                    <img class="icon" src="./img/icons/cabinet/account_balance_wallet_FILL0_wght600_GRAD0_opsz48.svg" alt=""/>
+                    <img class="icon" src="./img/icons/cabinet/account_balance_wallet_FILL0_wght600_GRAD0_opsz48.svg"
+                        alt="" />
                 </button>
                 <button class="menu-item default d-flex rounded p-4 mb-2 justify-content-between align-items-center">
                     <span class="menu-item__name">Календарь</span>
-                    <img class="icon" src="./img/icons/calendar_today_FILL0_wght400_GRAD0_opsz48.svg" alt=""/>
+                    <img class="icon" src="./img/icons/calendar_today_FILL0_wght400_GRAD0_opsz48.svg" alt="" />
                 </button>
                 <button class="menu-item default d-flex rounded p-4 mb-2 justify-content-between align-items-center">
                     <span class="menu-item__name">Настройка профиля гида</span>
-                    <img class="icon" src="./img/icons/cabinet/settings_FILL0_wght600_GRAD0_opsz48.svg" alt=""/>
+                    <img class="icon" src="./img/icons/cabinet/settings_FILL0_wght600_GRAD0_opsz48.svg" alt="" />
                 </button>
             </div>
 
             <!--МОИ ЭКСКУРСИИ-->
-            <div class="col ms-5" id="my-excurions">
+            <div class="my-excursions visible col ms-5" id="my-excurions">
                 <!--ВСЕ ЭКСКУРСИИ-->
                 <h1 class="lh-1 mb-5">Мои экскурсии</h1>
                 <div class="d-flex flex-row mb-5">
-                    <button class="default d-flex rounded px-4 py-3 justify-content-center align-items-center active">Действующие</button>
-                    <button class="default d-flex rounded ms-2 px-4 py-3 justify-content-center align-items-center">Архив</button>
-                    <button class="default d-flex rounded ms-2 px-4 py-3 justify-content-center align-items-center">На модерации</button>
-                    <button class="default d-flex rounded ms-2 px-4 py-3 justify-content-center align-items-center">Черновики</button>
-                    <button class="col-3 green d-flex rounded ms-auto px-4 py-3 justify-content-center align-items-center">Добавить экскурсию</button>
+                    <button
+                        class="default d-flex rounded px-4 py-3 justify-content-center align-items-center active">Действующие</button>
+                    <button
+                        class="default d-flex rounded ms-2 px-4 py-3 justify-content-center align-items-center">Архив</button>
+                    <button class="default d-flex rounded ms-2 px-4 py-3 justify-content-center align-items-center">На
+                        модерации</button>
+                    <button
+                        class="default d-flex rounded ms-2 px-4 py-3 justify-content-center align-items-center">Черновики</button>
+                    <button
+                        class="col-3 green d-flex rounded ms-auto px-4 py-3 justify-content-center align-items-center">Добавить
+                        экскурсию</button>
                 </div>
+
                 <!--ДЕЙСТВУЮЩИЕ-->
-                <div id="active-excursions">
+                <div id="active-excursions" class="active-excursions visible">
                     <div class="excursion row bg-white rounded mx-0 mb-4">
                         <div class="col px-0">
                             <div class="px-5 py-4">
                                 <h1 class="excursion__name mb-2">Медовые водопады</h1>
-                                <p class="excursion__description mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eius omnis distinctio, est quisquam architecto ducimus quod labore veniam ullam sint cum eum incidunt libero sapiente, dolor ea! Similique, voluptatibus!</p>
+                                <p class="excursion__description mb-3">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Iusto, eius omnis distinctio, est quisquam architecto ducimus quod
+                                    labore veniam ullam sint cum eum incidunt libero sapiente, dolor ea! Similique,
+                                    voluptatibus!</p>
                                 <div class="excursion__info row align-items-center">
                                     <div class="col">
                                         <span class="excursion__type rounded-1 px-1">групповая экскурсия</span>
@@ -67,38 +79,44 @@
                                         <span class="excursion__smalltext">ДНЯ</span>
                                     </div>
                                     <div class="col-auto">
-                                        <span  class="excursion__rating me-1">рейтинг экскурсии</span>
+                                        <span class="excursion__rating me-1">рейтинг экскурсии</span>
                                         <span class="excursion__number">4.20</span>
                                     </div>
                                     <div class="col-auto">
-                                        <img class="star" src="./img/icons/star.svg" alt=""/>
-                                        <img class="star" src="./img/icons/star.svg" alt=""/>
-                                        <img class="star" src="./img/icons/star.svg" alt=""/>
-                                        <img class="star" src="./img/icons/star.svg" alt=""/>
-                                        <img class="star" src="./img/icons/star.svg" alt=""/>
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
                                     </div>
                                 </div>
                             </div>
                             <div class="excursion__splitted">
                                 <div class="row align-items-center px-5 py-4">
-                                    <button class="col-auto excursion__menu">СТРАНИЦА ЭКСКУРСИИ <span class="expand-blue">&gt;</span></button>
-                                    <button class="col-auto excursion__menu">РЕДАКТИРОВАТЬ <span class="expand-blue">&gt;</span></button>
-                                    <button class="col-auto ms-3 px-0 excursion__menu excursion__to-archive">В АРХИВ</button>
+                                    <button class="col-auto excursion__menu">СТРАНИЦА ЭКСКУРСИИ <span
+                                            class="expand-blue">&gt;</span></button>
+                                    <button class="col-auto excursion__menu">РЕДАКТИРОВАТЬ <span
+                                            class="expand-blue">&gt;</span></button>
+                                    <button class="col-auto ms-3 px-0 excursion__menu excursion__archive">В
+                                        АРХИВ</button>
                                     <div class="col-auto ms-auto">
-                                        <img class="icon" src="./img/icons/sms_FILL0_wght600_GRAD0_opsz48.svg" alt=""/>
+                                        <img class="icon" src="./img/icons/sms_FILL0_wght600_GRAD0_opsz48.svg" alt="" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-4 px-0">
-                            <img class="excursion__image" src="./img/travels/2.jpg" alt=""/>
+                            <img class="excursion__image" src="./img/travels/2.jpg" alt="" />
                         </div>
                     </div>
                     <div class="excursion row bg-white rounded mx-0 mb-4">
                         <div class="col px-0">
                             <div class="px-5 py-4">
                                 <h1 class="excursion__name mb-2">Чарующий Пятигорск - город горячих вод</h1>
-                                <p class="excursion__description mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eius omnis distinctio, est quisquam architecto ducimus quod labore veniam ullam sint cum eum incidunt libero sapiente, dolor ea! Similique, voluptatibus!</p>
+                                <p class="excursion__description mb-3">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Iusto, eius omnis distinctio, est quisquam architecto ducimus quod
+                                    labore veniam ullam sint cum eum incidunt libero sapiente, dolor ea! Similique,
+                                    voluptatibus!</p>
                                 <div class="excursion__info row align-items-center">
                                     <div class="col">
                                         <span class="excursion__type rounded-1 px-1">групповая экскурсия</span>
@@ -112,31 +130,268 @@
                                         <span class="excursion__smalltext">ЧАС</span>
                                     </div>
                                     <div class="col-auto">
-                                        <span  class="excursion__rating me-1">рейтинг экскурсии</span>
+                                        <span class="excursion__rating me-1">рейтинг экскурсии</span>
                                         <span class="excursion__number">4.90</span>
                                     </div>
                                     <div class="col-auto">
-                                        <img class="star" src="./img/icons/star.svg" alt=""/>
-                                        <img class="star" src="./img/icons/star.svg" alt=""/>
-                                        <img class="star" src="./img/icons/star.svg" alt=""/>
-                                        <img class="star" src="./img/icons/star.svg" alt=""/>
-                                        <img class="star" src="./img/icons/star.svg" alt=""/>
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
                                     </div>
                                 </div>
                             </div>
                             <div class="excursion__splitted">
                                 <div class="row align-items-center px-5 py-4">
-                                    <button class="col-auto excursion__menu">СТРАНИЦА ЭКСКУРСИИ <span class="expand-blue">&gt;</span></button>
-                                    <button class="col-auto excursion__menu">РЕДАКТИРОВАТЬ <span class="expand-blue">&gt;</span></button>
-                                    <button class="col-auto ms-3 px-0 excursion__menu excursion__to-archive">В АРХИВ</button>
+                                    <button class="col-auto excursion__menu">СТРАНИЦА ЭКСКУРСИИ <span
+                                            class="expand-blue">&gt;</span></button>
+                                    <button class="col-auto excursion__menu">РЕДАКТИРОВАТЬ <span
+                                            class="expand-blue">&gt;</span></button>
+                                    <button class="col-auto ms-3 px-0 excursion__menu excursion__archive">В
+                                        АРХИВ</button>
                                     <div class="col-auto ms-auto">
-                                        <img class="icon" src="./img/icons/sms_FILL0_wght600_GRAD0_opsz48.svg" alt=""/>
+                                        <img class="icon" src="./img/icons/sms_FILL0_wght600_GRAD0_opsz48.svg" alt="" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-4 px-0">
-                            <img class="excursion__image" src="./img/travels/4.jpg" alt=""/>
+                            <img class="excursion__image" src="./img/travels/4.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <!--АРХИВ-->
+                <div id="archive-excursions" class="archive-excursions visible">
+                    <div class="excursion row bg-white rounded mx-0 mb-4">
+                        <div class="col px-0">
+                            <div class="px-5 py-4">
+                                <h1 class="excursion__name mb-2">Медовые водопады</h1>
+                                <p class="excursion__description mb-3">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Iusto, eius omnis distinctio, est quisquam architecto ducimus quod
+                                    labore veniam ullam sint cum eum incidunt libero sapiente, dolor ea! Similique,
+                                    voluptatibus!</p>
+                                <div class="excursion__info row align-items-center">
+                                    <div class="col">
+                                        <span class="excursion__type rounded-1 px-1">групповая экскурсия</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class="excursion__rating me-1">рейтинг экскурсии</span>
+                                        <span class="excursion__number">4.20</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="excursion__splitted">
+                                <div class="row align-items-center px-5 py-4">
+                                    <button class="col-auto mx-auto px-0 excursion__menu excursion__archive">УБРАТЬ ИЗ
+                                        АРХИВА</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 px-0">
+                            <img class="excursion__image archived" src="./img/travels/2.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="excursion row bg-white rounded mx-0 mb-4">
+                        <div class="col px-0">
+                            <div class="px-5 py-4">
+                                <h1 class="excursion__name mb-2">Чарующий Пятигорск - город горячих вод</h1>
+                                <p class="excursion__description mb-3">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Iusto, eius omnis distinctio, est quisquam architecto ducimus quod
+                                    labore veniam ullam sint cum eum incidunt libero sapiente, dolor ea! Similique,
+                                    voluptatibus!</p>
+                                <div class="excursion__info row align-items-center">
+                                    <div class="col">
+                                        <span class="excursion__type rounded-1 px-1">групповая экскурсия</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class="excursion__rating me-1">рейтинг экскурсии</span>
+                                        <span class="excursion__number">4.20</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                        <img class="star" src="./img/icons/star.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="excursion__splitted">
+                                <div class="row align-items-center px-5 py-4">
+                                    <button class="col-auto mx-auto px-0 excursion__menu excursion__archive">УБРАТЬ ИЗ
+                                        АРХИВА</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 px-0">
+                            <img class="excursion__image archived" src="./img/travels/4.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <!--НА МОДЕРАЦИИ-->
+                <div id="moderation-excursions" class="moderation-excursions visible">
+                    <div class="excursion row bg-white rounded mx-0 mb-4">
+                        <div class="col px-0">
+                            <div class="px-5 py-4">
+                                <h1 class="excursion__name mb-2">Медовые водопады</h1>
+                                <p class="excursion__description mb-3">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Iusto, eius omnis distinctio, est quisquam architecto ducimus quod
+                                    labore veniam ullam sint cum eum incidunt libero sapiente, dolor ea! Similique,
+                                    voluptatibus!</p>
+                                <div class="excursion__info row align-items-center">
+                                    <div class="col-auto me-4">
+                                        <span class="excursion__type rounded-1 px-1">групповая экскурсия</span>
+                                    </div>
+                                    <div class="col-auto me-4">
+                                        <span class="excursion__number">2500</span>
+                                        <span class="excursion__smalltext">РУБ</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class="excursion__number">2</span>
+                                        <span class="excursion__smalltext">ДНЯ</span>
+                                    </div>
+                                    <div class="col-auto ms-auto">
+                                        <span class="excursion__status">на проверке</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="excursion__splitted">
+                                <div class="row align-items-center px-5 py-4">
+                                    <button class="col-auto excursion__menu">СТРАНИЦА ЭКСКУРСИИ <span
+                                            class="expand-blue">&gt;</span></button>
+                                    <button class="col-auto excursion__menu">РЕДАКТИРОВАТЬ <span
+                                            class="expand-blue">&gt;</span></button>
+                                    <button
+                                        class="col-auto ms-auto px-0 excursion__menu excursion__archive">УДАЛИТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 px-0">
+                            <img class="excursion__image" src="./img/travels/2.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="excursion row bg-white rounded mx-0 mb-4">
+                        <div class="col px-0">
+                            <div class="px-5 py-4">
+                                <h1 class="excursion__name mb-2">Чарующий Пятигорск - город горячих вод</h1>
+                                <p class="excursion__description mb-3">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Iusto, eius omnis distinctio, est quisquam architecto ducimus quod
+                                    labore veniam ullam sint cum eum incidunt libero sapiente, dolor ea! Similique,
+                                    voluptatibus!</p>
+                                <div class="excursion__info row align-items-center">
+                                    <div class="col-auto me-4">
+                                        <span class="excursion__type rounded-1 px-1">групповая экскурсия</span>
+                                    </div>
+                                    <div class="col-auto me-4">
+                                        <span class="excursion__number">700</span>
+                                        <span class="excursion__smalltext">РУБ</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class="excursion__number">1</span>
+                                        <span class="excursion__smalltext">ЧАС</span>
+                                    </div>
+                                    <div class="col-auto ms-auto">
+                                        <span class="excursion__status">на проверке</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="excursion__splitted">
+                                <div class="row align-items-center px-5 py-4">
+                                    <button class="col-auto excursion__menu">СТРАНИЦА ЭКСКУРСИИ <span
+                                            class="expand-blue">&gt;</span></button>
+                                    <button class="col-auto excursion__menu">РЕДАКТИРОВАТЬ <span
+                                            class="expand-blue">&gt;</span></button>
+                                    <button
+                                        class="col-auto ms-auto px-0 excursion__menu excursion__archive">УДАЛИТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 px-0">
+                            <img class="excursion__image" src="./img/travels/4.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <!--ЧЕРНОВИКИ-->
+                <div id="draft-excursions" class="draft-excursions visible">
+                    <div class="excursion row bg-white rounded mx-0 mb-4">
+                        <div class="col px-0">
+                            <div class="px-5 py-4">
+                                <h1 class="excursion__name mb-2">Медовые водопады</h1>
+                                <p class="excursion__description mb-3">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Iusto, eius omnis distinctio, est quisquam architecto ducimus quod
+                                    labore veniam ullam sint cum eum incidunt libero sapiente, dolor ea! Similique,
+                                    voluptatibus!</p>
+                                <div class="excursion__info row align-items-center">
+                                    <div class="col-auto me-4">
+                                        <span class="excursion__type rounded-1 px-1">групповая экскурсия</span>
+                                    </div>
+                                    <div class="col-auto me-4">
+                                        <span class="excursion__number">2500</span>
+                                        <span class="excursion__smalltext">РУБ</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class="excursion__number">2</span>
+                                        <span class="excursion__smalltext">ДНЯ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="excursion__splitted">
+                                <div class="row align-items-center px-5 py-4">
+                                    <button class="col-auto excursion__menu">РЕДАКТИРОВАТЬ <span
+                                            class="expand-blue">&gt;</span></button>
+                                    <button
+                                        class="col-auto ms-auto px-0 excursion__menu excursion__archive">УДАЛИТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 px-0">
+                            <img class="excursion__image" src="./img/travels/2.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="excursion row bg-white rounded mx-0 mb-4">
+                        <div class="col px-0">
+                            <div class="px-5 py-4">
+                                <h1 class="excursion__name mb-2">Чарующий Пятигорск - город горячих вод</h1>
+                                <p class="excursion__description mb-3">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Iusto, eius omnis distinctio, est quisquam architecto ducimus quod
+                                    labore veniam ullam sint cum eum incidunt libero sapiente, dolor ea! Similique,
+                                    voluptatibus!</p>
+                                <div class="excursion__info row align-items-center">
+                                    <div class="col-auto me-4">
+                                        <span class="excursion__type rounded-1 px-1">групповая экскурсия</span>
+                                    </div>
+                                    <div class="col-auto me-4">
+                                        <span class="excursion__number">700</span>
+                                        <span class="excursion__smalltext">РУБ</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class="excursion__number">1</span>
+                                        <span class="excursion__smalltext">ЧАС</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="excursion__splitted">
+                                <div class="row align-items-center px-5 py-4">
+                                    <button class="col-auto excursion__menu">РЕДАКТИРОВАТЬ <span
+                                            class="expand-blue">&gt;</span></button>
+                                    <button
+                                        class="col-auto ms-auto px-0 excursion__menu excursion__archive">УДАЛИТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 px-0">
+                            <img class="excursion__image" src="./img/travels/4.jpg" alt="" />
                         </div>
                     </div>
                 </div>
