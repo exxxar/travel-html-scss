@@ -14,7 +14,13 @@
     color: $color-black;
 }
 
-.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
     padding-right: 0;
     padding-left: 0;
 }
@@ -25,7 +31,7 @@
     margin-left: 0;
 }
 
-.main.row > * {
+.main.row>* {
     padding: 0;
 }
 
@@ -37,6 +43,18 @@ body {
 
 main {
     margin: 40px 0 80px;
+}
+
+.my-excursions,
+.active-excursions,
+.archive-excursions,
+.moderation-excursions,
+.draft-excursions {
+    display: none;
+}
+
+.visible {
+    display: initial;
 }
 
 h1 {
@@ -91,7 +109,8 @@ a:hover {
     height: 20px;
 }
 
-.active, .active > * {
+.active,
+.active>* {
     background-color: $color-blue;
     color: $color-white;
     box-shadow: 0 10px 30px 7px rgba($color-blue, 0.3);
@@ -111,7 +130,7 @@ a:hover {
 
 .excursion__splitted {
     position: relative;
-    
+
 }
 
 .excursion__splitted::before {
@@ -131,15 +150,29 @@ a:hover {
     border-radius: 0 0.375rem 0.375rem 0;
 }
 
+.archived {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+
 .excursion__description {
     color: rgba($color-black, 0.8);
 }
 
-.excursion__type, .excursion__number, .excursion__rating, .excursion__menu {
+.excursion__type,
+.excursion__number,
+.excursion__rating,
+.excursion__menu,
+.excursion__status {
     font-size: 0.7rem;
 }
 
-.excursion__number, .excursion__menu {
+.excursion__number,
+.excursion__menu {
     font-family: "Manrope bold";
     letter-spacing: 3px;
 }
@@ -153,16 +186,20 @@ a:hover {
     color: rgba($color-black, 0.4);
 }
 
+.excursion__status {
+    color: $color-green;
+}
+
 .excursion__smalltext {
     font-size: 0.5rem;
 }
 
-.excursion__to-archive {
+.excursion__archive {
     position: relative;
     color: $color-red;
 }
 
-.excursion__to-archive::after {
+.excursion__archive::after {
     content: '';
     position: absolute;
     bottom: -5px;
