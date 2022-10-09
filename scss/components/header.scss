@@ -49,7 +49,8 @@ main {
 .active-excursions,
 .archive-excursions,
 .moderation-excursions,
-.draft-excursions {
+.draft-excursions,
+.current-excursion {
     display: none;
 }
 
@@ -208,3 +209,4 @@ a:hover {
     height: 1px;
     background-color: rgba($color-red, 0.07);
 }
+

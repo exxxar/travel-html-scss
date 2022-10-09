@@ -4840,7 +4840,8 @@ main {
 .active-excursions,
 .archive-excursions,
 .moderation-excursions,
-.draft-excursions {
+.draft-excursions,
+.current-excursion {
   display: none; }
 
 .visible {
