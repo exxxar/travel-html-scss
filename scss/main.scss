@@ -32,12 +32,16 @@ $prefix: "mo-";
 @import "components/footer";
 @import "components/travel-card";
 @import "components/main-page";
+@import "components/modal";
 
 @import "base/buttons";
+@import "base/inputs";
+@import "base/checkbox";
 @import "base/base";
 
 body {
   background: $color-light-gray;
+  color: $color-black;
   font-family: $font-family-regular !important;
   font-weight: 400;
   letter-spacing: 0;

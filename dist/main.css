@@ -5123,49 +5123,154 @@ template {
     margin-right: 10px;
     padding-top: 6px; } }
 
-.dt-btn-white {
-  margin-left: 40px;
-  width: 162px;
-  height: 60px;
-  background: #ffffff;
-  border-radius: 5px; }
-  .dt-btn-white span {
-    color: #0071eb;
-    font-family: "Manrope Bold";
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 14px; }
-  .dt-btn-white:hover {
-    background: #0071eb !important;
-    box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3); }
-    .dt-btn-white:hover span {
+.dt-modal .dt-modal-content .dt-header__recovery {
+  line-height: 1.2;
+  width: min-content; }
+
+.dt-modal .dt-modal-content .dt-modal-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+  font-family: "Manrope Bold"; }
+
+.dt-modal .dt-modal-content .dt-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0 50px;
+  margin-bottom: 40px; }
+  .dt-modal .dt-modal-content .dt-modal-body h5, .dt-modal .dt-modal-content .dt-modal-body .h5 {
+    font-family: "Manrope Thin"; }
+  .dt-modal .dt-modal-content .dt-modal-body a {
+    color: inherit; }
+  .dt-modal .dt-modal-content .dt-modal-body .dt-success-notification {
+    padding-right: 100px;
+    padding-left: 100px; }
+    .dt-modal .dt-modal-content .dt-modal-body .dt-success-notification svg {
+      margin-bottom: 25px;
+      fill: #65c350; }
+    .dt-modal .dt-modal-content .dt-modal-body .dt-success-notification h3, .dt-modal .dt-modal-content .dt-modal-body .dt-success-notification .h3 {
+      font-family: "Manrope Bold" !important; }
+
+.dt-modal .dt-modal-content .dt-modal-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  border-top: 1px solid #f6f6f6; }
+
+@font-face {
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../dist/fonts/bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Light';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../dist/fonts/light.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../dist/fonts/medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Semibold';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../dist/fonts/semibold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Thin';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../../dist/fonts/thin.otf") format("opentype"); }
+
+.dt_btn__recovery {
+  height: 44px !important; }
+
+.dt-btn {
+  border: none; }
+  .dt-btn-white {
+    margin-left: 40px;
+    width: 162px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 5px; }
+    .dt-btn-white span {
+      color: #0071eb;
+      font-family: "Manrope Bold";
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-size: 14px; }
+    .dt-btn-white:hover {
+      background: #0071eb !important;
+      box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3); }
+      .dt-btn-white:hover span {
+        color: #ffffff; }
+  .dt-btn-blue {
+    width: 220px;
+    height: 70px;
+    background: #0071eb;
+    border-radius: 5px; }
+    .dt-btn-blue span {
+      font-size: 14px;
+      font-family: "Manrope Bold";
       color: #ffffff; }
-
-.dt-btn-blue {
-  width: 220px;
-  height: 70px;
-  background: #0071eb;
-  border-radius: 5px; }
-  .dt-btn-blue span {
-    font-size: 14px;
+    .dt-btn-blue:hover {
+      background: #0071eb !important;
+      box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3); }
+  .dt-btn-text {
+    color: #222425;
     font-family: "Manrope Bold";
-    color: #ffffff; }
-  .dt-btn-blue:hover {
-    background: #0071eb !important;
-    box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3); }
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-decoration: none; }
+    .dt-btn-text:after {
+      content: '❯';
+      color: #0071eb;
+      padding-left: 8px; }
+    .dt-btn-text:hover {
+      color: #0071eb; }
+  .dt-btn-transparent {
+    height: 44px;
+    border: 1px solid #eff0f0;
+    padding: 10px 40px; }
+    .dt-btn-transparent:hover {
+      border: 1px solid #eff0f0 !important; }
+  .dt-btn__error {
+    border: 2px solid #f73637 !important; }
 
-.dt-btn-text {
-  color: #222425;
-  font-family: "Manrope Bold";
-  letter-spacing: 3px;
-  font-weight: bold;
-  text-decoration: none; }
-  .dt-btn-text:after {
-    content: '❯';
-    color: #0071eb;
-    padding-left: 8px; }
-  .dt-btn-text:hover {
-    color: #0071eb; }
+.dt-close-button {
+  width: 46px;
+  height: 46px;
+  background: #fef1f1;
+  border-radius: 0 6px 0 6px;
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .dt-close-button:hover {
+    background: #f73637; }
+    .dt-close-button:hover svg {
+      fill: #fef1f1; }
+  .dt-close-button svg {
+    fill: #f73637; }
 
 @media screen and (max-width: 568px) {
   .dt-btn-white {
@@ -5173,6 +5278,221 @@ template {
     .dt-btn-white span {
       font-size: 12px; } }
 
+/*.dt-input {
+  border: none;
+  border-radius: 6px;
+  background-color: $color-light-gray;
+  width: 100%;
+  color: $color-black;
+  font-size: 14px;
+  height: 70px;
+  padding-right: 40px;
+
+  &::placeholder {
+    color: rgba(34, 36, 37, 0.15);
+  }
+
+  &.error {
+    border: 2px solid $color-red;
+  }
+
+  &__icon {
+    &-phone:after {
+      content: url("/dist/img/icons/call_FILL0_wght600_GRAD0_opsz48_blue.svg");
+    }
+
+    &-password:after {
+      content: url("/dist/img/icons/visibility_FILL0_wght700_GRAD0_opsz48_blue.svg");
+    }
+
+    &-person:after {
+      content: url("/dist/img/icons/person_filled_FILL0_wght500_GRAD0_opsz48_blue.svg");
+    }
+
+    &:after {
+      right: 16px;
+      position: absolute;
+      left: 0;
+      text-align: end;
+      line-height: 6.7;
+    }
+
+    &:before {
+      left: 0;
+      right: 0;
+      width: auto;
+    }
+  }
+}*/
+.dt-input::placeholder {
+  color: rgba(34, 36, 37, 0.15); }
+
+.dt-input__label {
+  font-size: 12px;
+  font-family: "Manrope Thin";
+  margin-bottom: 11px; }
+
+.dt-input__wrapper {
+  position: relative; }
+
+.dt-input__group {
+  border: none;
+  border-radius: 6px;
+  background-color: #f6f6f6;
+  width: 100%;
+  color: #222425;
+  font-size: 14px;
+  height: 70px;
+  padding: 26px 27px 26px 30px; }
+  .dt-input__group-item {
+    align-items: center;
+    display: flex;
+    position: relative;
+    border-radius: 15px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: 100%;
+    justify-content: center;
+    min-height: 50px;
+    min-width: 50px; }
+  .dt-input__group .dt-input {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    font-family: "Manrope Regular";
+    width: 100%; }
+    .dt-input__group .dt-input__icon {
+      align-items: center;
+      display: flex;
+      position: absolute;
+      width: 24px;
+      height: 24px; }
+
+.dt-input__group, .dt-input__group-item {
+  align-items: center;
+  display: flex;
+  position: relative; }
+
+.dt-check__group h5, .dt-check__group .h5 {
+  font-family: "Manrope Regular" !important; }
+
+.dt-check__group .dt-check {
+  align-items: center !important;
+  margin-bottom: 6px; }
+
+.dt-check {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  /*&__label {
+    color: $main-default;
+    line-height: 16px;
+    font-size: $font-size-12;
+  }
+
+  &-error {
+    font-size: 12px;
+    color: $red-light;
+    margin: 0;
+  }*/ }
+  .dt-check__wrapper {
+    display: block;
+    min-height: 1.5rem;
+    margin-bottom: 0.125rem; }
+    .dt-check__wrapper-inline {
+      display: inline-block; }
+  .dt-check__input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(0, 113, 235, 0.071);
+    background: transparent;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    margin-right: 8px; }
+    .dt-check__input .dt-check__input-check {
+      border-radius: 100%;
+      height: 17px;
+      width: 17px; }
+    .dt-check__input input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 100%;
+      width: 100%; }
+    .dt-check__input input:checked ~ .dt-check__input-check {
+      background: #0071eb;
+      box-shadow: 0 3px 10px 0 rgba(0, 113, 235, 0.3);
+      border: 2px solid white; }
+    .dt-check__input input:checked:disabled ~ .dt-check__input-check {
+      background: #0071eb !important;
+      pointer-events: none; }
+
+/*.dt-check.check {
+  @extend .dt-check;
+
+  & .dt-check__input {
+    border: none;
+  }
+
+  & .dt-check__input-check {
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(0, 113, 235, 0.071);
+    border-radius: 6px;
+    background-color: transparent;
+  }
+
+  & input:checked ~ .dt-check__input-check {
+    background-image: url("data:image/svg+xml, %3Csvg width='100%25' height='100%25' fill='%232fbb40' xmlns='http://www.w3.org/2000/svg' viewBox='2 2 20 20'%3E%3Cpath d='M18.71,7.21a1,1,0,0,0-1.42,0L9.84,14.67,6.71,11.53A1,1,0,1,0,5.29,13l3.84,3.84a1,1,0,0,0,1.42,0l8.16-8.16A1,1,0,0,0,18.71,7.21Z'/%3E%3C/svg%3E");
+    box-shadow: none;
+    border: 2px solid $green-default;
+    background-color: transparent;
+  }
+
+  & input:disabled ~ .dt-check__input-check {
+    background-color: transparent;
+    background-image: url("data:image/svg+xml, %3Csvg width='100%25' height='100%25' fill='%23abadb4' xmlns='http://www.w3.org/2000/svg' viewBox='2 2 20 20'%3E%3Cpath d='M18.71,7.21a1,1,0,0,0-1.42,0L9.84,14.67,6.71,11.53A1,1,0,1,0,5.29,13l3.84,3.84a1,1,0,0,0,1.42,0l8.16-8.16A1,1,0,0,0,18.71,7.21Z'/%3E%3C/svg%3E");
+  }
+
+}*/
+/*.dt-check_color {
+  & .dt-check__input {
+    border: 2px solid rgb(240, 243, 255);
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    margin-right: 6px;
+
+    & .dt-check__input-check {
+      border-radius: 100%;
+      height: 24px;
+      width: 24px;
+    }
+
+    & input:indeterminate ~ .dt-check__input-check {
+      height: 24px;
+      width: 24px;
+      background: $color-blue;
+      box-shadow: none;
+      border-radius: 100%;
+    }
+
+    & input:checked ~ .dt-check__input-check {
+      background: $color-blue ;
+      box-shadow: none;
+    }
+
+    & input:disabled ~ .dt-check__input-check {
+      background: $color-blue;
+    }
+  }
+
+}*/
 .dt-form {
   --bs-gutter-y: 0;
   display: flex;
@@ -5222,6 +5542,7 @@ template {
 
 body {
   background: #f6f6f6;
+  color: #222425;
   font-family: "Manrope Regular" !important;
   font-weight: 400;
   letter-spacing: 0; }
