@@ -1,4 +1,10 @@
 .dt-check__group {
+  &-title {
+    font-family: $font-family-bold;
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
   & h5 {
     font-family: $font-family-regular !important;
   }
@@ -37,6 +43,10 @@
     height: 30px;
     border-radius: 6px;
     margin-right: 8px;
+
+    &:hover {
+      border: 2px solid $color-blue;
+    }
 
     .dt-check__input-check {
       border-radius: 100%;

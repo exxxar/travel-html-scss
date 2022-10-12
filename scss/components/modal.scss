@@ -31,10 +31,12 @@
       & .dt-success-notification {
         padding-right: 100px;
         padding-left: 100px;
+
         & svg {
           margin-bottom: 25px;
           fill: $color-green;
         }
+
         & h3 {
           font-family: $font-family-bold !important;
         }
@@ -47,6 +49,39 @@
       justify-content: space-between;
       padding: 30px 50px;
       border-top: 1px solid $color-light-gray;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dt-modal {
+    .dt-close-button {
+      top: -45px;
+      height: 45px;
+      border-radius: 6px 6px 0 0;
+      right: 0;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      background: $color-white;
+    }
+    & .modal-dialog {
+      margin-top: 55px;
+    }
+    & .dt-modal-header {
+      justify-content: center !important;
+    }
+    & .dt-modal-body {
+      padding: 0 30px !important;
+      & .dt-entry {
+        display: flex;
+        vertical-align: center;
+        padding: 12px 10px 12px 10px;
+      }
+
+      & .btn {
+        height: 60px;
+      }
     }
   }
 }

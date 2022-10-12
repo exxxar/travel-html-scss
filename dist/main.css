@@ -4893,8 +4893,56 @@ template {
   font-weight: 200;
   src: url("../../dist/fonts/thin.otf") format("opentype"); }
 
+@font-face {
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../dist/fonts/bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Light';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../dist/fonts/light.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../dist/fonts/medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Semibold';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../dist/fonts/semibold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Thin';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../../dist/fonts/thin.otf") format("opentype"); }
+
 .dt-page-header {
   background: url("/dist/img/header-bg.png") no-repeat; }
+  .dt-page-header > * {
+    color: white;
+    font-family: "Manrope Regular"; }
+  .dt-page-header p.dt-page__title {
+    font-size: 46px;
+    font-family: "Manrope Bold"; }
   .dt-page-header__actions {
     border-bottom: 1px solid #f6f6f6; }
     .dt-page-header__actions .dt-actions__links {
@@ -5160,6 +5208,129 @@ template {
   padding: 30px 50px;
   border-top: 1px solid #f6f6f6; }
 
+@media screen and (max-width: 768px) {
+  .dt-modal .dt-close-button {
+    top: -45px;
+    height: 45px;
+    border-radius: 6px 6px 0 0;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff; }
+  .dt-modal .modal-dialog {
+    margin-top: 55px; }
+  .dt-modal .dt-modal-header {
+    justify-content: center !important; }
+  .dt-modal .dt-modal-body {
+    padding: 0 30px !important; }
+    .dt-modal .dt-modal-body .dt-entry {
+      display: flex;
+      vertical-align: center;
+      padding: 12px 10px 12px 10px; }
+    .dt-modal .dt-modal-body .btn {
+      height: 60px; } }
+
+@font-face {
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../dist/fonts/bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Light';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../dist/fonts/light.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../dist/fonts/medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Semibold';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../dist/fonts/semibold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Thin';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../../dist/fonts/thin.otf") format("opentype"); }
+
+.dt-page__header {
+  margin-bottom: 40px !important; }
+  .dt-page__header .dt-header__title {
+    font-size: 38px;
+    font-family: "Manrope Bold";
+    margin-bottom: 32px !important; }
+  .dt-page__header .dt-header__description {
+    font-size: 14px !important;
+    font-family: "Manrope Thin" !important; }
+
+.dt-page__search-excursion .dt-input__wrapper .dt-input__group {
+  background: white !important; }
+
+.dt-page__search-excursion .dt-input__wrapper:nth-child(2) .dt-input__group {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.dt-page__search-excursion .dt-input__wrapper:nth-child(3) .dt-input__group {
+  border-radius: 0; }
+
+.dt-page__search-excursion .dt-input__wrapper:nth-child(4) .dt-input__group {
+  border-radius: 0; }
+
+.dt-page__search-excursion .dt-direction-excursion:not(:last-child) {
+  margin-right: 8px; }
+
+.dt-page__search-excursion .dt-direction-excursion:last-child {
+  margin-right: 25px; }
+
+.dt-page__search-excursion .dt-btn-blue {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.dt-page__type-excursions {
+  margin-top: 80px; }
+
+.dt-page__content .dt-filters-by__item {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid rgba(34, 36, 37, 0.07); }
+  .dt-page__content .dt-filters-by__item:first-child {
+    border-top: 1px solid rgba(34, 36, 37, 0.07); }
+  .dt-page__content .dt-filters-by__item:last-child {
+    border-bottom: none; }
+
+.dt-page__content .dt-sort-by {
+  margin-bottom: 35px; }
+  .dt-page__content .dt-sort-by__title {
+    font-family: "Manrope Thin";
+    color: rgba(34, 36, 37, 0.4);
+    margin-right: 50px; }
+  .dt-page__content .dt-sort-by__item {
+    font-family: "Manrope Regular";
+    margin-right: 25px;
+    cursor: pointer; }
+    .dt-page__content .dt-sort-by__item.active {
+      color: #0071eb; }
+
 @font-face {
   font-family: 'Manrope Bold';
   font-style: normal;
@@ -5232,7 +5403,7 @@ template {
     .dt-btn-blue span {
       font-size: 14px;
       font-family: "Manrope Bold";
-      color: #ffffff; }
+      color: #ffffff !important; }
     .dt-btn-blue:hover {
       background: #0071eb !important;
       box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3); }
@@ -5248,6 +5419,13 @@ template {
       padding-left: 8px; }
     .dt-btn-text:hover {
       color: #0071eb; }
+  .dt-btn-text-red {
+    cursor: pointer;
+    color: #f73637;
+    letter-spacing: 3px;
+    border-bottom: 1px solid rgba(247, 54, 55, 0.07); }
+    .dt-btn-text-red:hover {
+      border-bottom: 1px solid #f73637; }
   .dt-btn-transparent {
     height: 44px;
     border: 1px solid #eff0f0;
@@ -5278,52 +5456,6 @@ template {
     .dt-btn-white span {
       font-size: 12px; } }
 
-/*.dt-input {
-  border: none;
-  border-radius: 6px;
-  background-color: $color-light-gray;
-  width: 100%;
-  color: $color-black;
-  font-size: 14px;
-  height: 70px;
-  padding-right: 40px;
-
-  &::placeholder {
-    color: rgba(34, 36, 37, 0.15);
-  }
-
-  &.error {
-    border: 2px solid $color-red;
-  }
-
-  &__icon {
-    &-phone:after {
-      content: url("/dist/img/icons/call_FILL0_wght600_GRAD0_opsz48_blue.svg");
-    }
-
-    &-password:after {
-      content: url("/dist/img/icons/visibility_FILL0_wght700_GRAD0_opsz48_blue.svg");
-    }
-
-    &-person:after {
-      content: url("/dist/img/icons/person_filled_FILL0_wght500_GRAD0_opsz48_blue.svg");
-    }
-
-    &:after {
-      right: 16px;
-      position: absolute;
-      left: 0;
-      text-align: end;
-      line-height: 6.7;
-    }
-
-    &:before {
-      left: 0;
-      right: 0;
-      width: auto;
-    }
-  }
-}*/
 .dt-input::placeholder {
   color: rgba(34, 36, 37, 0.15); }
 
@@ -5373,6 +5505,11 @@ template {
   display: flex;
   position: relative; }
 
+.dt-check__group-title {
+  font-family: "Manrope Bold";
+  font-size: 14px;
+  margin-bottom: 18px; }
+
 .dt-check__group h5, .dt-check__group .h5 {
   font-family: "Manrope Regular" !important; }
 
@@ -5414,6 +5551,8 @@ template {
     height: 30px;
     border-radius: 6px;
     margin-right: 8px; }
+    .dt-check__input:hover {
+      border: 2px solid #0071eb; }
     .dt-check__input .dt-check__input-check {
       border-radius: 100%;
       height: 17px;
@@ -5493,6 +5632,105 @@ template {
   }
 
 }*/
+@font-face {
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../dist/fonts/bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Light';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../dist/fonts/light.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../dist/fonts/medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Semibold';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../dist/fonts/semibold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Thin';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../../dist/fonts/thin.otf") format("opentype"); }
+
+.dt-switch {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 36px;
+  flex-shrink: 0; }
+  .dt-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  .dt-switch .dt-slider {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 6px;
+    background-color: #ffffff;
+    width: 58px;
+    height: 36px; }
+  .dt-switch .dt-slider:before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    left: 5px;
+    bottom: 6px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 4px;
+    background: #0071eb;
+    box-shadow: 0 3px 10px 0 rgba(0, 113, 235, 0.3);
+    border: 2px solid white; }
+  .dt-switch input:checked + .dt-slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px); }
+
+.dt__tabs a.nav-link {
+  text-decoration: none;
+  color: #222425;
+  background: white;
+  border-radius: 5px;
+  padding: 23px;
+  font-size: 12px; }
+  .dt__tabs a.nav-link.active {
+    background: #0071eb;
+    box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3);
+    color: white; }
+
+.dt__tabs-list {
+  margin-bottom: 35px; }
+  .dt__tabs-list li.nav-item {
+    height: 63px; }
+    .dt__tabs-list li.nav-item:not(:last-child) {
+      margin-right: 0.25rem; }
+
 .dt-form {
   --bs-gutter-y: 0;
   display: flex;
@@ -5566,6 +5804,15 @@ h5, .h5 {
 h6, .h6 {
   font-size: 10px;
   margin-bottom: 0; }
+
+.dt-page__breadcrumbs {
+  padding-top: 40px;
+  padding-bottom: 80px; }
+  .dt-page__breadcrumbs .breadcrumb-item > a {
+    color: rgba(34, 36, 37, 0.4) !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap; }
 
 @media screen and (max-width: 768px) {
   h1, .h1 {

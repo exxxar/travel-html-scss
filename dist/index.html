@@ -7,9 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
     <title>Туризм</title>
-
     <link href="main.css" rel="stylesheet">
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
@@ -359,6 +357,12 @@
                 </div>
                 <div class="dt-actions__entry">
                     <ul class="dt-buttons d-flex align-items-center">
+                        <li class="dt-btn-entry" style="display: none">
+                            <button class="dt-btn-blue">
+                                <span>Погода в горах</span>
+                                <img src="./img/icons/mountains.png" alt="">
+                            </button>
+                        </li>
                         <li class="dt-btn-entry">
                             <a href="#">
                                 <img width="18" height="18" src="/dist/img/icons/searchWhite.svg" alt="search">
@@ -383,6 +387,18 @@
                             </h6>
                         </li>
                     </ul>
+                </div>
+            </div>
+
+            <div class="container dt-page-header__content text-center" style="display:none;">
+                <p class="dt-page__title">Экскурсии по Ставропольскому краю</p>
+                <div class="d-flex">
+                    <h5>Куда?</h5>
+                    <label class="dt-switch">
+                        <input type="checkbox">
+                        <span class="dt-slider"></span>
+                    </label>
+                    <h5>Откуда?</h5>
                 </div>
             </div>
         </div>
