@@ -4836,6 +4836,9 @@ template {
 .opacity-40 {
   opacity: 0.4 !important; }
 
+.opacity-70 {
+  opacity: 0.7 !important; }
+
 .opacity-80 {
   opacity: 0.8 !important; }
 
@@ -5080,7 +5083,29 @@ a:hover {
   position: absolute;
   left: 0;
   top: -1px;
-  width: 40rem;
+  width: 80%;
   height: 4px;
   background-color: #0071eb;
   border-radius: 6px; }
+
+.comment__content {
+  padding: 2rem;
+  position: relative; }
+
+.comment__content::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  top: 1.2rem;
+  left: -0.5rem;
+  position: absolute; }
+
+.comment__images {
+  gap: 0.35rem; }
+
+.comment__image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover; }
