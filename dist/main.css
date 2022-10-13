@@ -5132,17 +5132,17 @@ template {
 .dt-page-main .dt-popular__action {
   margin-top: 40px; }
 
-.dt-page-main .dt-advantages {
+.dt-page__advantages {
   margin-bottom: 80px; }
-  .dt-page-main .dt-advantages__content .dt-advantage__card {
+  .dt-page__advantages-content .dt-advantage__card {
     padding: 40px; }
-    .dt-page-main .dt-advantages__content .dt-advantage__card img {
+    .dt-page__advantages-content .dt-advantage__card img {
       width: 50px;
       height: 100%;
       margin-right: 30px; }
-    .dt-page-main .dt-advantages__content .dt-advantage__card .dt-card__text {
+    .dt-page__advantages-content .dt-advantage__card .dt-card__text {
       font-family: "Manrope Bold"; }
-    .dt-page-main .dt-advantages__content .dt-advantage__card .dt-card__subtitle {
+    .dt-page__advantages-content .dt-advantage__card .dt-card__subtitle {
       font-family: "Manrope Thin"; }
 
 @media screen and (max-width: 768px) {
@@ -5330,6 +5330,37 @@ template {
     cursor: pointer; }
     .dt-page__content .dt-sort-by__item.active {
       color: #0071eb; }
+
+.dt-pagination {
+  margin-top: 40px; }
+  .dt-pagination .dt-btn {
+    height: 50px;
+    width: 165px; }
+    .dt-pagination .dt-btn span {
+      font-size: 12px;
+      font-family: "Manrope Bold"; }
+    .dt-pagination .dt-btn__icon {
+      width: 20px; }
+  .dt-pagination .dt-nav-pagination .page-item {
+    margin-left: 6px; }
+    .dt-pagination .dt-nav-pagination .page-item.active .page-link {
+      background: #0071eb !important;
+      box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3);
+      color: #ffffff; }
+  .dt-pagination .dt-nav-pagination .page-link {
+    color: #222425;
+    font-size: 12px;
+    font-family: "Manrope Bold";
+    border: none;
+    border-radius: 6px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .dt-pagination .dt-nav-pagination .page-link:hover {
+      color: #0071eb;
+      background: #ffffff; }
 
 @font-face {
   font-family: 'Manrope Bold';

@@ -184,7 +184,7 @@
                 <div class="dt-filters-by__item">
                     <div class="dt-check">
                         <div class="dt-check__input">
-                            <input type="radio" name="type_person"/>
+                            <input type="checkbox" name="hot_excursion"/>
                             <div class="dt-check__input-check"></div>
                         </div>
                         <label class="dt-check__label">
@@ -199,7 +199,7 @@
                         <label class="dt-check__group-title">стоимость, руб: </label>
                         <div class="dt-check">
                             <div class="dt-check__input">
-                                <input type="radio" name="type_person"/>
+                                <input type="radio" name="price"/>
                                 <div class="dt-check__input-check"></div>
                             </div>
                             <label class="dt-check__label">
@@ -210,7 +210,7 @@
                         </div>
                         <div class="dt-check">
                             <div class="dt-check__input">
-                                <input type="radio" name="type_person"/>
+                                <input type="radio" name="price"/>
                                 <div class="dt-check__input-check"></div>
                             </div>
                             <label class="dt-check__label">
@@ -221,7 +221,7 @@
                         </div>
                         <div class="dt-check">
                             <div class="dt-check__input">
-                                <input type="radio" name="type_person"/>
+                                <input type="radio" name="price"/>
                                 <div class="dt-check__input-check"></div>
                             </div>
                             <label class="dt-check__label">
@@ -232,7 +232,7 @@
                         </div>
                         <div class="dt-check">
                             <div class="dt-check__input">
-                                <input type="radio" name="type_person" value="true"/>
+                                <input type="radio" name="price" value="true"/>
                                 <div class="dt-check__input-check"></div>
                             </div>
                             <label class="dt-check__label">
@@ -1024,6 +1024,126 @@
                                     <h6 class="dt-btn-text">Все даты и запись</h6>
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+
+                    </div>
+                    <div class="col-lg-6 dt-pagination d-flex justify-content-between">
+                        <button class="align-items-center d-flex dt-btn dt-btn-blue justify-content-center">
+                            <span>Показать еще</span>
+                            <div class="dt-btn__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%"
+                                     viewBox="0 0 48 48" fill="#ffffff">
+                                    <path d="M24 31.4 11.3 18.7l2.85-2.8L24 25.8l9.85-9.85 2.85 2.8Z"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <nav aria-label="Page navigation" class="dt-nav-pagination dt-pagination_body">
+                            <ul class="pagination">
+                                <li class="page-item page-item-control disabled">
+                                    <div class="page-link">
+                                        <svg width="6" height="10" viewBox="0 0 8 12" fill="#eff0f0">
+                                            <path data-v-346e8e5a=""
+                                                  d="M8 1.42L3.42 6L8 10.59L6.59 12L0.59 6L6.59 1.23266e-07L8 1.42Z"></path>
+                                        </svg>
+                                    </div>
+                                </li>
+                                <li class="page-item active">
+                                    <div class="page-link">1
+                                    </div>
+                                </li>
+                                <li class="page-item">
+                                    <div class="page-link">2
+                                    </div>
+                                </li>
+                                <li class="page-item dots">
+                                    <div class="page-link">3
+                                    </div>
+                                </li>
+                                <li class="page-item page-item-control">
+                                    <div class="page-link">
+                                        <svg fill="#222425" width="6" height="10" viewBox="0 0 8 12">
+                                            <path d="M0 10.5801L4.58 6.00012L0 1.41012L1.41 0.00012207L7.41 6.00012L1.41 12.0001L0 10.5801Z"></path>
+                                        </svg>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dt-page__advantages">
+            <div class="dt-page__advantages-header dt-block-header text-center">
+                <h1 class="dt-header__title">Преимущества нашего сервиса</h1>
+                <h6 class="dt-header__subtitle">вы оцените качество нашего сервиса по достоинству</h6>
+            </div>
+            <div class="dt-page__advantages-content">
+                <div class="dt-form bordered row-cols-lg-3 row-cols-md-2 row-cols-1">
+                    <div class="col">
+                        <div class="dt-advantage__card d-flex">
+                            <img src="/dist/img/icons/preferences/1.png" alt="">
+                            <h4 class="dt-card__text">
+                                Бесплатная отмена
+                                <span class="dt-card__subtitle text-muted-black"><br>
+                                    Бесплатная отмена за 48 часов.</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dt-advantage__card d-flex">
+                            <img src="/dist/img/icons/preferences/2.png" alt="">
+                            <h4 class="dt-card__text">
+                                Мгновенное подтверждение
+                                <span class="dt-card__subtitle text-muted-black"><br>
+                                    После оплаты вы получите билет на электронную почту или телефон.</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dt-advantage__card d-flex">
+                            <img src="/dist/img/icons/preferences/3.png" alt="">
+                            <h4 class="dt-card__text">
+                                Оплата онлайн
+                                <span class="dt-card__subtitle text-muted-black"><br>
+                                    Мы гарантируем сохранность платежей и персональных данных.</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dt-advantage__card d-flex">
+                            <img src="/dist/img/icons/preferences/4.png" alt="">
+                            <h4 class="dt-card__text">
+                                Честные отзывы
+                                <span class="dt-card__subtitle text-muted-black"><br>
+                                    15 000 отзывов от наших клиентов, которым вы можете доверять.</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dt-advantage__card d-flex">
+                            <img src="/dist/img/icons/preferences/5.png" alt="">
+                            <h4 class="dt-card__text">
+                                Лучшие экскурсии
+                                <span class="dt-card__subtitle text-muted-black"><br>
+                                    Тщательно подобранные экскурсии со всего мира на одном сайте.</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dt-advantage__card d-flex">
+                            <img src="/dist/img/icons/preferences/6.png" alt="">
+                            <h4 class="dt-card__text">
+                                Профессиональные гиды
+                                <span class="dt-card__subtitle text-muted-black"><br>
+                                    15 000 отзывов от наших клиентов, которым вы можете доверять.</span>
+                            </h4>
                         </div>
                     </div>
                 </div>

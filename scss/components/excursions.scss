@@ -69,6 +69,7 @@
       &:first-child {
         border-top: 1px solid rgba(34, 36, 37, 0.07);
       }
+
       &:last-child {
         border-bottom: none;
       }
@@ -76,6 +77,7 @@
 
     & .dt-sort-by {
       margin-bottom: 35px;
+
       &__title {
         font-family: $font-family-thin;
         color: $color-light-black;
@@ -90,6 +92,56 @@
         &.active {
           color: $color-blue;
         }
+      }
+    }
+  }
+}
+
+.dt-pagination {
+  margin-top: 40px;
+
+  & .dt-btn {
+    height: 50px;
+    width: 165px;
+
+    span {
+      font-size: 12px;
+      font-family: $font-family-bold;
+    }
+
+    &__icon {
+      width: 20px;
+    }
+  }
+
+  & .dt-nav-pagination {
+    & .page-item {
+      margin-left: 6px;
+
+      &.active {
+        & .page-link {
+          background: $color-blue !important;
+          box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3);
+          color: $color-white;
+        }
+      }
+    }
+
+    & .page-link {
+      color: $color-black;
+      font-size: 12px;
+      font-family: $font-family-bold;
+      border: none;
+      border-radius: 6px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        color: $color-blue;
+        background: $color-white;
       }
     }
   }
