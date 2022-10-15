@@ -4915,6 +4915,9 @@ input,
 select {
   height: 70px; }
 
+input::placeholder {
+  color: rgba(34, 36, 37, 0.1); }
+
 textarea {
   resize: none; }
 
@@ -4926,6 +4929,10 @@ select {
   background-repeat: no-repeat;
   background-position: top 50% right 2rem;
   background-size: 1.2rem auto; }
+
+.bg-light-blue {
+  color: #0071eb;
+  background-color: rgba(0, 113, 235, 0.1); }
 
 .bold {
   font-family: "Manrope bold"; }
@@ -4941,22 +4948,6 @@ body {
 
 main {
   margin: 40px 0 80px; }
-
-.my-excursions,
-.active-excursions,
-.archive-excursions,
-.moderation-excursions,
-.draft-excursions,
-.current-excursion,
-.accordion__content,
-.add-excursion,
-.my-objects,
-.active-objects,
-.deleted-objects,
-.add-object,
-.transactions,
-.calendar {
-  display: none; }
 
 .visible {
   display: initial !important; }
@@ -5012,11 +5003,47 @@ h3 {
 .green {
   color: #65c350; }
 
+a,
+button,
+span,
+p {
+  font-size: 0.8rem; }
+
+a {
+  text-decoration: none;
+  color: #222425; }
+
+a:hover {
+  color: #222425; }
+
+.my-excursions,
+.active-excursions,
+.archive-excursions,
+.moderation-excursions,
+.draft-excursions,
+.current-excursion,
+.accordion__content,
+.add-excursion,
+.my-objects,
+.active-objects,
+.deleted-objects,
+.add-object,
+.transactions,
+.calendar {
+  display: none; }
+
 .arrow {
   background-image: url("./img/icons/expand_more_FILL0_wght600_GRAD0_opsz48.svg"); }
 
 .location {
   background-image: url("./img/icons/location_on_FILL0_wght600_GRAD0_opsz48.svg"); }
+
+.person {
+  background-image: url("./img/icons/person_filled_FILL0_wght500_GRAD0_opsz48.svg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: top 50% right 1rem;
+  background-size: 20px; }
 
 .red-underline::after {
   content: '';
@@ -5045,12 +5072,6 @@ h3 {
   height: 1px;
   background-color: rgba(34, 36, 37, 0.07); }
 
-a,
-button,
-span,
-p {
-  font-size: 0.8rem; }
-
 .button {
   height: 50px; }
 
@@ -5059,13 +5080,6 @@ p {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden; }
-
-a {
-  text-decoration: none;
-  color: #222425; }
-
-a:hover {
-  color: #222425; }
 
 .menu-item {
   height: 70px;
@@ -5331,3 +5345,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .page {
   width: 50px; }
+
+.cell {
+  width: 54px;
+  height: 42px; }
