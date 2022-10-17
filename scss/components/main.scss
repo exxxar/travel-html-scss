@@ -233,12 +233,6 @@ h3 {
     font-size: 0.9rem;
 }
 
-.default {
-    background-color: $color-white;
-    color: $color-black;
-    fill: $color-black;
-}
-
 .bg-green {
     background-color: $color-green;
     color: $color-white;
@@ -247,6 +241,11 @@ h3 {
 .bg-blue {
     background-color: $color-blue;
     color: $color-white;
+}
+
+.black {
+    color: $color-black;
+    fill: $color-black;
 }
 
 .blue {
@@ -276,13 +275,17 @@ p {
     font-size: 0.8rem;
 }
 
+span {
+    letter-spacing: 0.5px;
+}
+
 a {
     text-decoration: none;
     color: $color-black;
 }
 
 a:hover {
-    color: $color-black;
+    color: $color-blue;
 }
 
 svg {
@@ -369,11 +372,12 @@ svg {
 .round-icon {
     width: 40px;
     height: 40px;
+    object-fit: cover;
 }
 
 .active,
 .active>* {
-    background-color: $color-blue;
+    background-color: $color-blue !important;
     color: $color-white;
     box-shadow: 0 10px 30px 7px rgba($color-blue, 0.3);
     z-index: 1;
@@ -381,7 +385,7 @@ svg {
 }
 
 .inactive {
-    background-color: $color-white;
+    background-color: $color-white !important;
     color: rgba($color-black, 0.1);
 }
 
@@ -642,4 +646,123 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .cell {
     width: 54px;
     height: 42px;
+}
+
+//--------------------------------------------
+
+.messages-head {
+    overflow-y: auto;
+    height: 702px;
+    border: 1px solid rgba($color-black, 0.07);
+}
+
+.messages-head::-webkit-scrollbar {
+    width: 3px;
+}
+
+.messages-head::-webkit-scrollbar-track {
+    background: none;
+}
+
+.messages-head::-webkit-scrollbar-thumb {
+    background-color: $color-blue;
+}
+
+.messages-head__message {
+    height: 70px;
+    border-bottom: 1px solid rgba($color-black, 0.07);
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.messages-head__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.unread {
+    background-color: rgba($color-blue, 0.03) !important;
+}
+
+.unread>div>.messages-head__text,
+.unread>.messages-head__unread {
+    display: -webkit-box !important;
+}
+
+.unread>div>.messages-head__date {
+    display: none !important;
+}
+
+.current {
+    background-color: rgba($color-blue, 0.8);
+}
+
+.current>div>span,
+.current>div>p {
+    color: $color-white;
+    font-family: "Manrope regular";
+}
+
+.current>.icon-wrap>.round-icon {
+    background-color: rgba($color-white, 0.07) !important;
+}
+
+.current>.icon-wrap>.round-icon>svg {
+    fill: $color-white;
+    opacity: 1 !important;
+}
+
+.messages-head__unread {
+    width: 8px;
+    height: 8px;
+    background-color: $color-red;
+    border-radius: 50%;
+}
+
+.messages-body {
+    height: 702px;
+    overflow: hidden;
+    padding-top: 0 !important;
+}
+
+.messages-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+    background: linear-gradient(180deg, $color-white 20%, rgba(0, 0, 0, 0) 100%);
+}
+
+.messages-body__message {
+    max-width: 780px;
+    padding: 10px 20px !important;
+}
+
+.messages-body__date {
+    align-self: center !important;
+}
+
+.messages-body__left-wrap {
+    align-self: flex-start !important;
+}
+
+.messages-body__right-wrap {
+    align-self: flex-end !important;
+}
+
+.messages-body__left {
+    border-top-left-radius: 0 !important;
+    background-color: $color-blue;
+}
+
+.messages-body__right {
+    border-top-right-radius: 0 !important;
+    background-color: rgb(248, 249, 250);
+    order: 2;
 }
