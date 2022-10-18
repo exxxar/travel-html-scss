@@ -303,6 +303,11 @@ svg {
     background-position: 50% 40%;
 }
 
+.img-250 {
+    height: 250px;
+    object-fit: cover;
+}
+
 //----------------------------------------------------
 .my-excursions,
 .active-excursions,
@@ -866,3 +871,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 	opacity: .25;
 	pointer-events: none;
 }
+
+//--------------------------------------------------
+

@@ -5038,6 +5038,10 @@ svg {
   background-repeat: no-repeat;
   background-position: 50% 40%; }
 
+.img-250 {
+  height: 250px;
+  object-fit: cover; }
+
 .my-excursions,
 .active-excursions,
 .archive-excursions,
