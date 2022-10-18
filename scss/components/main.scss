@@ -166,7 +166,11 @@ select {
 
 .bg-light-blue {
     color: $color-blue;
-    background-color: rgba($color-blue, 0.1);
+    background-color: rgba($color-blue, 0.07);
+}
+
+.bg-light-blue>svg {
+    fill: $color-blue;
 }
 
 .bold {
@@ -290,6 +294,13 @@ a:hover {
 
 svg {
     fill: $color-blue;
+}
+
+.bg-image {
+    background-image: url("./img/4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
 }
 
 //----------------------------------------------------
@@ -765,4 +776,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-top-right-radius: 0 !important;
     background-color: rgb(248, 249, 250);
     order: 2;
+}
+
+//---------------------------------------------------
+
+.benefits {
+    background-color: rgba($color-black, 0.1);
+    border: 1px solid rgba($color-black, 0.07);
+}
+
+.benefits__item {
+    outline: 1px solid rgba($color-black, 0.1);
+    background-color: $color-light-gray;
 }
