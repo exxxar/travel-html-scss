@@ -144,10 +144,11 @@
 input,
 select {
     height: 70px;
+    font-size: 0.8rem;
 }
 
 input::placeholder {
-    color: rgba($color-black, 0.1);
+    color: rgba($color-black, 0.3);
 }
 
 textarea {
@@ -359,6 +360,10 @@ svg {
 
 .button {
     height: 50px;
+}
+
+.big-button {
+    height: 70px;
 }
 
 .short-descrtiption {
@@ -873,4 +878,3 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 //--------------------------------------------------
-

@@ -4913,10 +4913,11 @@ template {
 
 input,
 select {
-  height: 70px; }
+  height: 70px;
+  font-size: 0.8rem; }
 
 input::placeholder {
-  color: rgba(34, 36, 37, 0.1); }
+  color: rgba(34, 36, 37, 0.3); }
 
 textarea {
   resize: none; }
@@ -5088,6 +5089,9 @@ svg {
 
 .button {
   height: 50px; }
+
+.big-button {
+  height: 70px; }
 
 .short-descrtiption {
   display: -webkit-box;
