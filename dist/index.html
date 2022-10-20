@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Туризм</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="app">
+    <div class="dt-modal modal fade" tabindex="-1" id="dtModalEntry" aria-hidden="true" data-bs-backdrop="static"
+         data-bs-keyboard="false">
+        <div class="dt-modal-entry">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content dt-modal-content">
+                    <div class="dt-modal-header">
+                        <h1 class="dt-modal__title">Вход</h1>
+                        <button type="button" class="dt-close-button" data-bs-dismiss="modal" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 48 48">
+                                <path d="m12.45 38.35-2.8-2.8L21.2 24 9.65 12.45l2.8-2.8L24 21.2 35.55 9.65l2.8 2.8L26.8
+                                      24l11.55 11.55-2.8 2.8L24 26.8Z"/>
+                            </svg>
+                        </button>
+
+                    </div>
+                    <div class="dt-modal-body">
+                        <div class="dt-actions d-flex">
+                            <div class="dt-entry-gosuslugi flex-fill w-100 me-3">
+                                <button class="btn dt-btn-transparent">
+                                    <img src="/dist/img/VK_Full_Logo_(2021-present).svg.png" alt="">
+                                </button>
+                            </div>
+                            <div class="dt-entry-vk flex-fill w-100">
+                                <button class="btn dt-btn-transparent">
+                                    <img src="/dist/img/logo-gosuslugi-ru.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="dt-input__wrapper">
+                            <div class="d-flex align-items-center justify-content-between"><label
+                                    class="dt-input__label">телефон</label>
+                            </div>
+                            <div class="dt-input__group">
+                                <input type="text" name="name" placeholder="+7 (000) 000-00-00"
+                                       class="dt-input" autocomplete="off">
+                                <div class="dt-input__group-item">
+                                    <div class="dt-input__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%"
+                                             viewBox="0 0 48 48" fill="#0071eb">
+                                            <path d="M39.8 42.65q-6.25 0-12.4-3.05t-11.075-7.95Q11.4 26.75 8.35 20.575 5.3 14.4 5.3 8.2q0-1.25.85-2.1.85-.85 2.05-.85h7q1.2 0 1.975.675Q17.95 6.6 18.2 7.8l1.35 5.85q.2 1.05-.025 1.875T18.7 16.9l-5.15 4.85q2.65 4.3 5.8 7.425t7.1 5.275l4.9-5q.7-.75 1.575-1.025.875-.275 1.875-.025l5.35 1.25q1.2.3 1.875 1.125T42.7 32.8v6.9q0 1.25-.85 2.1-.85.85-2.05.85Zm-28.2-24.4 4-3.9-1.1-5.1H9.3q-.05 1.8.5 3.975t1.8 5.025Zm18.5 18.2q1.9.9 4.175 1.475 2.275.575 4.425.725V33.4L34 32.35Zm-18.5-18.2Zm18.5 18.2Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dt-input__wrapper">
+                            <div class="d-flex align-items-center justify-content-between"><label
+                                    class="dt-input__label">пароль</label>
+                            </div>
+                            <div class="dt-input__group">
+                                <input type="password" name="name" class="dt-input" autocomplete="off">
+                                <div class="dt-input__group-item">
+                                    <div class="dt-input__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%"
+                                             viewBox="0 0 48 48" fill="#222425" opacity="0.15">
+                                            <path d="M24 31.5q3.55 0 6.025-2.475Q32.5 26.55 32.5 23q0-3.55-2.475-6.025Q27.55 14.5 24 14.5q-3.55 0-6.025 2.475Q15.5 19.45 15.5 23q0 3.55 2.475 6.025Q20.45 31.5 24 31.5Zm0-3.7q-2 0-3.4-1.4T19.2 23q0-2 1.4-3.4t3.4-1.4q2 0 3.4 1.4t1.4 3.4q0 2-1.4 3.4T24 27.8Zm0 11.35q-7.7 0-13.9-4.5T.85 23q3.05-7.15 9.25-11.65T24 6.85q7.7 0 13.9 4.5T47.15 23q-3.05 7.15-9.25 11.65T24 39.15ZM24 23Zm0 12q6 0 11.05-3.275Q40.1 28.45 42.75 23q-2.65-5.45-7.675-8.725Q30.05 11 24 11q-6 0-11.05 3.275Q7.9 17.55 5.2 23q2.7 5.45 7.725 8.725Q17.95 35 24 35Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dt-check align-items-start">
+                            <div class="dt-check__input">
+                                <input type="checkbox"/>
+                                <div class="dt-check__input-check"></div>
+                            </div>
+                            <label class="dt-check__label">
+                                <slot name="label">
+                                    <h5> Я соглашаюсь с <a href="#">Условиями использования сайта</a>
+                                        и даю согласие на обработку своих персональных данных в соответствии с
+                                        <a href="#">Политикой обработки персональных данных.</a>
+                                    </h5>
+                                </slot>
+                            </label>
+                        </div>
+                        <div class="btn dt-btn-blue d-flex align-items-center justify-content-center w-100">
+                            <span>Войти</span>
+                        </div>
+                    </div>
+                    <div class="dt-modal-footer">
+                        <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#dtModalRegistry"
+                           class="text-uppercase dt-travel-card__action">
+                            <h6 class="dt-btn-text">Регистрация</h6>
+                        </a>
+                        <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#dtModalRecovery-1"
+                           class="text-uppercase dt-travel-card__action">
+                            <h6 class="dt-btn-text">Забыли пароль?</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dt-modal modal fade" tabindex="-1" id="dtModalRegistry" aria-hidden="true" data-bs-backdrop="static"
+         data-bs-keyboard="false">
+        <div class="dt-modal-registry">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content dt-modal-content">
+                    <div class="dt-modal-header">
+                        <h1 class="dt-modal__title">Регистрация</h1>
+                        <button type="button" class="dt-close-button" data-bs-dismiss="modal" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 48 48">
+                                <path d="m12.45 38.35-2.8-2.8L21.2 24 9.65 12.45l2.8-2.8L24 21.2 35.55 9.65l2.8 2.8L26.8
+                                      24l11.55 11.55-2.8 2.8L24 26.8Z"/>
+                            </svg>
+                        </button>
+
+                    </div>
+                    <div class="dt-modal-body">
+                        <div class="dt-input__wrapper">
+                            <div class="d-flex align-items-center justify-content-between"><label
+                                    class="dt-input__label">имя</label>
+                            </div>
+                            <div class="dt-input__group">
+                                <input type="text" name="name" id="name_reg" placeholder="Иван" class="dt-input"
+                                       autocomplete="off">
+                                <div class="dt-input__group-item">
+                                    <div class="dt-input__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%"
+                                             viewBox="0 0 48 48" fill="#0071eb">
+                                            <path d="M24 23.8q-3.45 0-5.625-2.175T16.2 16q0-3.45 2.175-5.625T24 8.2q3.45 0 5.625 2.175T31.8 16q0 3.45-2.175 5.625T24 23.8ZM7.7 40.45v-5q0-2 1-3.425 1-1.425 2.55-2.175 3.4-1.5 6.5-2.25t6.25-.75q3.15 0 6.225.775Q33.3 28.4 36.7 29.9q1.6.7 2.6 2.125t1 3.425v5Zm3.4-3.4h25.8V35.5q0-.8-.475-1.525-.475-.725-1.175-1.075-3.15-1.5-5.775-2.075Q26.85 30.25 24 30.25q-2.85 0-5.525.575Q15.8 31.4 12.7 32.9q-.7.35-1.15 1.075-.45.725-.45 1.525ZM24 20.4q1.9 0 3.15-1.25T28.4 16q0-1.9-1.25-3.15T24 11.6q-1.9 0-3.15 1.25T19.6 16q0 1.9 1.25 3.15T24 20.4Zm0-4.4Zm0 21.05Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dt-input__wrapper">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <label class="dt-input__label">телефон</label>
+                            </div>
+                            <div class="dt-input__group">
+                                <input type="text" name="name" id="phone_reg" placeholder="+7 (000) 000-00-00"
+                                       class="dt-input" autocomplete="off">
+                                <div class="dt-input__group-item">
+                                    <div class="dt-input__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%"
+                                             viewBox="0 0 48 48" fill="#0071eb">
+                                            <path d="M39.8 42.65q-6.25 0-12.4-3.05t-11.075-7.95Q11.4 26.75 8.35 20.575 5.3 14.4 5.3 8.2q0-1.25.85-2.1.85-.85 2.05-.85h7q1.2 0 1.975.675Q17.95 6.6 18.2 7.8l1.35 5.85q.2 1.05-.025 1.875T18.7 16.9l-5.15 4.85q2.65 4.3 5.8 7.425t7.1 5.275l4.9-5q.7-.75 1.575-1.025.875-.275 1.875-.025l5.35 1.25q1.2.3 1.875 1.125T42.7 32.8v6.9q0 1.25-.85 2.1-.85.85-2.05.85Zm-28.2-24.4 4-3.9-1.1-5.1H9.3q-.05 1.8.5 3.975t1.8 5.025Zm18.5 18.2q1.9.9 4.175 1.475 2.275.575 4.425.725V33.4L34 32.35Zm-18.5-18.2Zm18.5 18.2Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dt-check__group">
+                            <div class="dt-check align-items-start">
+                                <div class="dt-check__input">
+                                    <input type="radio" name="type_person"/>
+                                    <div class="dt-check__input-check"></div>
+                                </div>
+                                <label class="dt-check__label">
+                                    <slot name="label">
+                                        <h5>Физическое лицо</h5>
+                                    </slot>
+                                </label>
+                            </div>
+                            <div class="dt-check align-items-start">
+                                <div class="dt-check__input">
+                                    <input type="radio" name="type_person"/>
+                                    <div class="dt-check__input-check"></div>
+                                </div>
+                                <label class="dt-check__label">
+                                    <slot name="label">
+                                        <h5>Юридическое лицо</h5>
+                                    </slot>
+                                </label>
+                            </div>
+                            <div class="dt-check align-items-start">
+                                <div class="dt-check__input">
+                                    <input type="radio" name="type_person"/>
+                                    <div class="dt-check__input-check"></div>
+                                </div>
+                                <label class="dt-check__label">
+                                    <slot name="label">
+                                        <h5>Самозанятый</h5>
+                                    </slot>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="dt-input__wrapper">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <label class="dt-input__label">пароль</label>
+                            </div>
+                            <div class="dt-input__group">
+                                <input type="password" name="password" id="password" class="dt-input">
+                            </div>
+                        </div>
+                        <div class="dt-input__wrapper">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <label class="dt-input__label">повторите пароль</label>
+                            </div>
+                            <div class="dt-input__group">
+                                <input type="password" name="confirm_password" id="confirm_password" class="dt-input">
+                            </div>
+                        </div>
+
+
+                        <div class="dt-check align-items-start">
+                            <div class="dt-check__input">
+                                <input type="checkbox"/>
+                                <div class="dt-check__input-check"></div>
+                            </div>
+                            <label class="dt-check__label">
+                                <slot name="label">
+                                    <h5> Я соглашаюсь с <a href="#">Условиями использования сайта</a>
+                                        и даю согласие на обработку своих персональных данных в соответствии с
+                                        <a href="#">Политикой обработки персональных данных.</a>
+                                    </h5>
+                                </slot>
+                            </label>
+                        </div>
+                        <div class="btn dt-btn-blue d-flex align-items-center justify-content-center w-100">
+                            <span>Регистрация</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dt-modal modal fade" tabindex="-1" id="dtModalRecovery-1" aria-hidden="true" data-bs-backdrop="static"
+         data-bs-keyboard="false">
+        <div class="dt-modal-entry">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content dt-modal-content">
+                    <div class="dt-modal-header dt-header__recovery">
+                        <h1 class="dt-modal__title">Восстановление пароля</h1>
+                        <button type="button" class="dt-close-button" data-bs-dismiss="modal" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 48 48">
+                                <path d="m12.45 38.35-2.8-2.8L21.2 24 9.65 12.45l2.8-2.8L24 21.2 35.55 9.65l2.8 2.8L26.8
+                                      24l11.55 11.55-2.8 2.8L24 26.8Z"/>
+                            </svg>
+                        </button>
+
+                    </div>
+                    <div class="dt-modal-body">
+                        <div class="dt-input__wrapper">
+                            <div class="d-flex align-items-center justify-content-between"><label
+                                    class="dt-input__label">ваш телефон</label>
+                            </div>
+                            <div class="dt-input__group">
+                                <input type="text" name="phone" placeholder="+7 (000) 000-00-00"
+                                       class="dt-input" autocomplete="off">
+                                <div class="dt-input__group-item">
+                                    <div class="dt-input__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%"
+                                             viewBox="0 0 48 48" fill="#0071eb">
+                                            <path d="M39.8 42.65q-6.25 0-12.4-3.05t-11.075-7.95Q11.4 26.75 8.35 20.575 5.3 14.4 5.3 8.2q0-1.25.85-2.1.85-.85 2.05-.85h7q1.2 0 1.975.675Q17.95 6.6 18.2 7.8l1.35 5.85q.2 1.05-.025 1.875T18.7 16.9l-5.15 4.85q2.65 4.3 5.8 7.425t7.1 5.275l4.9-5q.7-.75 1.575-1.025.875-.275 1.875-.025l5.35 1.25q1.2.3 1.875 1.125T42.7 32.8v6.9q0 1.25-.85 2.1-.85.85-2.05.85Zm-28.2-24.4 4-3.9-1.1-5.1H9.3q-.05 1.8.5 3.975t1.8 5.025Zm18.5 18.2q1.9.9 4.175 1.475 2.275.575 4.425.725V33.4L34 32.35Zm-18.5-18.2Zm18.5 18.2Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn dt-btn-blue dt_btn__recovery d-flex align-items-center justify-content-center w-100">
+                            <span>Выслать код для восстановления</span>
+                        </div>
+
+                        <div class="dt-input__wrapper">
+                            <div class="d-flex align-items-center justify-content-between"><label
+                                    class="dt-input__label">введите код из смс</label>
+                            </div>
+                            <div class="dt-input__group">
+                                <input type="text" name="phone" class="dt-input" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="btn dt-btn-blue d-flex align-items-center justify-content-center w-100">
+                            <span>Сменить пароль</span>
+                        </div>
+                    </div>
+                    <div class="dt-modal-body" style="display:none">
+                        <div class="dt-input__wrapper">
+                            <div class="d-flex align-items-center justify-content-between"><label
+                                    class="dt-input__label">новый пароль</label>
+                            </div>
+                            <div class="dt-input__group">
+                                <input type="password" name="password" class="dt-input">
+                            </div>
+                        </div>
+                        <div class="dt-input__wrapper">
+                            <div class="d-flex align-items-center justify-content-between"><label
+                                    class="dt-input__label">повторите новый пароль</label>
+                            </div>
+                            <div class="dt-input__group">
+                                <input type="password" name="confirm_password" class="dt-input">
+                            </div>
+                        </div>
+                        <div class="btn dt-btn-blue d-flex align-items-center justify-content-center w-100">
+                            <span>Готово</span>
+                        </div>
+                    </div>
+                    <div class="dt-modal-body" style="display:none;">
+                        <div class="dt-success-notification text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 0 48 48">
+                                <path d="M21.05 33.1 35.2 18.95l-2.3-2.25-11.85 11.85-6-6-2.25 2.25ZM24 44q-4.1 0-7.75-1.575-3.65-1.575-6.375-4.3-2.725-2.725-4.3-6.375Q4 28.1 4 24q0-4.15 1.575-7.8 1.575-3.65 4.3-6.35 2.725-2.7 6.375-4.275Q19.9 4 24 4q4.15 0 7.8 1.575 3.65 1.575 6.35 4.275 2.7 2.7 4.275 6.35Q44 19.85 44 24q0 4.1-1.575 7.75-1.575 3.65-4.275 6.375t-6.35 4.3Q28.15 44 24 44Zm0-3q7.1 0 12.05-4.975Q41 31.05 41 24q0-7.1-4.95-12.05Q31.1 7 24 7q-7.05 0-12.025 4.95Q7 16.9 7 24q0 7.05 4.975 12.025Q16.95 41 24 41Zm0-17Z"/>
+                            </svg>
+                            <h3>Вы успешно изменили пароль</h3>
+                        </div>
+                    </div>
+                    <div class="dt-modal-footer">
+                        <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#dtModalEntry"
+                           class="text-uppercase dt-travel-card__action">
+                            <h6 class="dt-btn-text">Вход</h6>
+                        </a>
+                        <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#dtModalRegistry"
+                           class="text-uppercase dt-travel-card__action">
+                            <h6 class="dt-btn-text">Регистрация</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="dt-page-header d-none d-md-block">
+        <div class="">
+            <div class="dt-page-header__actions d-flex justify-content-between">
+                <div class="dt-actions__links align-items-center d-flex">
+                    <ul class="dt-links__list d-flex">
+                        <li>
+                            <h6>
+                                <a href="#" class="dt-link text-white text-decoration-none text-uppercase">О проекте</a>
+                            </h6>
+                        </li>
+                        <li>
+                            <h6>
+                                <a href="#" class="dt-link text-white text-decoration-none text-uppercase">FAQ</a>
+                            </h6>
+                        </li>
+                        <li>
+                            <h6>
+                                <a href="#" class="dt-link text-white text-decoration-none text-uppercase">Все
+                                    экскурсии</a>
+                            </h6>
+                        </li>
+                        <li>
+                            <h6>
+                                <a href="#" class="dt-link text-white text-decoration-none text-uppercase">Горяшие
+                                    экскурсии</a>
+                            </h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dt-actions__entry">
+                    <ul class="dt-buttons d-flex align-items-center">
+                        <li class="dt-btn-entry" style="display: none">
+                            <button class="dt-btn-blue">
+                                <span>Погода в горах</span>
+                                <img src="./img/icons/mountains.png" alt="">
+                            </button>
+                        </li>
+                        <li class="dt-btn-entry">
+                            <a href="#">
+                                <img width="18" height="18" src="/dist/img/icons/searchWhite.svg" alt="search">
+                            </a>
+                        </li>
+                        <li class="dt-btn-entry">
+                            <a href="#">
+                                <img width="18" height="18"
+                                     src="/dist/img/icons/favorite_FILL0_wght600_GRAD0_opsz48_white.svg"
+                                     alt="favorite">
+                            </a>
+                        </li>
+                        <li class="dt-btn-entry">
+                            <a href="#"><img width="18" height="18"
+                                             src="/dist/img/icons/sms_FILL0_wght600_GRAD0_opsz48_white.svg"
+                                             alt="sms"></a>
+                        </li>
+                        <li class="dt-btn-entry">
+                            <h6>
+                                <a data-bs-toggle="modal" data-bs-target="#dtModalEntry"
+                                   class="text-muted text-decoration-none" href="#">ВХОД</a>
+                            </h6>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container dt-page-header__content text-center" style="display:none;">
+                <p class="dt-page__title">Экскурсии по Ставропольскому краю</p>
+                <div class="d-flex">
+                    <h5>Куда?</h5>
+                    <label class="dt-switch">
+                        <input type="checkbox">
+                        <span class="dt-slider"></span>
+                    </label>
+                    <h5>Откуда?</h5>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container dt-page dt-page-main">
+        <div class="align-items-center d-flex dt-online-register justify-content-center text-center position-relative">
+            <div class="dt-wrapper position-absolute w-100 h-100"></div>
+            <div class="dt-online-register__info d-flex align-items-center">
+                <h3 class="fw-bold dt-online-register-title">Онлайн заявка на регистрацию туристических групп</h3>
+                <button class="btn dt-btn-white dt-online-register-btn"><span>Заполнить</span></button>
+            </div>
+        </div>
+        <div class="dt-popular">
+            <div class="dt-popular__header dt-block-header text-center">
+                <h1 class="dt-header__title">Популярные направления</h1>
+                <h6 class="dt-header__subtitle">основываясь на оценках посетителей</h6>
+            </div>
+            <div class="dt-popular__tabs">
+                <ul class="nav nav-pills dt-popular-list d-flex" id="pills-tab" role="tablist">
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" id="pills-1" data-toggle="pill" href="#pills-1" role="tab"
+                           aria-controls="pills-1" aria-selected="true">Все направления</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link active" id="pills-2" data-toggle="pill" href="#pills-2" role="tab"
+                           aria-controls="pills-2" aria-selected="true">Северный Кавказ</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" id="pills-3" data-toggle="pill" href="#pills-3" role="tab"
+                           aria-controls="pills-3" aria-selected="true">Горы</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" id="pills-4" data-toggle="pill" href="#pills-4" role="tab"
+                           aria-controls="pills-4" aria-selected="true">Пешие прогулки</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" id="pills-5" data-toggle="pill" href="#pills-5" role="tab"
+                           aria-controls="pills-5" aria-selected="true">Экстрим</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" id="pills-6" data-toggle="pill" href="#pills-6" role="tab"
+                           aria-controls="pills-6" aria-selected="true">Романтическая экскурсия</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" id="pills-7" data-toggle="pill" href="#pills-7" role="tab"
+                           aria-controls="pills-7" aria-selected="true">Все направления</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" id="pills-8" data-toggle="pill" href="#pills-8" role="tab"
+                           aria-controls="pills-8" aria-selected="true">Северный Кавказ</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                         aria-labelledby="pills-home-tab">
+                        <div class="dt-form row-cols-lg-4 row-cols-md-2">
+                            <div class="col">
+                                <div class="card dt-travel-card">
+                                    <div class="card-header bg-white p-0 position-relative">
+                                        <div class="card-img">
+                                            <div class="dt-wrapper-gradient position-absolute"></div>
+                                            <h5 class="dt-excursion-type">мини-группа</h5>
+                                            <div class="dt-like d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18"
+                                                     viewBox="0 0 50 50" overflow="visible">
+                                                    <path d="m23.95 42.9-2.5-2.25q-5.4-4.95-8.9-8.525t-5.575-6.4q-2.075-2.825-2.9-5.15-.825-2.325-.825-4.725 0-4.8 3.225-8.05Q9.7 4.55 14.45 4.55q2.85 0 5.25 1.275t4.25 3.725q2.2-2.6 4.5-3.8 2.3-1.2 5-1.2 4.8 0 8.05 3.25 3.25 3.25 3.25 8.05 0 2.4-.825 4.7-.825 2.3-2.9 5.125t-5.6 6.425q-3.525 3.6-8.875 8.55Zm0-5.2q5.05-4.65 8.3-7.95 3.25-3.3 5.15-5.75 1.9-2.45 2.625-4.375.725-1.925.725-3.775 0-3.2-2.025-5.25T33.5 8.55q-2.5 0-4.65 1.575-2.15 1.575-3.5 4.425H22.6q-1.3-2.8-3.475-4.4-2.175-1.6-4.675-1.6-3.15 0-5.175 2.05T7.25 15.85q0 1.9.75 3.85.75 1.95 2.65 4.45t5.15 5.75q3.25 3.25 8.15 7.8Zm.1-14.6Z"/>
+                                                </svg>
+                                            </div>
+                                            <img class="dt-excursion__image" src="/dist/img/travels/1.jpg" alt="">
+                                            <div class="dt-price d-flex justify-content-between position-absolute w-100">
+                                                <h5 class="align-items-end d-flex dt-price__sum text-white">
+                                                    <span class="fw-bold">1700 руб.</span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-lg-block d-md-block d-none">
+                                                        за человека
+                                                    </span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-block d-md-none">
+                                                        за чел.
+                                                    </span>
+                                                </h5>
+                                                <h5 class="dt-price__time text-uppercase text-muted-white">4 часа</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body bg-white">
+                                        <div class="card-body__excursion-rating d-flex justify-content-between">
+                                            <div class="dt-rating d-flex">
+                                                <h5 class="dt-rating__title text-muted-black me-2">
+                                                    рейтинг экскурсии
+                                                </h5>
+                                                <h5 class="fw-bold color-black">4.67</h5>
+                                            </div>
+                                            <div class="dt-rating__star d-flex">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion">
+                                            <div class="card-body__excursion-name">
+                                                <h4 class="fw-bold">Бермамыт</h4>
+                                            </div>
+                                            <div class="card-body__excursion-description fw-light">
+                                                <h5>
+                                                    Это путешествие, пожалуй одно из самых впечатляющих из всех
+                                                    экскурсий по Северному Кавказу.
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion-date d-flex justify-content-between">
+                                            <div class="dt-calendar d-flex align-items-center">
+                                                <img src="/dist/img/icons/calendar_today_FILL0_wght400_GRAD0_opsz48_blue.svg"
+                                                     alt="calendar" style="width: 18px; height: 16px" class="me-2">
+                                                <h5 class="text-muted-black d-lg-block d-md-block d-none">ближайшая
+                                                    дата</h5>
+                                                <h5 class="text-muted-black d-block d-md-none">ближ. дата</h5>
+                                            </div>
+                                            <h5 class="fw-bold">15 августа в 10:00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white text-center">
+                                        <a href="#" class="text-uppercase dt-travel-card__action">
+                                            <h6 class="dt-btn-text">Все даты и запись</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dt-travel-card">
+                                    <div class="card-header bg-white p-0 position-relative">
+                                        <div class="card-img">
+                                            <div class="dt-wrapper-gradient position-absolute"></div>
+                                            <h5 class="dt-excursion-type">групповая экскурсия</h5>
+                                            <div class="dt-like d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18"
+                                                     viewBox="0 0 50 50" overflow="visible">
+                                                    <path d="m23.95 42.9-2.5-2.25q-5.4-4.95-8.9-8.525t-5.575-6.4q-2.075-2.825-2.9-5.15-.825-2.325-.825-4.725 0-4.8 3.225-8.05Q9.7 4.55 14.45 4.55q2.85 0 5.25 1.275t4.25 3.725q2.2-2.6 4.5-3.8 2.3-1.2 5-1.2 4.8 0 8.05 3.25 3.25 3.25 3.25 8.05 0 2.4-.825 4.7-.825 2.3-2.9 5.125t-5.6 6.425q-3.525 3.6-8.875 8.55Zm0-5.2q5.05-4.65 8.3-7.95 3.25-3.3 5.15-5.75 1.9-2.45 2.625-4.375.725-1.925.725-3.775 0-3.2-2.025-5.25T33.5 8.55q-2.5 0-4.65 1.575-2.15 1.575-3.5 4.425H22.6q-1.3-2.8-3.475-4.4-2.175-1.6-4.675-1.6-3.15 0-5.175 2.05T7.25 15.85q0 1.9.75 3.85.75 1.95 2.65 4.45t5.15 5.75q3.25 3.25 8.15 7.8Zm.1-14.6Z"/>
+                                                </svg>
+                                            </div>
+                                            <img class="dt-excursion__image" src="/dist/img/travels/2.jpg" alt="">
+                                            <div class="dt-price d-flex justify-content-between position-absolute w-100">
+                                                <h5 class="dt-price__sum text-white align-items-end d-flex">
+                                                    <span class="fw-bold">2500 руб.</span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-lg-block d-md-block d-none">
+                                                        за человека
+                                                    </span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-block d-md-none">
+                                                        за чел.
+                                                    </span>
+                                                </h5>
+                                                <h5 class="dt-price__time text-uppercase text-muted-white">2 дня</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body bg-white">
+                                        <div class="card-body__excursion-rating d-flex justify-content-between">
+                                            <div class="dt-rating d-flex">
+                                                <h5 class="dt-rating__title text-muted-black me-2">рейтинг
+                                                    экскурсии </h5>
+                                                <h5 class="fw-bold color-black">4.74</h5>
+                                            </div>
+                                            <div class="dt-rating__star d-flex">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion">
+                                            <div class="card-body__excursion-name">
+                                                <h4 class="fw-bold">Медовые водопады</h4>
+                                            </div>
+                                            <div class="card-body__excursion-description fw-light">
+                                                <h5>
+                                                    Медовые водопады - группа водопадов в ущелье реки Аликоновки,
+                                                    прорезавшей скалы глубоким каньоном.
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion-date d-flex justify-content-between">
+                                            <div class="dt-calendar d-flex align-items-center">
+                                                <img src="/dist/img/icons/calendar_today_FILL0_wght400_GRAD0_opsz48_blue.svg"
+                                                     alt="calendar" style="width: 18px; height: 16px" class="me-2">
+                                                <h5 class="text-muted-black d-lg-block d-md-block d-none">ближайшая
+                                                    дата</h5>
+                                                <h5 class="text-muted-black d-block d-md-none">ближ. дата</h5>
+                                            </div>
+                                            <h5 class="fw-bold">завтра в 18:00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white text-center">
+                                        <a href="#" class="text-uppercase dt-travel-card__action">
+                                            <h6 class="dt-btn-text">Все даты и запись</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dt-travel-card">
+                                    <div class="card-header bg-white p-0 position-relative">
+                                        <div class="card-img">
+                                            <div class="dt-wrapper-gradient position-absolute"></div>
+                                            <h5 class="dt-excursion-type">групповая экскурсия</h5>
+                                            <div class="dt-like active d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18"
+                                                     viewBox="0 0 50 50" overflow="visible">
+                                                    <path d="m23.95 42.9-2.5-2.25q-5.4-4.95-8.9-8.525t-5.575-6.4q-2.075-2.825-2.9-5.15-.825-2.325-.825-4.725 0-4.8 3.225-8.05Q9.7 4.55 14.45 4.55q2.85 0 5.25 1.275t4.25 3.725q2.2-2.6 4.5-3.8 2.3-1.2 5-1.2 4.8 0 8.05 3.25 3.25 3.25 3.25 8.05 0 2.4-.825 4.7-.825 2.3-2.9 5.125t-5.6 6.425q-3.525 3.6-8.875 8.55Zm0-5.2q5.05-4.65 8.3-7.95 3.25-3.3 5.15-5.75 1.9-2.45 2.625-4.375.725-1.925.725-3.775 0-3.2-2.025-5.25T33.5 8.55q-2.5 0-4.65 1.575-2.15 1.575-3.5 4.425H22.6q-1.3-2.8-3.475-4.4-2.175-1.6-4.675-1.6-3.15 0-5.175 2.05T7.25 15.85q0 1.9.75 3.85.75 1.95 2.65 4.45t5.15 5.75q3.25 3.25 8.15 7.8Zm.1-14.6Z"/>
+                                                </svg>
+                                            </div>
+                                            <img class="dt-excursion__image" src="/dist/img/travels/3.jpg" alt="">
+                                            <div class="dt-price d-flex justify-content-between position-absolute w-100">
+                                                <h5 class="dt-price__sum text-white align-items-end d-flex">
+                                                    <span class="fw-bold">9000 руб.</span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-lg-block d-md-block d-none">
+                                                        за человека
+                                                    </span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-block d-md-none">
+                                                        за чел.
+                                                    </span>
+                                                </h5>
+                                                <h5 class="dt-price__time text-uppercase text-muted-white">1 день</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body bg-white">
+                                        <div class="card-body__excursion-rating d-flex justify-content-between">
+                                            <div class="dt-rating d-flex">
+                                                <h5 class="dt-rating__title text-muted-black me-2">рейтинг
+                                                    экскурсии </h5>
+                                                <h5 class="fw-bold color-black">4.05</h5>
+                                            </div>
+                                            <div class="dt-rating__star d-flex">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion">
+                                            <div class="card-body__excursion-name">
+                                                <h4 class="fw-bold">Экскурсия по местам силы в Джилу су</h4>
+                                            </div>
+                                            <div class="card-body__excursion-description fw-light">
+                                                <h5>
+                                                    Северный Кавказ издревле считался регионом, где существует множество
+                                                    мест силы, вероятно из-за сильных энергети ...
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion-date d-flex justify-content-between">
+                                            <div class="dt-calendar d-flex align-items-center">
+                                                <img src="/dist/img/icons/calendar_today_FILL0_wght400_GRAD0_opsz48_blue.svg"
+                                                     alt="calendar" style="width: 18px; height: 16px" class="me-2">
+                                                <h5 class="text-muted-black d-lg-block d-md-block d-none">ближайшая
+                                                    дата</h5>
+                                                <h5 class="text-muted-black d-block d-md-none">ближ. дата</h5>
+                                            </div>
+                                            <h5 class="fw-bold">14 марта в 18:00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white text-center">
+                                        <a href="#" class="text-uppercase dt-travel-card__action">
+                                            <h6 class="dt-btn-text">Все даты и запись</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dt-travel-card">
+                                    <div class="card-header bg-white p-0 position-relative">
+                                        <div class="card-img">
+                                            <div class="dt-wrapper-gradient position-absolute"></div>
+                                            <h5 class="dt-excursion-type">групповая экскурсия</h5>
+                                            <div class="dt-like d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18"
+                                                     viewBox="0 0 50 50" overflow="visible">
+                                                    <path d="m23.95 42.9-2.5-2.25q-5.4-4.95-8.9-8.525t-5.575-6.4q-2.075-2.825-2.9-5.15-.825-2.325-.825-4.725 0-4.8 3.225-8.05Q9.7 4.55 14.45 4.55q2.85 0 5.25 1.275t4.25 3.725q2.2-2.6 4.5-3.8 2.3-1.2 5-1.2 4.8 0 8.05 3.25 3.25 3.25 3.25 8.05 0 2.4-.825 4.7-.825 2.3-2.9 5.125t-5.6 6.425q-3.525 3.6-8.875 8.55Zm0-5.2q5.05-4.65 8.3-7.95 3.25-3.3 5.15-5.75 1.9-2.45 2.625-4.375.725-1.925.725-3.775 0-3.2-2.025-5.25T33.5 8.55q-2.5 0-4.65 1.575-2.15 1.575-3.5 4.425H22.6q-1.3-2.8-3.475-4.4-2.175-1.6-4.675-1.6-3.15 0-5.175 2.05T7.25 15.85q0 1.9.75 3.85.75 1.95 2.65 4.45t5.15 5.75q3.25 3.25 8.15 7.8Zm.1-14.6Z"/>
+                                                </svg>
+                                            </div>
+                                            <img class="dt-excursion__image" src="/dist/img/travels/4.jpg" alt="">
+                                            <div class="dt-price d-flex justify-content-between position-absolute w-100">
+                                                <h5 class="dt-price__sum text-white align-items-end d-flex">
+                                                    <span class="fw-bold">700 руб.</span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-lg-block d-md-block d-none">
+                                                        за человека
+                                                    </span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-block d-md-none">
+                                                        за чел.
+                                                    </span>
+                                                </h5>
+                                                <h5 class="dt-price__time text-uppercase text-muted-white">1 час</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body bg-white">
+                                        <div class="card-body__excursion-rating d-flex justify-content-between">
+                                            <div class="dt-rating d-flex">
+                                                <h5 class="dt-rating__title text-muted-black me-2">рейтинг
+                                                    экскурсии </h5>
+                                                <h5 class="fw-bold color-black">4.95</h5>
+                                            </div>
+                                            <div class="dt-rating__star d-flex">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion">
+                                            <div class="card-body__excursion-name">
+                                                <h4 class="fw-bold">Чарующий пятигорск - город горячих вод</h4>
+                                            </div>
+                                            <div class="card-body__excursion-description fw-light">
+                                                <h5>
+                                                    Приглашаем пройтись по старым паркам и гротам, вообразить как по ту
+                                                    сторону аллеи гуляет Лермонтов, вон в той ...
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion-date d-flex justify-content-between">
+                                            <div class="dt-calendar d-flex align-items-center">
+                                                <img src="/dist/img/icons/calendar_today_FILL0_wght400_GRAD0_opsz48_blue.svg"
+                                                     alt="calendar" style="width: 18px; height: 16px" class="me-2">
+                                                <h5 class="text-muted-black d-lg-block d-md-block d-none">ближайшая
+                                                    дата</h5>
+                                                <h5 class="text-muted-black d-block d-md-none">ближ. дата</h5>
+                                            </div>
+                                            <h5 class="fw-bold">завтра в 19:30</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white text-center">
+                                        <a href="#" class="text-uppercase dt-travel-card__action">
+                                            <h6 class="dt-btn-text">Все даты и запись</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dt-travel-card">
+                                    <div class="card-header bg-white p-0 position-relative">
+                                        <div class="card-img">
+                                            <div class="dt-wrapper-gradient position-absolute"></div>
+                                            <h5 class="dt-excursion-type">групповая экскурсия</h5>
+                                            <div class="dt-like d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18"
+                                                     viewBox="0 0 50 50" overflow="visible">
+                                                    <path d="m23.95 42.9-2.5-2.25q-5.4-4.95-8.9-8.525t-5.575-6.4q-2.075-2.825-2.9-5.15-.825-2.325-.825-4.725 0-4.8 3.225-8.05Q9.7 4.55 14.45 4.55q2.85 0 5.25 1.275t4.25 3.725q2.2-2.6 4.5-3.8 2.3-1.2 5-1.2 4.8 0 8.05 3.25 3.25 3.25 3.25 8.05 0 2.4-.825 4.7-.825 2.3-2.9 5.125t-5.6 6.425q-3.525 3.6-8.875 8.55Zm0-5.2q5.05-4.65 8.3-7.95 3.25-3.3 5.15-5.75 1.9-2.45 2.625-4.375.725-1.925.725-3.775 0-3.2-2.025-5.25T33.5 8.55q-2.5 0-4.65 1.575-2.15 1.575-3.5 4.425H22.6q-1.3-2.8-3.475-4.4-2.175-1.6-4.675-1.6-3.15 0-5.175 2.05T7.25 15.85q0 1.9.75 3.85.75 1.95 2.65 4.45t5.15 5.75q3.25 3.25 8.15 7.8Zm.1-14.6Z"/>
+                                                </svg>
+                                            </div>
+                                            <img class="dt-excursion__image" src="/dist/img/travels/3.jpg" alt="">
+                                            <div class="dt-price d-flex justify-content-between position-absolute w-100">
+                                                <h5 class="dt-price__sum text-white align-items-end d-flex">
+                                                    <span class="fw-bold">9000 руб.</span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-lg-block d-md-block d-none">
+                                                        за человека
+                                                    </span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-block d-md-none">
+                                                        за чел.
+                                                    </span>
+                                                </h5>
+                                                <h5 class="dt-price__time text-uppercase text-muted-white">1 день</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body bg-white">
+                                        <div class="card-body__excursion-rating d-flex justify-content-between">
+                                            <div class="dt-rating d-flex">
+                                                <h5 class="dt-rating__title text-muted-black me-2">рейтинг
+                                                    экскурсии </h5>
+                                                <h5 class="fw-bold color-black">4.05</h5>
+                                            </div>
+                                            <div class="dt-rating__star d-flex">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion">
+                                            <div class="card-body__excursion-name">
+                                                <h4 class="fw-bold">Экскурсия по местам силы в Джилу су</h4>
+                                            </div>
+                                            <div class="card-body__excursion-description fw-light">
+                                                <h5>
+                                                    Северный Кавказ издревле считался регионом, где существует множество
+                                                    мест силы, вероятно из-за сильных энергети ...
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion-date d-flex justify-content-between">
+                                            <div class="dt-calendar d-flex align-items-center">
+                                                <img src="/dist/img/icons/calendar_today_FILL0_wght400_GRAD0_opsz48_blue.svg"
+                                                     alt="calendar" style="width: 18px; height: 16px" class="me-2">
+                                                <h5 class="text-muted-black d-lg-block d-md-block d-none">ближайшая
+                                                    дата</h5>
+                                                <h5 class="text-muted-black d-block d-md-none">ближ. дата</h5>
+                                            </div>
+                                            <h5 class="fw-bold">14 марта в 18:00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white text-center">
+                                        <a href="#" class="text-uppercase dt-travel-card__action">
+                                            <h6 class="dt-btn-text">Все даты и запись</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dt-travel-card">
+                                    <div class="card-header bg-white p-0 position-relative">
+                                        <div class="card-img">
+                                            <div class="dt-wrapper-gradient position-absolute"></div>
+                                            <h5 class="dt-excursion-type">групповая экскурсия</h5>
+                                            <div class="dt-like d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18"
+                                                     viewBox="0 0 50 50" overflow="visible">
+                                                    <path d="m23.95 42.9-2.5-2.25q-5.4-4.95-8.9-8.525t-5.575-6.4q-2.075-2.825-2.9-5.15-.825-2.325-.825-4.725 0-4.8 3.225-8.05Q9.7 4.55 14.45 4.55q2.85 0 5.25 1.275t4.25 3.725q2.2-2.6 4.5-3.8 2.3-1.2 5-1.2 4.8 0 8.05 3.25 3.25 3.25 3.25 8.05 0 2.4-.825 4.7-.825 2.3-2.9 5.125t-5.6 6.425q-3.525 3.6-8.875 8.55Zm0-5.2q5.05-4.65 8.3-7.95 3.25-3.3 5.15-5.75 1.9-2.45 2.625-4.375.725-1.925.725-3.775 0-3.2-2.025-5.25T33.5 8.55q-2.5 0-4.65 1.575-2.15 1.575-3.5 4.425H22.6q-1.3-2.8-3.475-4.4-2.175-1.6-4.675-1.6-3.15 0-5.175 2.05T7.25 15.85q0 1.9.75 3.85.75 1.95 2.65 4.45t5.15 5.75q3.25 3.25 8.15 7.8Zm.1-14.6Z"/>
+                                                </svg>
+                                            </div>
+                                            <img class="dt-excursion__image" src="/dist/img/travels/4.jpg" alt="">
+                                            <div class="dt-price d-flex justify-content-between position-absolute w-100">
+                                                <h5 class="dt-price__sum text-white align-items-end d-flex">
+                                                    <span class="fw-bold">700 руб.</span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-lg-block d-md-block d-none">
+                                                        за человека
+                                                    </span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-block d-md-none">
+                                                        за чел.
+                                                    </span>
+                                                </h5>
+                                                <h5 class="dt-price__time text-uppercase text-muted-white">1 час</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body bg-white">
+                                        <div class="card-body__excursion-rating d-flex justify-content-between">
+                                            <div class="dt-rating d-flex">
+                                                <h5 class="dt-rating__title text-muted-black me-2">рейтинг
+                                                    экскурсии </h5>
+                                                <h5 class="fw-bold color-black">4.95</h5>
+                                            </div>
+                                            <div class="dt-rating__star d-flex">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion">
+                                            <div class="card-body__excursion-name">
+                                                <h4 class="fw-bold">Чарующий пятигорск - город горячих вод</h4>
+                                            </div>
+                                            <div class="card-body__excursion-description fw-light">
+                                                <h5>
+                                                    Приглашаем пройтись по старым паркам и гротам, вообразить как по ту
+                                                    сторону аллеи гуляет Лермонтов, вон в той ...
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion-date d-flex justify-content-between">
+                                            <div class="dt-calendar d-flex align-items-center">
+                                                <img src="/dist/img/icons/calendar_today_FILL0_wght400_GRAD0_opsz48_blue.svg"
+                                                     alt="calendar" style="width: 18px; height: 16px" class="me-2">
+                                                <h5 class="text-muted-black d-lg-block d-md-block d-none">ближайшая
+                                                    дата</h5>
+                                                <h5 class="text-muted-black d-block d-md-none">ближ. дата</h5>
+                                            </div>
+                                            <h5 class="fw-bold">завтра в 19:30</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white text-center">
+                                        <a href="#" class="text-uppercase dt-travel-card__action">
+                                            <h6 class="dt-btn-text">Все даты и запись</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dt-travel-card">
+                                    <div class="card-header bg-white p-0 position-relative">
+                                        <div class="card-img">
+                                            <div class="dt-wrapper-gradient position-absolute"></div>
+                                            <h5 class="dt-excursion-type">мини-группа</h5>
+                                            <div class="dt-like d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18"
+                                                     viewBox="0 0 50 50" overflow="visible">
+                                                    <path d="m23.95 42.9-2.5-2.25q-5.4-4.95-8.9-8.525t-5.575-6.4q-2.075-2.825-2.9-5.15-.825-2.325-.825-4.725 0-4.8 3.225-8.05Q9.7 4.55 14.45 4.55q2.85 0 5.25 1.275t4.25 3.725q2.2-2.6 4.5-3.8 2.3-1.2 5-1.2 4.8 0 8.05 3.25 3.25 3.25 3.25 8.05 0 2.4-.825 4.7-.825 2.3-2.9 5.125t-5.6 6.425q-3.525 3.6-8.875 8.55Zm0-5.2q5.05-4.65 8.3-7.95 3.25-3.3 5.15-5.75 1.9-2.45 2.625-4.375.725-1.925.725-3.775 0-3.2-2.025-5.25T33.5 8.55q-2.5 0-4.65 1.575-2.15 1.575-3.5 4.425H22.6q-1.3-2.8-3.475-4.4-2.175-1.6-4.675-1.6-3.15 0-5.175 2.05T7.25 15.85q0 1.9.75 3.85.75 1.95 2.65 4.45t5.15 5.75q3.25 3.25 8.15 7.8Zm.1-14.6Z"/>
+                                                </svg>
+                                            </div>
+                                            <img class="dt-excursion__image" src="/dist/img/travels/1.jpg" alt="">
+                                            <div class="dt-price d-flex justify-content-between position-absolute w-100">
+                                                <h5 class="dt-price__sum text-white align-items-end d-flex">
+                                                    <span class="fw-bold">1700 руб.</span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-lg-block d-md-block d-none">
+                                                        за человека
+                                                    </span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-block d-md-none">
+                                                        за чел.
+                                                    </span>
+                                                </h5>
+                                                <h5 class="dt-price__time text-uppercase text-muted-white">4 часа</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body bg-white">
+                                        <div class="card-body__excursion-rating d-flex justify-content-between">
+                                            <div class="dt-rating d-flex">
+                                                <h5 class="dt-rating__title text-muted-black me-2">рейтинг
+                                                    экскурсии </h5>
+                                                <h5 class="fw-bold color-black">4.67</h5>
+                                            </div>
+                                            <div class="dt-rating__star d-flex">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion">
+                                            <div class="card-body__excursion-name">
+                                                <h4 class="fw-bold">Бермамыт</h4>
+                                            </div>
+                                            <div class="card-body__excursion-description fw-light">
+                                                <h5>
+                                                    Это путешествие, пожалуй одно из самых впечатляющих из всех
+                                                    экскурсий по
+                                                    Северному Кавказу.
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion-date d-flex justify-content-between">
+                                            <div class="dt-calendar d-flex align-items-center">
+                                                <img src="/dist/img/icons/calendar_today_FILL0_wght400_GRAD0_opsz48_blue.svg"
+                                                     alt="calendar" style="width: 18px; height: 16px" class="me-2">
+                                                <h5 class="text-muted-black d-lg-block d-md-block d-none">ближайшая
+                                                    дата</h5>
+                                                <h5 class="text-muted-black d-block d-md-none">ближ. дата</h5>
+                                            </div>
+                                            <h5 class="fw-bold">15 августа в 10:00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white text-center">
+                                        <a href="#" class="text-uppercase dt-travel-card__action">
+                                            <h6 class="dt-btn-text">Все даты и запись</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card dt-travel-card">
+                                    <div class="card-header bg-white p-0 position-relative">
+                                        <div class="card-img">
+                                            <div class="dt-wrapper-gradient position-absolute"></div>
+                                            <h5 class="dt-excursion-type">групповая экскурсия</h5>
+                                            <div class="dt-like d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18"
+                                                     viewBox="0 0 50 50" overflow="visible">
+                                                    <path d="m23.95 42.9-2.5-2.25q-5.4-4.95-8.9-8.525t-5.575-6.4q-2.075-2.825-2.9-5.15-.825-2.325-.825-4.725 0-4.8 3.225-8.05Q9.7 4.55 14.45 4.55q2.85 0 5.25 1.275t4.25 3.725q2.2-2.6 4.5-3.8 2.3-1.2 5-1.2 4.8 0 8.05 3.25 3.25 3.25 3.25 8.05 0 2.4-.825 4.7-.825 2.3-2.9 5.125t-5.6 6.425q-3.525 3.6-8.875 8.55Zm0-5.2q5.05-4.65 8.3-7.95 3.25-3.3 5.15-5.75 1.9-2.45 2.625-4.375.725-1.925.725-3.775 0-3.2-2.025-5.25T33.5 8.55q-2.5 0-4.65 1.575-2.15 1.575-3.5 4.425H22.6q-1.3-2.8-3.475-4.4-2.175-1.6-4.675-1.6-3.15 0-5.175 2.05T7.25 15.85q0 1.9.75 3.85.75 1.95 2.65 4.45t5.15 5.75q3.25 3.25 8.15 7.8Zm.1-14.6Z"/>
+                                                </svg>
+                                            </div>
+                                            <img class="dt-excursion__image" src="/dist/img/travels/2.jpg" alt="">
+                                            <div class="dt-price d-flex justify-content-between position-absolute w-100">
+                                                <h5 class="dt-price__sum text-white align-items-end d-flex">
+                                                    <span class="fw-bold">2500 руб.</span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-lg-block d-md-block d-none">
+                                                        за человека
+                                                    </span>
+                                                    <span class="dt-price__title text-uppercase text-muted-white d-block d-md-none">
+                                                        за чел.
+                                                    </span>
+                                                </h5>
+                                                <h5 class="dt-price__time text-uppercase text-muted-white">2 дня</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body bg-white">
+                                        <div class="card-body__excursion-rating d-flex justify-content-between">
+                                            <div class="dt-rating d-flex">
+                                                <h5 class="dt-rating__title text-muted-black me-2">рейтинг
+                                                    экскурсии </h5>
+                                                <h5 class="fw-bold color-black">4.74</h5>
+                                            </div>
+                                            <div class="dt-rating__star d-flex">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                                <img src="/dist/img/icons/star_blue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion">
+                                            <div class="card-body__excursion-name">
+                                                <h4 class="fw-bold">Медовые водопады</h4>
+                                            </div>
+                                            <div class="card-body__excursion-description fw-light">
+                                                <h5>
+                                                    Медовые водопады - группа водопадов в ущелье реки Аликоновки,
+                                                    прорезавшей скалы глубоким каньоном.
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="card-body__excursion-date d-flex justify-content-between">
+                                            <div class="dt-calendar d-flex align-items-center">
+                                                <img src="/dist/img/icons/calendar_today_FILL0_wght400_GRAD0_opsz48_blue.svg"
+                                                     alt="calendar" style="width: 18px; height: 16px" class="me-2">
+                                                <h5 class="text-muted-black d-lg-block d-md-block d-none">ближайшая
+                                                    дата</h5>
+                                                <h5 class="text-muted-black d-block d-md-none">ближ. дата</h5>
+                                            </div>
+                                            <h5 class="fw-bold">завтра в 18:00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-white text-center">
+                                        <a href="#" class="text-uppercase dt-travel-card__action">
+                                            <h6 class="dt-btn-text">Все даты и запись</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dt-popular__action text-center d-flex justify-content-center">
+                    <div class="align-items-center btn d-flex dt-btn-blue justify-content-center">
+                        <span>Все экскурсии</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dt-advantages">
+            <div class="dt-advantages__header dt-block-header text-center">
+                <h1 class="dt-header__title">Преимущества нашего сервиса</h1>
+                <h6 class="dt-header__subtitle">вы оцените качество нашего сервиса по достоинству</h6>
+            </div>
+            <div class="dt-advantages__content">
+                <div class="dt-form bordered row-cols-lg-3 row-cols-md-2 row-cols-1">
+                    <div class="col">
+                        <div class="dt-advantage__card d-flex">
+                            <img src="/dist/img/icons/preferences/1.png" alt="">
+                            <h4 class="dt-card__text">
+                                Бесплатная отмена
+                                <span class="dt-card__subtitle text-muted-black"><br>
+                                    Бесплатная отмена за 48 часов.</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dt-advantage__card d-flex">
+                            <img src="/dist/img/icons/preferences/2.png" alt="">
+                            <h4 class="dt-card__text">
+                                Мгновенное подтверждение
+                                <span class="dt-card__subtitle text-muted-black"><br>
+                                    После оплаты вы получите билет на электронную почту или телефон.</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dt-advantage__card d-flex">
+                            <img src="/dist/img/icons/preferences/3.png" alt="">
+                            <h4 class="dt-card__text">
+                                Оплата онлайн
+                                <span class="dt-card__subtitle text-muted-black"><br>
+                                    Мы гарантируем сохранность платежей и персональных данных.</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dt-advantage__card d-flex">
+                            <img src="/dist/img/icons/preferences/4.png" alt="">
+                            <h4 class="dt-card__text">
+                                Честные отзывы
+                                <span class="dt-card__subtitle text-muted-black"><br>
+                                    15 000 отзывов от наших клиентов, которым вы можете доверять.</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dt-advantage__card d-flex">
+                            <img src="/dist/img/icons/preferences/5.png" alt="">
+                            <h4 class="dt-card__text">
+                                Лучшие экскурсии
+                                <span class="dt-card__subtitle text-muted-black"><br>
+                                    Тщательно подобранные экскурсии со всего мира на одном сайте.</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dt-advantage__card d-flex">
+                            <img src="/dist/img/icons/preferences/6.png" alt="">
+                            <h4 class="dt-card__text">
+                                Профессиональные гиды
+                                <span class="dt-card__subtitle text-muted-black"><br>
+                                    15 000 отзывов от наших клиентов, которым вы можете доверять.</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="dt-page-footer text-center">
+        <div class="container">
+            <ul class="dt-sitemap__links">
+                <li>
+                    <h6><a href="#" class="dt-link text-white text-decoration-none text-uppercase">Партнерам</a></h6>
+                </li>
+                <li>
+                    <h6><a href="#" class="dt-link text-white text-decoration-none text-uppercase">Гидам</a></h6>
+                </li>
+                <li>
+                    <h6><a href="#" class="dt-link text-white text-decoration-none text-uppercase">Путешественникам</a>
+                    </h6>
+                </li>
+                <li>
+                    <h6><a href="#" class="dt-link text-white text-decoration-none text-uppercase">FAQ</a></h6>
+                </li>
+                <li>
+                    <h6><a href="#" class="dt-link text-white text-decoration-none text-uppercase">О проекте</a></h6>
+                </li>
+                <li>
+                    <h6><a href="#" class="dt-link text-white text-decoration-none text-uppercase">Вход</a></h6>
+                </li>
+                <li>
+                    <h6><a href="#" class="dt-link text-white text-decoration-none text-uppercase">Поиск экскурсий</a>
+                    </h6>
+                </li>
+                <li>
+                    <h6><a href="#" class="dt-link text-white text-decoration-none text-uppercase">Контакты</a></h6>
+                </li>
+                <li>
+                    <h6><a href="#" class="dt-link text-white text-decoration-none text-uppercase">Связаться с нами</a>
+                    </h6>
+                </li>
+                <li>
+                    <h6><a href="#" class="dt-link text-white text-decoration-none text-uppercase">Как стать гидом</a>
+                    </h6>
+                </li>
+            </ul>
+            <div class="dt-years-payments">
+                <div class="row">
+                    <div class="col-lg-4 col-12 dt-order-name">
+                        <div class="dt-years text-start">
+                            <h5 class="text-muted-white">2012-2022 "Название"</h5>
+                        </div>
+                    </div>
+                    <div class="col-4 col-12 dt-order-payments">
+                        <div class="dt-payments">
+                            <ul class="d-flex dt-payments__list justify-content-center">
+                                <li class="dt-payments__item">
+                                    <img class="dt-payment" src="/dist/img/payments/1.png" alt="visa">
+                                </li>
+                                <li class="dt-payments__item">
+                                    <img class="dt-payment" src="/dist/img/payments/2.png" alt="master">
+                                </li>
+                                <li class="dt-payments__item">
+                                    <img class="dt-payment" src="/dist/img/payments/3.png" alt="mir">
+                                </li>
+                                <li class="dt-payments__item">
+                                    <img class="dt-payment" src="/dist/img/payments/4.png" alt="youmoney">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4 col-12 dt-order-privacy">
+                        <div class="dt-privacy text-end">
+                            <h6>
+                                <a href="#" class="dt-link text-white text-uppercase">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url(../node_modules/bootstrap/dist/css/bootstrap.css);
 :root {
   --mo-blue: #0d6efd;
   --mo-indigo: #6610f2;
@@ -94,40 +96,40 @@ hr {
   border-top: 1px solid;
   opacity: 0.25; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2; }
 
-h1 {
+h1, .h1 {
   font-size: calc(1.375rem + 1.5vw); }
   @media (min-width: 1200px) {
-    h1 {
+    h1, .h1 {
       font-size: 2.5rem; } }
 
-h2 {
+h2, .h2 {
   font-size: calc(1.325rem + 0.9vw); }
   @media (min-width: 1200px) {
-    h2 {
+    h2, .h2 {
       font-size: 2rem; } }
 
-h3 {
+h3, .h3 {
   font-size: calc(1.3rem + 0.6vw); }
   @media (min-width: 1200px) {
-    h3 {
+    h3, .h3 {
       font-size: 1.75rem; } }
 
-h4 {
+h4, .h4 {
   font-size: calc(1.275rem + 0.3vw); }
   @media (min-width: 1200px) {
-    h4 {
+    h4, .h4 {
       font-size: 1.5rem; } }
 
-h5 {
+h5, .h5 {
   font-size: 1.25rem; }
 
-h6 {
+h6, .h6 {
   font-size: 1rem; }
 
 p {
@@ -174,10 +176,10 @@ b,
 strong {
   font-weight: bolder; }
 
-small {
+small, .small {
   font-size: 0.875em; }
 
-mark {
+mark, .mark {
   padding: 0.1875em;
   background-color: var(--mo-highlight-bg); }
 
@@ -1448,6 +1450,113 @@ progress {
   min-height: 1em;
   background-color: currentcolor;
   opacity: 0.25; }
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300; }
+
+.display-1 {
+  font-size: calc(1.625rem + 4.5vw);
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (min-width: 1200px) {
+    .display-1 {
+      font-size: 5rem; } }
+
+.display-2 {
+  font-size: calc(1.575rem + 3.9vw);
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (min-width: 1200px) {
+    .display-2 {
+      font-size: 4.5rem; } }
+
+.display-3 {
+  font-size: calc(1.525rem + 3.3vw);
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (min-width: 1200px) {
+    .display-3 {
+      font-size: 4rem; } }
+
+.display-4 {
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (min-width: 1200px) {
+    .display-4 {
+      font-size: 3.5rem; } }
+
+.display-5 {
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (min-width: 1200px) {
+    .display-5 {
+      font-size: 3rem; } }
+
+.display-6 {
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (min-width: 1200px) {
+    .display-6 {
+      font-size: 2.5rem; } }
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none; }
+
+.list-inline {
+  padding-left: 0;
+  list-style: none; }
+
+.list-inline-item {
+  display: inline-block; }
+  .list-inline-item:not(:last-child) {
+    margin-right: 0.5rem; }
+
+.initialism {
+  font-size: 0.875em;
+  text-transform: uppercase; }
+
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem; }
+  .blockquote > :last-child {
+    margin-bottom: 0; }
+
+.blockquote-footer {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  font-size: 0.875em;
+  color: #6c757d; }
+  .blockquote-footer::before {
+    content: "\2014\00A0"; }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid var(--mo-border-color);
+  border-radius: 0.375rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  max-width: 100%;
+  height: auto; }
+
+.figure {
+  display: inline-block; }
+
+.figure-img {
+  margin-bottom: 0.5rem;
+  line-height: 1; }
+
+.figure-caption {
+  font-size: 0.875em;
+  color: #6c757d; }
 
 .align-baseline {
   vertical-align: baseline !important; }
@@ -4283,13 +4392,7 @@ div,
 span,
 applet,
 object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+iframe, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 p,
 blockquote,
 pre,
@@ -4308,8 +4411,7 @@ ins,
 kbd,
 q,
 s,
-samp,
-small,
+samp, small, .small,
 strike,
 strong,
 sub,
@@ -4354,8 +4456,7 @@ output,
 ruby,
 section,
 summary,
-time,
-mark,
+time, mark, .mark,
 audio,
 video {
   font-size: 100%;
@@ -4607,7 +4708,7 @@ samp {
 /**
   * Add the correct font size in all browsers.
   */
-small {
+small, .small {
   font-size: 75%; }
 
 /**
@@ -4791,3 +4892,932 @@ template {
   font-style: normal;
   font-weight: 200;
   src: url("../../dist/fonts/thin.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../dist/fonts/bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Light';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../dist/fonts/light.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../dist/fonts/medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Semibold';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../dist/fonts/semibold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Thin';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../../dist/fonts/thin.otf") format("opentype"); }
+
+.dt-page-header {
+  background: url("/dist/img/header-bg.png") no-repeat; }
+  .dt-page-header > * {
+    color: white;
+    font-family: "Manrope Regular"; }
+  .dt-page-header p.dt-page__title {
+    font-size: 46px;
+    font-family: "Manrope Bold"; }
+  .dt-page-header__actions {
+    border-bottom: 1px solid #f6f6f6; }
+    .dt-page-header__actions .dt-actions__links {
+      padding-left: 40px; }
+    .dt-page-header__actions .dt-links__list li:not(:last-child) {
+      padding-right: 40px; }
+    .dt-page-header__actions .dt-buttons .dt-btn-entry {
+      padding: 22px 32px;
+      border-left: 1px solid #f6f6f6; }
+      .dt-page-header__actions .dt-buttons .dt-btn-entry:last-child {
+        border-right: none; }
+
+.dt-link:hover, .dt-link.active {
+  color: #f73637 !important; }
+
+.dt-page-footer {
+  background: url("/dist/img/footer-bg.png") no-repeat; }
+  .dt-page-footer ul.dt-sitemap__links {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 120px; }
+    .dt-page-footer ul.dt-sitemap__links li:not(:last-child) {
+      padding-right: 55px; }
+      .dt-page-footer ul.dt-sitemap__links li:not(:last-child) a.dt-link {
+        display: inline; }
+  .dt-page-footer .dt-years-payments {
+    padding-bottom: 15px; }
+    .dt-page-footer .dt-years-payments .dt-payments .dt-payments__item {
+      padding-right: 15px; }
+      .dt-page-footer .dt-years-payments .dt-payments .dt-payments__item img.dt-payment {
+        height: 16px; }
+
+@media screen and (max-width: 768px) {
+  .dt-page-footer {
+    background-size: cover; }
+    .dt-page-footer .dt-sitemap__links {
+      display: block !important; }
+      .dt-page-footer .dt-sitemap__links li {
+        padding-right: 0 !important; }
+        .dt-page-footer .dt-sitemap__links li:not(:last-child) {
+          padding-bottom: 20px; }
+    .dt-page-footer .dt-years-payments .row {
+      display: flex; }
+      .dt-page-footer .dt-years-payments .row .dt-order-name {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; }
+      .dt-page-footer .dt-years-payments .row .dt-order-payments {
+        order: -1;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; }
+      .dt-page-footer .dt-years-payments .row .dt-order-privacy {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; } }
+
+.dt-travel-card .card-header .card-img {
+  height: 200px; }
+  .dt-travel-card .card-header .card-img .dt-excursion__image {
+    height: 100%;
+    width: inherit;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0; }
+
+.dt-travel-card .card-header .dt-excursion-type {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  background: #0071eb;
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  color: #ffffff; }
+
+.dt-travel-card .card-header .dt-like {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px; }
+  .dt-travel-card .card-header .dt-like svg {
+    padding-top: 2px;
+    fill: #222425;
+    opacity: 0.15; }
+  .dt-travel-card .card-header .dt-like:hover svg, .dt-travel-card .card-header .dt-like.active svg {
+    fill: #0071eb !important;
+    box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3); }
+
+.dt-travel-card .card-header .dt-price {
+  bottom: 0;
+  padding: 15px 35px 15px;
+  border-top: 1px solid #f6f6f6; }
+  .dt-travel-card .card-header .dt-price h5, .dt-travel-card .card-header .dt-price .h5 {
+    letter-spacing: 3px; }
+  .dt-travel-card .card-header .dt-price__title {
+    font-size: 8px; }
+
+.dt-travel-card .card-body {
+  padding: 32px 30px;
+  max-height: 250px; }
+  .dt-travel-card .card-body__excursion {
+    max-height: 100px;
+    overflow: hidden;
+    margin-bottom: 30px; }
+  .dt-travel-card .card-body__excursion-rating {
+    margin-bottom: 30px; }
+    .dt-travel-card .card-body__excursion-rating .dt-rating__star img {
+      width: 16px;
+      height: 16px; }
+  .dt-travel-card .card-body__excursion-name {
+    margin-bottom: 15px;
+    line-height: 19px; }
+  .dt-travel-card .card-body__excursion-description {
+    font-family: "Manrope Light"; }
+
+.dt-travel-card .card-footer {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.dt-travel-card__action {
+  color: #222425;
+  font-family: "Manrope Bold";
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-decoration: none; }
+
+@media screen and (max-width: 768px) {
+  .dt-travel-card .dt-rating__star img {
+    width: 14px;
+    height: 14px; } }
+
+.dt-header__title {
+  font-size: 30px;
+  font-family: "Manrope Bold"; }
+
+.dt-header__subtitle {
+  font-family: "Manrope Light";
+  font-size: 14px; }
+
+.dt-page-main .dt-online-register {
+  color: white;
+  background: url("/dist/img/3.jpg") no-repeat 50% 45%;
+  background-size: cover;
+  height: 100px;
+  border-radius: 5px;
+  margin: 30px 0 0; }
+  .dt-page-main .dt-online-register .dt-wrapper {
+    background: #222425;
+    opacity: 0.7;
+    border-radius: 5px; }
+  .dt-page-main .dt-online-register__info {
+    z-index: 1; }
+
+.dt-page-main .dt-popular__tabs a.nav-link {
+  text-decoration: none;
+  color: #222425;
+  background: white;
+  border-radius: 5px;
+  padding: 23px;
+  font-size: 12px; }
+  .dt-page-main .dt-popular__tabs a.nav-link.active {
+    background: #0071eb;
+    box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3);
+    color: white; }
+
+.dt-page-main .dt-popular__tabs .dt-popular-list {
+  margin-bottom: 35px; }
+  .dt-page-main .dt-popular__tabs .dt-popular-list li.nav-item {
+    height: 63px; }
+    .dt-page-main .dt-popular__tabs .dt-popular-list li.nav-item:not(:last-child) {
+      margin-right: 0.25rem; }
+
+.dt-page-main .dt-popular__tabs .dt-excursion__flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px -30px; }
+  .dt-page-main .dt-popular__tabs .dt-excursion__flex .dt-card {
+    background: white;
+    border-radius: 5px; }
+
+.dt-page-main .dt-popular__tabs .dt-card {
+  width: 25%;
+  padding: 0 15px 30px; }
+
+.dt-page-main .dt-popular__action {
+  margin-top: 40px; }
+
+.dt-page-main .dt-advantages {
+  margin-bottom: 80px; }
+  .dt-page-main .dt-advantages__content .dt-advantage__card {
+    padding: 40px; }
+    .dt-page-main .dt-advantages__content .dt-advantage__card img {
+      width: 50px;
+      height: 100%;
+      margin-right: 30px; }
+    .dt-page-main .dt-advantages__content .dt-advantage__card .dt-card__text {
+      font-family: "Manrope Bold"; }
+    .dt-page-main .dt-advantages__content .dt-advantage__card .dt-card__subtitle {
+      font-family: "Manrope Thin"; }
+
+@media screen and (max-width: 768px) {
+  .dt-page-main .dt-online-register {
+    height: auto; }
+    .dt-page-main .dt-online-register__info {
+      flex-wrap: wrap;
+      padding: 25px 30px; }
+    .dt-page-main .dt-online-register-title {
+      margin-bottom: 15px; }
+    .dt-page-main .dt-online-register-btn {
+      width: 100%;
+      margin: 0; }
+  .dt-page-main .dt-popular__header {
+    padding-right: 25px;
+    padding-left: 25px; }
+    .dt-page-main .dt-popular__header .dt-header__title {
+      margin-bottom: 15px; }
+  .dt-page-main .dt-advantages__header {
+    padding-right: 25px;
+    padding-left: 25px; }
+    .dt-page-main .dt-advantages__header .dt-header__title {
+      margin-bottom: 15px; }
+  .dt-page-main .dt-advantages__content .dt-advantage__card img {
+    width: 40px;
+    margin-right: 10px;
+    padding-top: 6px; } }
+
+.dt-modal .dt-modal-content .dt-header__recovery {
+  line-height: 1.2;
+  width: min-content; }
+
+.dt-modal .dt-modal-content .dt-modal-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+  font-family: "Manrope Bold"; }
+
+.dt-modal .dt-modal-content .dt-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0 50px;
+  margin-bottom: 40px; }
+  .dt-modal .dt-modal-content .dt-modal-body h5, .dt-modal .dt-modal-content .dt-modal-body .h5 {
+    font-family: "Manrope Thin"; }
+  .dt-modal .dt-modal-content .dt-modal-body a {
+    color: inherit; }
+  .dt-modal .dt-modal-content .dt-modal-body .dt-success-notification {
+    padding-right: 100px;
+    padding-left: 100px; }
+    .dt-modal .dt-modal-content .dt-modal-body .dt-success-notification svg {
+      margin-bottom: 25px;
+      fill: #65c350; }
+    .dt-modal .dt-modal-content .dt-modal-body .dt-success-notification h3, .dt-modal .dt-modal-content .dt-modal-body .dt-success-notification .h3 {
+      font-family: "Manrope Bold" !important; }
+
+.dt-modal .dt-modal-content .dt-modal-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  border-top: 1px solid #f6f6f6; }
+
+@media screen and (max-width: 768px) {
+  .dt-modal .dt-close-button {
+    top: -45px;
+    height: 45px;
+    border-radius: 6px 6px 0 0;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff; }
+  .dt-modal .modal-dialog {
+    margin-top: 55px; }
+  .dt-modal .dt-modal-header {
+    justify-content: center !important; }
+  .dt-modal .dt-modal-body {
+    padding: 0 30px !important; }
+    .dt-modal .dt-modal-body .dt-entry {
+      display: flex;
+      vertical-align: center;
+      padding: 12px 10px 12px 10px; }
+    .dt-modal .dt-modal-body .btn {
+      height: 60px; } }
+
+@font-face {
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../dist/fonts/bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Light';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../dist/fonts/light.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../dist/fonts/medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Semibold';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../dist/fonts/semibold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Thin';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../../dist/fonts/thin.otf") format("opentype"); }
+
+.dt-page__header {
+  margin-bottom: 40px !important; }
+  .dt-page__header .dt-header__title {
+    font-size: 38px;
+    font-family: "Manrope Bold";
+    margin-bottom: 32px !important; }
+  .dt-page__header .dt-header__description {
+    font-size: 14px !important;
+    font-family: "Manrope Thin" !important; }
+
+.dt-page__search-excursion .dt-input__wrapper .dt-input__group {
+  background: white !important; }
+
+.dt-page__search-excursion .dt-input__wrapper:nth-child(2) .dt-input__group {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.dt-page__search-excursion .dt-input__wrapper:nth-child(3) .dt-input__group {
+  border-radius: 0; }
+
+.dt-page__search-excursion .dt-input__wrapper:nth-child(4) .dt-input__group {
+  border-radius: 0; }
+
+.dt-page__search-excursion .dt-direction-excursion:not(:last-child) {
+  margin-right: 8px; }
+
+.dt-page__search-excursion .dt-direction-excursion:last-child {
+  margin-right: 25px; }
+
+.dt-page__search-excursion .dt-btn-blue {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.dt-page__type-excursions {
+  margin-top: 80px; }
+
+.dt-page__content .dt-filters-by__item {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid rgba(34, 36, 37, 0.07); }
+  .dt-page__content .dt-filters-by__item:first-child {
+    border-top: 1px solid rgba(34, 36, 37, 0.07); }
+  .dt-page__content .dt-filters-by__item:last-child {
+    border-bottom: none; }
+
+.dt-page__content .dt-sort-by {
+  margin-bottom: 35px; }
+  .dt-page__content .dt-sort-by__title {
+    font-family: "Manrope Thin";
+    color: rgba(34, 36, 37, 0.4);
+    margin-right: 50px; }
+  .dt-page__content .dt-sort-by__item {
+    font-family: "Manrope Regular";
+    margin-right: 25px;
+    cursor: pointer; }
+    .dt-page__content .dt-sort-by__item.active {
+      color: #0071eb; }
+
+@font-face {
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../dist/fonts/bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Light';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../dist/fonts/light.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../dist/fonts/medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Semibold';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../dist/fonts/semibold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Thin';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../../dist/fonts/thin.otf") format("opentype"); }
+
+.dt_btn__recovery {
+  height: 44px !important; }
+
+.dt-btn {
+  border: none; }
+  .dt-btn-white {
+    margin-left: 40px;
+    width: 162px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 5px; }
+    .dt-btn-white span {
+      color: #0071eb;
+      font-family: "Manrope Bold";
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-size: 14px; }
+    .dt-btn-white:hover {
+      background: #0071eb !important;
+      box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3); }
+      .dt-btn-white:hover span {
+        color: #ffffff; }
+  .dt-btn-blue {
+    width: 220px;
+    height: 70px;
+    background: #0071eb;
+    border-radius: 5px; }
+    .dt-btn-blue span {
+      font-size: 14px;
+      font-family: "Manrope Bold";
+      color: #ffffff !important; }
+    .dt-btn-blue:hover {
+      background: #0071eb !important;
+      box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3); }
+  .dt-btn-text {
+    color: #222425;
+    font-family: "Manrope Bold";
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-decoration: none; }
+    .dt-btn-text:after {
+      content: '❯';
+      color: #0071eb;
+      padding-left: 8px; }
+    .dt-btn-text:hover {
+      color: #0071eb; }
+  .dt-btn-text-red {
+    cursor: pointer;
+    color: #f73637;
+    letter-spacing: 3px;
+    border-bottom: 1px solid rgba(247, 54, 55, 0.07); }
+    .dt-btn-text-red:hover {
+      border-bottom: 1px solid #f73637; }
+  .dt-btn-transparent {
+    height: 44px;
+    border: 1px solid #eff0f0;
+    padding: 10px 40px; }
+    .dt-btn-transparent:hover {
+      border: 1px solid #eff0f0 !important; }
+  .dt-btn__error {
+    border: 2px solid #f73637 !important; }
+
+.dt-close-button {
+  width: 46px;
+  height: 46px;
+  background: #fef1f1;
+  border-radius: 0 6px 0 6px;
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .dt-close-button:hover {
+    background: #f73637; }
+    .dt-close-button:hover svg {
+      fill: #fef1f1; }
+  .dt-close-button svg {
+    fill: #f73637; }
+
+@media screen and (max-width: 568px) {
+  .dt-btn-white {
+    height: 50px; }
+    .dt-btn-white span {
+      font-size: 12px; } }
+
+.dt-input::placeholder {
+  color: rgba(34, 36, 37, 0.15); }
+
+.dt-input__label {
+  font-size: 12px;
+  font-family: "Manrope Thin";
+  margin-bottom: 11px; }
+
+.dt-input__wrapper {
+  position: relative; }
+
+.dt-input__group {
+  border: none;
+  border-radius: 6px;
+  background-color: #f6f6f6;
+  width: 100%;
+  color: #222425;
+  font-size: 14px;
+  height: 70px;
+  padding: 26px 27px 26px 30px; }
+  .dt-input__group-item {
+    align-items: center;
+    display: flex;
+    position: relative;
+    border-radius: 15px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: 100%;
+    justify-content: center;
+    min-height: 50px;
+    min-width: 50px; }
+  .dt-input__group .dt-input {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    font-family: "Manrope Regular";
+    width: 100%; }
+    .dt-input__group .dt-input__icon {
+      align-items: center;
+      display: flex;
+      position: absolute;
+      width: 24px;
+      height: 24px; }
+
+.dt-input__group, .dt-input__group-item {
+  align-items: center;
+  display: flex;
+  position: relative; }
+
+.dt-check__group-title {
+  font-family: "Manrope Bold";
+  font-size: 14px;
+  margin-bottom: 18px; }
+
+.dt-check__group h5, .dt-check__group .h5 {
+  font-family: "Manrope Regular" !important; }
+
+.dt-check__group .dt-check {
+  align-items: center !important;
+  margin-bottom: 6px; }
+
+.dt-check {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  /*&__label {
+    color: $main-default;
+    line-height: 16px;
+    font-size: $font-size-12;
+  }
+
+  &-error {
+    font-size: 12px;
+    color: $red-light;
+    margin: 0;
+  }*/ }
+  .dt-check__wrapper {
+    display: block;
+    min-height: 1.5rem;
+    margin-bottom: 0.125rem; }
+    .dt-check__wrapper-inline {
+      display: inline-block; }
+  .dt-check__input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(0, 113, 235, 0.071);
+    background: transparent;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    margin-right: 8px; }
+    .dt-check__input:hover {
+      border: 2px solid #0071eb; }
+    .dt-check__input .dt-check__input-check {
+      border-radius: 100%;
+      height: 17px;
+      width: 17px; }
+    .dt-check__input input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 100%;
+      width: 100%; }
+    .dt-check__input input:checked ~ .dt-check__input-check {
+      background: #0071eb;
+      box-shadow: 0 3px 10px 0 rgba(0, 113, 235, 0.3);
+      border: 2px solid white; }
+    .dt-check__input input:checked:disabled ~ .dt-check__input-check {
+      background: #0071eb !important;
+      pointer-events: none; }
+
+/*.dt-check.check {
+  @extend .dt-check;
+
+  & .dt-check__input {
+    border: none;
+  }
+
+  & .dt-check__input-check {
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(0, 113, 235, 0.071);
+    border-radius: 6px;
+    background-color: transparent;
+  }
+
+  & input:checked ~ .dt-check__input-check {
+    background-image: url("data:image/svg+xml, %3Csvg width='100%25' height='100%25' fill='%232fbb40' xmlns='http://www.w3.org/2000/svg' viewBox='2 2 20 20'%3E%3Cpath d='M18.71,7.21a1,1,0,0,0-1.42,0L9.84,14.67,6.71,11.53A1,1,0,1,0,5.29,13l3.84,3.84a1,1,0,0,0,1.42,0l8.16-8.16A1,1,0,0,0,18.71,7.21Z'/%3E%3C/svg%3E");
+    box-shadow: none;
+    border: 2px solid $green-default;
+    background-color: transparent;
+  }
+
+  & input:disabled ~ .dt-check__input-check {
+    background-color: transparent;
+    background-image: url("data:image/svg+xml, %3Csvg width='100%25' height='100%25' fill='%23abadb4' xmlns='http://www.w3.org/2000/svg' viewBox='2 2 20 20'%3E%3Cpath d='M18.71,7.21a1,1,0,0,0-1.42,0L9.84,14.67,6.71,11.53A1,1,0,1,0,5.29,13l3.84,3.84a1,1,0,0,0,1.42,0l8.16-8.16A1,1,0,0,0,18.71,7.21Z'/%3E%3C/svg%3E");
+  }
+
+}*/
+/*.dt-check_color {
+  & .dt-check__input {
+    border: 2px solid rgb(240, 243, 255);
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    margin-right: 6px;
+
+    & .dt-check__input-check {
+      border-radius: 100%;
+      height: 24px;
+      width: 24px;
+    }
+
+    & input:indeterminate ~ .dt-check__input-check {
+      height: 24px;
+      width: 24px;
+      background: $color-blue;
+      box-shadow: none;
+      border-radius: 100%;
+    }
+
+    & input:checked ~ .dt-check__input-check {
+      background: $color-blue ;
+      box-shadow: none;
+    }
+
+    & input:disabled ~ .dt-check__input-check {
+      background: $color-blue;
+    }
+  }
+
+}*/
+@font-face {
+  font-family: 'Manrope Bold';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../dist/fonts/bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Light';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../dist/fonts/light.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../dist/fonts/medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../dist/fonts/regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Semibold';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../dist/fonts/semibold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Manrope Thin';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../../dist/fonts/thin.otf") format("opentype"); }
+
+.dt-switch {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 36px;
+  flex-shrink: 0; }
+  .dt-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  .dt-switch .dt-slider {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 6px;
+    background-color: #ffffff;
+    width: 58px;
+    height: 36px; }
+  .dt-switch .dt-slider:before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    left: 5px;
+    bottom: 6px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 4px;
+    background: #0071eb;
+    box-shadow: 0 3px 10px 0 rgba(0, 113, 235, 0.3);
+    border: 2px solid white; }
+  .dt-switch input:checked + .dt-slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px); }
+
+.dt__tabs a.nav-link {
+  text-decoration: none;
+  color: #222425;
+  background: white;
+  border-radius: 5px;
+  padding: 23px;
+  font-size: 12px; }
+  .dt__tabs a.nav-link.active {
+    background: #0071eb;
+    box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3);
+    color: white; }
+
+.dt__tabs-list {
+  margin-bottom: 35px; }
+  .dt__tabs-list li.nav-item {
+    height: 63px; }
+    .dt__tabs-list li.nav-item:not(:last-child) {
+      margin-right: 0.25rem; }
+
+.dt-form {
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  width: 100%; }
+  .dt-form > * {
+    flex-shrink: 0;
+    margin-top: var(--bs-gutter-y);
+    padding-left: 5px;
+    padding-right: 5px; }
+  .dt-form.bordered {
+    gap: 0 !important;
+    padding: 0 !important; }
+    .dt-form.bordered > * {
+      padding: 0;
+      border: 1px solid #e5e6e6; }
+
+.dt-block-header {
+  padding-top: 81px;
+  padding-bottom: 40px; }
+
+.dt-wrapper-gradient {
+  background: linear-gradient(to top, #222425, transparent);
+  opacity: 0.75;
+  height: 100%;
+  width: 100%; }
+
+.color-black {
+  color: #222425 !important; }
+
+.text-muted-black {
+  color: #222425 !important;
+  opacity: 0.4; }
+
+.text-muted-white {
+  color: #ffffff !important;
+  opacity: 0.5; }
+
+@media screen and (max-width: 768px) {
+  .dt-block-header {
+    padding-top: 60px;
+    padding-bottom: 30px; } }
+
+body {
+  background: #f6f6f6;
+  color: #222425;
+  font-family: "Manrope Regular" !important;
+  font-weight: 400;
+  letter-spacing: 0; }
+
+h1, .h1 {
+  font-size: 30px;
+  margin-bottom: 0; }
+
+h3, .h3 {
+  font-size: 20px;
+  margin-bottom: 0; }
+
+h4, .h4 {
+  font-size: 16px;
+  margin-bottom: 0; }
+
+h5, .h5 {
+  font-size: 12px;
+  margin-bottom: 0; }
+
+h6, .h6 {
+  font-size: 10px;
+  margin-bottom: 0; }
+
+.dt-page__breadcrumbs {
+  padding-top: 40px;
+  padding-bottom: 80px; }
+  .dt-page__breadcrumbs .breadcrumb-item > a {
+    color: rgba(34, 36, 37, 0.4) !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap; }
+
+@media screen and (max-width: 768px) {
+  h1, .h1 {
+    font-size: 20px !important; }
+  h3, .h3 {
+    font-size: 12px !important; }
+  h5, .h5 {
+    font-size: 10px !important; } }
