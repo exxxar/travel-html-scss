@@ -4938,6 +4938,9 @@ select {
 .bg-light-blue svg {
   fill: #0071eb; }
 
+.regular {
+  font-family: "Manrope regular"; }
+
 .bold {
   font-family: "Manrope bold"; }
 
