@@ -5468,8 +5468,21 @@ input[type=date]::-webkit-calendar-picker-indicator {
   height: 40px;
   margin-right: -1rem; }
 
-.object {
-  width: 340px; }
+@media (min-width: 1200px) {
+  .object {
+    width: 340px; } }
+
+.add-obj__map-point {
+  border: 1px solid #dee2e6; }
+  @media (min-width: 992px) {
+    .add-obj__map-point {
+      border: none; } }
+
+.add-obj__map-point-menu {
+  border: 1px solid #dee2e6; }
+  @media (min-width: 1400px) {
+    .add-obj__map-point-menu {
+      border: none; } }
 
 .calendar__date-type {
   overflow-x: auto; }
