@@ -5490,9 +5490,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .calendar__date-type::-webkit-scrollbar {
   display: none; }
 
-.pages-selector__page {
-  width: 50px; }
-
 .cell {
   width: 54px;
   height: 42px; }
