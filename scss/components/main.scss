@@ -829,6 +829,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
     width: 340px;
 }
 
+.calendar__date-type {
+    overflow-x: auto;
+}
+
+.calendar__date-type::-webkit-scrollbar {
+    display: none;
+}
+
 .pages-selector__page {
     width: 50px;
 }
