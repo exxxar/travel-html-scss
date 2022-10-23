@@ -165,6 +165,13 @@ select {
     background-size: 1.2rem auto;
 }
 
+option {
+    border: none;
+    border-radius: 0.375rem;
+    background-color: $color-white;
+    padding: 1.5rem !important;
+}
+
 .bg-light-blue {
     color: $color-blue;
     background-color: rgba($color-blue, 0.07);
@@ -595,6 +602,14 @@ svg {
     }
 }
 
+.current-excursion__image {
+    max-height: 125px;
+
+    @media (min-width: 992px) {
+        max-height: 100%;
+    }
+}
+
 .cover {
     object-fit: cover;
 }
@@ -728,13 +743,23 @@ svg {
     height: 15px;
     background-color: $color-white;
     transform: rotate(45deg);
-    top: 1.2rem;
-    left: -0.5rem;
+    top: -0.3rem;
+    left: 1.15rem;
     position: absolute;
+
+    @media (min-width: 768px) {
+        top: 1.2rem;
+        left: -0.5rem;
+    }
 }
 
 .comment__images {
     gap: 0.35rem;
+    overflow-x: auto;
+}
+
+.comment__images::-webkit-scrollbar {
+    display: none;
 }
 
 .comment__image {
@@ -818,8 +843,13 @@ input:disabled+.category {
     border: none;
 }
 
-input:checked+.collapsed-menu .menu-dots {
-    transform: rotate(90deg);
+input:checked+.collapsed-menu {
+    width: 100%;
+    background-color: $color-white;
+    box-shadow: 0 10px 30px 7px rgba($color-blue, 0.1);
+    border-radius: 0.375rem;
+    padding: 1.5rem !important;
+    padding-top: 1rem !important;
 }
 
 input:checked+.collapsed-menu .collapsed-menu__body {
@@ -832,17 +862,21 @@ input:checked+.collapsed-menu .collapsed-menu__body {
     height: 30px;
 }
 
+.menu-dots:hover>.menu-dot {
+    box-shadow: 0 2px 5px 1px rgba($color-blue, 0.3);
+}
+
 .menu-dot {
     width: 5px;
     height: 5px;
     transition: 0.3s;
 }
 
-.collapsed-menu__body {
-    position: relative;
-    top: -30%;
-    left: -20%;
+.collapsed-menu {
+    transition: 0.3s;
 }
+
+.collapsed-menu__body {}
 
 .destination-number {
     margin-top: 2.7rem;
