@@ -213,9 +213,10 @@
   }
 
   & .dt-bg__guide {
-    height: 205px;
     background: url("/dist/img/5.png") no-repeat;
     background-size: 100% 100%;
+    border-radius: 6px;
+    padding: 10px;
     margin-bottom: 30px;
 
     & .dt-guide {
@@ -395,9 +396,10 @@
     }
 
     & .dt-bg__guide {
+      margin-top: 40px;
       & .dt-guide {
         &__info {
-          padding: 35px 40px;
+          padding: 25px 30px;
         }
 
         &__img {

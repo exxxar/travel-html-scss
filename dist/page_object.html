@@ -13,9 +13,7 @@
     <div class="dt-page dt-page__preheader">
         <div class="container dt-preheader__content w-100 h-100 text-center">
             <div class="row">
-                <div class="col-lg-2">
-
-                </div>
+                <div class="col-lg-2"></div>
                 <div class="col-lg-8">
                     <div class="dt-preheader__breadcrumbs d-flex justify-content-center">
                         <nav style="--bs-breadcrumb-divider: '❯';" aria-label="breadcrumb">
@@ -33,15 +31,6 @@
                     <div class="curved">
                         <img src="./img/curved_strip.png" alt="">
                     </div>
-                    <p class="dt-preheader__description">
-                        118 увлекательных экскурсий в городе Ставропольский край – Минеральные воды и источники в
-                        Ставрополье
-                        славились лечебными свойствами уже давно: здесь лечили больных в войсках Кавказской линии. А с
-                        1803 года
-                        начали обустраивать курорты на Кавказских минеральных водах., экскурсионные маршруты охватывают
-                        111
-                        достопримечательностей.
-                    </p>
                     <div class="dt-preheader__photos justify-content-center">
                         <div class="dt-photos__item">
                             <img src="./img/travels/1.jpg" alt="">
@@ -68,22 +57,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2">
-
-                </div>
+                <div class="col-lg-2"></div>
             </div>
         </div>
     </div>
     <div class="container dt-page dt-page-object" style="margin-top: -35px;">
-        <div class="dt-header__detail d-flex">
+        <div class="dt-top-info-block dt-top-info-block--two-input d-flex">
             <div class="dt-input__wrapper w-100">
                 <div class="dt-input__group bg-white">
-                    <div class="d-flex flex-wrap w-100">
-                        <label class="dt-label fw-thin">адрес</label>
-                        <input type="text" name="name" class="dt-input fw-semibold"
-                               autocomplete="off" value="Некоторый адрес" disabled>
+                    <div class="d-flex dt-input__text flex-wrap justify-content-between w-100">
+                        <div class="dt-text__left">
+                            <label class="dt-label fw-thin">адрес</label>
+                            <div class="dt-group-value d-flex flex-wrap m-0">
+                                <span class="dt-group-value__item fw-semibold">Некоторый адрес</span>
+                            </div>
+                        </div>
+                        <button class="dt-btn-text text-uppercase text-nowrap">на карте</button>
                     </div>
-                    <button class="dt-btn-text text-uppercase text-nowrap">на карте</button>
                     <div class="dt-input__group-item">
                         <div class="dt-input__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%"
@@ -96,10 +86,12 @@
             </div>
             <div class="dt-input__wrapper w-100">
                 <div class="dt-input__group bg-white">
-                    <div class="d-flex flex-wrap w-100">
+                    <div class="dt-input__text flex-wrap w-100">
                         <label class="dt-label fw-thin">координаты</label>
-                        <input type="text" name="name" class="dt-input fw-semibold"
-                               autocomplete="off" value="широта: 28.532062 долгота: -120.257606" disabled>
+                        <div class="dt-group-value d-flex flex-wrap">
+                            <span class="dt-group-value__item me-2 fw-semibold">широта: 28.532062</span>
+                            <span class="dt-group-value__item fw-semibold">долгота: -120.257606</span>
+                        </div>
                     </div>
                     <div class="dt-input__group-item">
                         <div class="dt-input__icon">
@@ -114,7 +106,7 @@
         </div>
         <div class="row dt-page__content">
             <div class="col-lg-8 dt-page__content">
-                <p class="dt-article__title">Описание экскурсии</p>
+                <p class="dt-article__title">Описание</p>
                 <p class="dt-main-text-thin">Приглашаю вас совместить приятное с полезным и сделать
                     акклиматизационный выход с красивыми видами на
                     гору Чегет и ледниковое озеро Донгуз-Орун-Кель. Воды, стекающие по склонам, размывают почву и несут
@@ -135,23 +127,25 @@
             </div>
             <div class="col-lg-4">
                 <div class="dt-bg__guide">
-                    <div class="dt-guide__info d-flex w-100 h-100">
-                        <div class="dt-guide__img">
-                            <img src="./img/avatars/7.jpg" alt="">
-                        </div>
-                        <div class="dt-guide__text">
-                            <p class="dt-guide__title fw-thin">экскурсию для вас проведет</p>
-                            <p class="dt-guide__name">Петров Николай Игоревич</p>
-                            <div class="dt-rating__star d-flex">
-                                <img src="/dist/img/icons/star_blue.svg" alt="">
-                                <img src="/dist/img/icons/star_blue.svg" alt="">
-                                <img src="/dist/img/icons/star_blue.svg" alt="">
-                                <img src="/dist/img/icons/star_blue.svg" alt="">
-                                <img src="/dist/img/icons/star_blue.svg" alt="">
-                                <p class="dt-guide__rating fw-bold">4.84</p>
+                    <div class="dt-bg-light-gray">
+                        <div class="dt-guide__info d-flex w-100 h-100">
+                            <div class="dt-guide__img">
+                                <img src="./img/avatars/7.jpg" alt="">
                             </div>
-                            <p class="dt-btn-text text-uppercase me-3 d-lg-flex d-none">смотреть отзывы (140)</p>
-                            <p class="dt-btn-text text-uppercase d-flex d-lg-none">отзывы (140)</p>
+                            <div class="dt-guide__text">
+                                <p class="dt-guide__title fw-thin">экскурсию для вас проведет</p>
+                                <p class="dt-guide__name">Петров Николай Игоревич</p>
+                                <div class="dt-rating__star d-flex">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <p class="dt-guide__rating fw-bold">4.84</p>
+                                </div>
+                                <p class="dt-btn-text text-uppercase me-3 d-lg-flex d-none">смотреть отзывы (140)</p>
+                                <p class="dt-btn-text text-uppercase text-nowrap d-flex d-lg-none">отзывы (140)</p>
+                            </div>
                         </div>
                     </div>
                 </div>

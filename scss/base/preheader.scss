@@ -18,6 +18,7 @@
           font-size: 10px;
           font-family: $font-family-regular;
           text-decoration: none !important;
+          letter-spacing: 3px;
         }
 
         & .breadcrumb-item:not(:last-child) {
@@ -128,20 +129,24 @@
 }*/
 
 @media screen and (max-width: 768px) {
-  /*.dt-header__image {
-    height: 1065px;
-  }*/
   .dt-page__preheader {
     .dt-preheader__content {
       padding-top: 115px;
       padding-bottom: 40px;
 
       & .dt-preheader {
+        &__breadcrumbs {
+          margin-bottom: 50px;
+          & .breadcrumb-item {
+            font-size: 8.22px;
+          }
+        }
+
         &__title {
           font-size: 23px;
           line-height: 31px;
           letter-spacing: 0;
-          margin-bottom: 20px;
+          margin-bottom: 0;
         }
 
         &__description {

@@ -26,7 +26,7 @@
   }
 }
 
-.dt-page-object {
+/*.dt-page-object {
   & .dt-header__detail {
     & .dt-input__wrapper {
       &:nth-child(1) {
@@ -45,7 +45,7 @@
       }
     }
   }
-}
+}*/
 
 .dt-block-header {
   padding-top: 81px;
@@ -89,6 +89,9 @@
 }
 .dt-font--size-12 {
   font-size: 12px;
+}
+.dt-bg-light-gray {
+  background: $color-light-gray;
 }
 
 @media screen and (max-width: 768px) {

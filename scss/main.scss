@@ -46,6 +46,7 @@ $prefix: "mo-";
 @import "base/base";
 @import "base/preheader";
 @import "base/pagination";
+@import "base/topInfoBlock";
 
 body {
   background: $color-light-gray;
