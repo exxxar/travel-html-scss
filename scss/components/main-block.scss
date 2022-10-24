@@ -942,8 +942,12 @@ input:checked+label+input+div[name=add-exc-photo] {
     display: block !important;
 }
 
-input:checked+label+.discount-block {
+input:checked~.discount-block {
     display: flex !important;
+}
+
+input:checked~button{
+    display: block !important;
 }
 
 input:checked+.category {
@@ -1007,7 +1011,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     }
 }
 
-.add-obj__map-point {
+.map-point {
     border: 1px solid #dee2e6;
 
     @media (min-width: 992px) {
@@ -1015,7 +1019,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     }
 }
 
-.add-obj__map-point-menu {
+.map-point-menu {
     border: 1px solid #dee2e6;
 
     @media (min-width: 1400px) {
