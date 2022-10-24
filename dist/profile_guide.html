@@ -10,7 +10,7 @@
 </head>
 <body>
 <main class="wrapper">
-    <div class="dt-page dt-page__preheader">
+    <div class="dt-page__preheader">
         <div class="container dt-preheader__content w-100 h-100 text-center">
             <div class="row">
                 <div class="col-lg-2">
@@ -19,7 +19,7 @@
                 <div class="col-lg-8">
                     <div class="dt-preheader__breadcrumbs d-flex justify-content-center">
                         <nav style="--bs-breadcrumb-divider: '❯';" aria-label="breadcrumb">
-                            <ol class="breadcrumb justify-content-center">
+                            <ol class="breadcrumb justify-content-center m-0">
                                 <li class="breadcrumb-item text-nowrap">Главная</li>
                                 <li class="breadcrumb-item text-nowrap">Гиды</li>
                                 <li class="breadcrumb-item text-nowrap">Имя Фамилия</li>
@@ -45,8 +45,8 @@
             </div>
         </div>
     </div>
-    <div class="container dt-page dt-page-object" style="margin-top: -35px;">
-        <div class="dt-header__detail d-flex">
+    <div class="container dt-page dt-page-object">
+        <div class="dt-top-info-block dt-top-info-block--two-input d-flex">
             <div class="dt-input__wrapper w-100">
                 <div class="dt-input__group bg-white">
                     <div class="d-flex flex-wrap w-100">
@@ -97,10 +97,11 @@
                     поднимемся еще выше до станции канатной дороги горы Чегет, где находится смотровая площадка и
                     знаменитое кафе Ай (луна), где любил бывать Высоций и Визбор.</p>
                 <div class="dt-reviews">
-                    <div class="dt-reviews__header d-flex justify-content-between">
-                        <p class="dt-article__title mb-0">Отзывы об экскурсоводе</p>
+                    <div class="dt-reviews__header d-flex flex-wrap justify-content-between">
+                        <p class="dt-article__title mb-0 d-lg-flex d-none">Отзывы об экскурсоводе</p>
+                        <p class="dt-article__title mb-0 d-lg-none d-flex mb-3">Отзывы</p>
                         <div class="dt-article__reviews-count d-flex align-items-center">
-                            <h3 class="fw-bold me-3">4.86 из 5</h3>
+                            <p class="dt-rating-of fw-bold me-3">4.86 из 5</p>
                             <div class="dt-rating__star d-flex w-auto me-3">
                                 <img src="/dist/img/icons/star_blue.svg" alt="">
                                 <img src="/dist/img/icons/star_blue.svg" alt="">
@@ -108,7 +109,7 @@
                                 <img src="/dist/img/icons/star_blue.svg" alt="">
                                 <img src="/dist/img/icons/star_blue.svg" alt="">
                             </div>
-                            <p class="fw-thin">43 оценки</p>
+                            <p class="dt-count-marks fw-thin">43 оценки</p>
                         </div>
                     </div>
                     <div class="dt-reviews__rating">
@@ -161,15 +162,28 @@
                     <div class="dt-reviews__sort-by d-flex justify-content-end">
                         <p class="dt-sort-by__title fw-thin">сортировка по</p>
                         <p class="dt-sort-by__item active fw-regular">дате</p>
-                        <p class="dt-sort-by__item fw-regular">оценке</p>
+                        <p class="dt-sort-by__item fw-regular d-lg-flex d-none">оценке</p>
                     </div>
                     <div class="dt-reviews__content">
                         <div class="dt-review__item d-flex">
                             <div class="dt-review__avatar">
                                 <img src="./img/avatars/2.jpg" alt="">
                             </div>
+                            <div class="dt-review__header d-lg-none d-block">
+                                <div class="dt-header__user">
+                                    <p class="dt-user__date-ago fw-thin text-muted">2 недели назад</p>
+                                    <p class="dt-user__name fw-semibold">Екатерина Иванова</p>
+                                </div>
+                                <div class="dt-rating__star w-auto d-flex">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                </div>
+                            </div>
                             <div class="dt-review__block flex-grow-1">
-                                <div class="dt-review__header d-flex justify-content-between">
+                                <div class="dt-review__header d-lg-block d-none">
                                     <div class="dt-header__user">
                                         <p class="dt-user__date-ago fw-thin text-muted">2 недели назад</p>
                                         <p class="dt-user__name fw-semibold">Екатерина Иванова</p>
@@ -189,17 +203,18 @@
                                     деятельности в значительной степени обуславливает создание систем массового
                                     участия.
                                 </p>
-                                <div class="dt-review__photos">
-                                    <div class="dt-photos__item">
+
+                                <div class="dt-form dt-review__photos">
+                                    <div class="dt-photos__item p-0">
                                         <img src="./img/travels/1.jpg">
                                     </div>
-                                    <div class="dt-photos__item">
+                                    <div class="dt-photos__item p-0">
                                         <img src="./img/travels/2.jpg">
                                     </div>
-                                    <div class="dt-photos__item">
+                                    <div class="dt-photos__item p-0">
                                         <img src="./img/travels/3.jpg">
                                     </div>
-                                    <div class="dt-photos__item">
+                                    <div class="dt-photos__item p-0">
                                         <img src="./img/travels/4.jpg">
                                     </div>
                                 </div>
@@ -212,8 +227,21 @@
                                     <path d="M17.8 28.9q-1.15 0-1.95-.8t-.8-1.95q0-1.2.8-1.975.8-.775 1.95-.775 1.2 0 1.975.8.775.8.775 1.95 0 1.2-.8 1.975-.8.775-1.95.775Zm12.45 0q-1.2 0-1.975-.8-.775-.8-.775-1.95 0-1.2.8-1.975.8-.775 1.95-.775t1.95.8q.8.8.8 1.95 0 1.2-.8 1.975-.8.775-1.95.775ZM24 40.75q7 0 11.875-4.875T40.75 24q0-1.3-.2-2.5t-.5-2.25q-1 .3-2.125.375-1.125.075-2.375.075-4.8 0-9.05-1.95-4.25-1.95-7.3-5.6-1.65 3.95-4.775 6.925Q11.3 22.05 7.3 23.7v.35q0 7 4.85 11.85T24 40.75Zm0 3.95q-4.25 0-8.025-1.625-3.775-1.625-6.6-4.425-2.825-2.8-4.45-6.575Q3.3 28.3 3.3 24q0-4.3 1.625-8.075Q6.55 12.15 9.375 9.35q2.825-2.8 6.6-4.45 3.775-1.65 8.075-1.65 4.3 0 8.05 1.65 3.75 1.65 6.55 4.45 2.8 2.8 4.45 6.575Q44.75 19.7 44.75 24q0 4.3-1.625 8.075-1.625 3.775-4.45 6.575-2.825 2.8-6.6 4.425Q28.3 44.7 24 44.7ZM19.4 7.65q4.4 5.15 8.125 7.05 3.725 1.9 8.175 1.9 1.2 0 1.9-.05t1.55-.3Q36.9 12.2 33.025 9.6 29.15 7 24 7q-1.35 0-2.55.2-1.2.2-2.05.45ZM7.45 20.1q2.4-.9 5.475-4.075Q16 12.85 17.3 8.35q-4.35 1.95-6.575 4.975Q8.5 16.35 7.45 20.1ZM19.4 7.65Zm-2.1.7Z"/>
                                 </svg>
                             </div>
+                            <div class="dt-review__header d-lg-none d-block">
+                                <div class="dt-header__user">
+                                    <p class="dt-user__date-ago fw-thin text-muted">3 месяца назад</p>
+                                    <p class="dt-user__name fw-semibold">Николаев Алексей</p>
+                                </div>
+                                <div class="dt-rating__star w-auto d-flex">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                </div>
+                            </div>
                             <div class="dt-review__block flex-grow-1">
-                                <div class="dt-review__header d-flex justify-content-between">
+                                <div class="dt-review__header d-lg-block d-none">
                                     <div class="dt-header__user">
                                         <p class="dt-user__date-ago fw-thin text-muted">3 месяца назад</p>
                                         <p class="dt-user__name fw-semibold">Николаев Алексей</p>
@@ -236,8 +264,21 @@
                             <div class="dt-review__avatar">
                                 <img src="./img/avatars/2.jpg" alt="">
                             </div>
+                            <div class="dt-review__header d-lg-none d-block">
+                                <div class="dt-header__user">
+                                    <p class="dt-user__date-ago fw-thin text-muted">пол года назад</p>
+                                    <p class="dt-user__name fw-semibold">Имя Отчество</p>
+                                </div>
+                                <div class="dt-rating__star w-auto d-flex">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                    <img src="/dist/img/icons/star_blue.svg" alt="">
+                                </div>
+                            </div>
                             <div class="dt-review__block flex-grow-1">
-                                <div class="dt-review__header d-flex justify-content-between">
+                                <div class="dt-review__header d-lg-block d-none">
                                     <div class="dt-header__user">
                                         <p class="dt-user__date-ago fw-thin text-muted">пол года назад</p>
                                         <p class="dt-user__name fw-semibold">Имя Отчество</p>
@@ -284,7 +325,29 @@
                     <div class="card-header bg-white p-0 position-relative">
                         <div class="card-img">
                             <div class="dt-wrapper-gradient position-absolute"></div>
-                            <h5 class="dt-excursion-type">мини-группа</h5>
+                            <p class="dt-excursion-type">мини-группа</p>
+                            <div class="dt-like dt-bg-red d-flex align-items-center justify-content-center"
+                                 style="right: 65px">
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" height="100%" width="100%"
+                                     viewBox="0 0 48 48" fill="white">
+                                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                       fill="#000000" stroke="none">
+                                        <path d="M2405 5109 c-43 -25 -154 -118 -251 -209 -251 -235 -445 -499 -599
+-812 -177 -359 -249 -716 -271 -1332 l-7 -184 -36 10 c-74 21 -138 63 -216
+142 -123 125 -199 273 -259 509 -39 150 -58 177 -125 177 -76 0 -243 -144
+-344 -298 -195 -296 -288 -666 -291 -1152 -1 -242 10 -341 59 -527 176 -666
+702 -1192 1368 -1368 171 -45 289 -59 487 -59 257 0 443 33 680 121 503 187
+925 611 1114 1116 102 274 139 533 117 832 -26 359 -97 637 -236 932 -113 239
+-204 382 -510 803 -224 309 -293 414 -366 560 -95 190 -141 359 -157 578 -8
+102 -12 116 -34 138 -29 29 -92 41 -123 23z m-272 -3254 c14 -28 82 -135 153
+-240 140 -209 202 -329 233 -450 62 -242 52 -402 -36 -585 -38 -79 -59 -108
+-127 -175 -130 -129 -266 -188 -436 -188 -170 0 -306 59 -436 188 -68 66 -89
+96 -127 175 -62 128 -82 229 -74 376 6 109 28 229 52 287 l12 29 25 -44 c46
+-77 106 -136 171 -167 110 -53 205 -51 243 7 15 22 19 59 25 202 8 188 19 274
+51 385 24 84 98 230 158 309 l43 57 22 -58 c13 -32 34 -81 48 -108z"/>
+                                    </g>
+                                </svg>
+                            </div>
                             <div class="dt-like d-flex align-items-center justify-content-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18"
                                      viewBox="0 0 50 50" overflow="visible">
@@ -293,16 +356,16 @@
                             </div>
                             <img class="dt-excursion__image" src="/dist/img/travels/1.jpg" alt="">
                             <div class="dt-price d-flex justify-content-between position-absolute w-100">
-                                <h5 class="align-items-end d-flex dt-price__sum text-white">
-                                    <span class="fw-bold">1700 руб.</span>
+                                <p class="align-items-end d-flex dt-price__sum text-white">
+                                    <span class="fw-bold me-1">1700 руб.</span>
                                     <span class="dt-price__title text-uppercase text-muted-white d-lg-block d-md-block d-none">
                                                         за человека
                                                     </span>
                                     <span class="dt-price__title text-uppercase text-muted-white d-block d-md-none">
                                                         за чел.
                                                     </span>
-                                </h5>
-                                <h5 class="dt-price__time text-uppercase text-muted-white">4 часа</h5>
+                                </p>
+                                <p class="dt-price__time text-uppercase text-muted-white">4 часа</p>
                             </div>
                         </div>
                     </div>
@@ -326,12 +389,10 @@
                             <div class="card-body__excursion-name">
                                 <h4 class="fw-bold">Бермамыт</h4>
                             </div>
-                            <div class="card-body__excursion-description fw-light">
-                                <h5>
-                                    Это путешествие, пожалуй одно из самых впечатляющих из всех
-                                    экскурсий по Северному Кавказу.
-                                </h5>
-                            </div>
+                            <p class="card-body__excursion-description fw-light">
+                                Это путешествие, пожалуй одно из самых впечатляющих из всех
+                                экскурсий по Северному Кавказу.
+                            </p>
                         </div>
                         <div class="card-body__excursion-date d-flex justify-content-between">
                             <div class="dt-calendar d-flex align-items-center">
@@ -363,16 +424,16 @@
                             </div>
                             <img class="dt-excursion__image" src="/dist/img/travels/2.jpg" alt="">
                             <div class="dt-price d-flex justify-content-between position-absolute w-100">
-                                <h5 class="dt-price__sum text-white align-items-end d-flex">
-                                    <span class="fw-bold">2500 руб.</span>
+                                <p class="dt-price__sum text-white align-items-end d-flex">
+                                    <span class="fw-bold me-1">2500 руб.</span>
                                     <span class="dt-price__title text-uppercase text-muted-white d-lg-block d-md-block d-none">
                                                         за человека
                                                     </span>
                                     <span class="dt-price__title text-uppercase text-muted-white d-block d-md-none">
                                                         за чел.
                                                     </span>
-                                </h5>
-                                <h5 class="dt-price__time text-uppercase text-muted-white">2 дня</h5>
+                                </p>
+                                <p class="dt-price__time text-uppercase text-muted-white">2 дня</p>
                             </div>
                         </div>
                     </div>
@@ -395,12 +456,10 @@
                             <div class="card-body__excursion-name">
                                 <h4 class="fw-bold">Медовые водопады</h4>
                             </div>
-                            <div class="card-body__excursion-description fw-light">
-                                <h5>
-                                    Медовые водопады - группа водопадов в ущелье реки Аликоновки,
-                                    прорезавшей скалы глубоким каньоном.
-                                </h5>
-                            </div>
+                            <p class="card-body__excursion-description fw-light">
+                                Медовые водопады - группа водопадов в ущелье реки Аликоновки,
+                                прорезавшей скалы глубоким каньоном.
+                            </p>
                         </div>
                         <div class="card-body__excursion-date d-flex justify-content-between">
                             <div class="dt-calendar d-flex align-items-center">

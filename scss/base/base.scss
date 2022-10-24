@@ -26,6 +26,10 @@
   }
 }
 
+.dt-page {
+  margin-top: -35px;
+}
+
 /*.dt-page-object {
   & .dt-header__detail {
     & .dt-input__wrapper {
@@ -93,8 +97,15 @@
 .dt-bg-light-gray {
   background: $color-light-gray;
 }
+.dt-bg-red {
+  background: $color-red !important;
+}
 
 @media screen and (max-width: 768px) {
+  .dt-page {
+    margin-top: -105px;
+  }
+
   .dt-block-header {
     padding-top: 60px;
     padding-bottom: 30px;

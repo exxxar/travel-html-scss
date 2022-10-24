@@ -5000,81 +5000,91 @@ template {
         justify-content: center;
         margin-bottom: 20px; } }
 
-.dt-travel-card .card-header .card-img {
-  height: 200px; }
-  .dt-travel-card .card-header .card-img .dt-excursion__image {
-    height: 100%;
-    width: inherit;
-    object-fit: cover;
-    border-radius: 5px 5px 0 0; }
-
-.dt-travel-card .card-header .dt-excursion-type {
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  background: #0071eb;
-  padding: 0.25rem 1rem;
-  border-radius: 5px;
-  color: #ffffff; }
-
-.dt-travel-card .card-header .dt-like {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  background: #ffffff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px; }
-  .dt-travel-card .card-header .dt-like svg {
-    padding-top: 2px;
-    fill: #222425;
-    opacity: 0.15; }
-  .dt-travel-card .card-header .dt-like:hover svg, .dt-travel-card .card-header .dt-like.active svg {
-    fill: #0071eb !important;
-    box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3); }
-
-.dt-travel-card .card-header .dt-price {
-  bottom: 0;
-  padding: 15px 35px 15px;
-  border-top: 1px solid #f6f6f6; }
-  .dt-travel-card .card-header .dt-price h5, .dt-travel-card .card-header .dt-price .h5 {
-    letter-spacing: 2px; }
+.dt-travel-card {
+  border: none !important; }
+  .dt-travel-card .card-header .card-img {
+    height: 200px; }
+    .dt-travel-card .card-header .card-img .dt-excursion__image {
+      height: 100%;
+      width: inherit;
+      object-fit: cover;
+      border-radius: 5px 5px 0 0; }
+    .dt-travel-card .card-header .card-img .dt-price__time {
+      font-size: 12px; }
+  .dt-travel-card .card-header .dt-excursion-type {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background: #0071eb;
+    padding: 0.25rem 1rem;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 12px; }
+  .dt-travel-card .card-header .dt-price__sum {
+    font-size: 14px; }
   .dt-travel-card .card-header .dt-price__title {
-    font-size: 8px; }
-
-.dt-travel-card .card-body {
-  padding: 32px 30px;
-  max-height: 250px; }
-  .dt-travel-card .card-body__excursion {
-    max-height: 100px;
-    overflow: hidden;
-    margin-bottom: 30px; }
-  .dt-travel-card .card-body__excursion-rating {
-    margin-bottom: 30px; }
-    .dt-travel-card .card-body__excursion-rating .dt-rating__star img {
-      width: 16px;
-      height: 16px; }
-  .dt-travel-card .card-body__excursion-name {
-    margin-bottom: 15px;
-    line-height: 19px; }
-  .dt-travel-card .card-body__excursion-description {
-    font-family: "Manrope Light"; }
-
-.dt-travel-card .card-footer {
-  padding-top: 30px;
-  padding-bottom: 30px; }
-
-.dt-travel-card__action {
-  color: #222425;
-  font-family: "Manrope Bold";
-  letter-spacing: 2px;
-  font-weight: bold;
-  text-decoration: none; }
+    letter-spacing: 3px; }
+  .dt-travel-card .card-header .dt-like {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px; }
+    .dt-travel-card .card-header .dt-like svg {
+      padding-top: 2px;
+      fill: #222425;
+      opacity: 0.15; }
+    .dt-travel-card .card-header .dt-like:hover svg, .dt-travel-card .card-header .dt-like.active svg {
+      fill: #0071eb !important;
+      box-shadow: 0 15px 30px rgba(0, 113, 235, 0.3); }
+  .dt-travel-card .card-header .dt-price {
+    bottom: 0;
+    padding: 15px 35px 15px;
+    border-top: 1px solid #f6f6f6; }
+    .dt-travel-card .card-header .dt-price h5, .dt-travel-card .card-header .dt-price .h5 {
+      letter-spacing: 2px; }
+    .dt-travel-card .card-header .dt-price__title {
+      font-size: 8px; }
+  .dt-travel-card .card-body {
+    padding: 32px 30px;
+    max-height: 250px; }
+    .dt-travel-card .card-body__excursion {
+      max-height: 100px;
+      overflow: hidden;
+      margin-bottom: 30px; }
+    .dt-travel-card .card-body__excursion-rating {
+      margin-bottom: 30px; }
+      .dt-travel-card .card-body__excursion-rating .dt-rating__star img {
+        width: 16px;
+        height: 16px; }
+    .dt-travel-card .card-body__excursion-name {
+      margin-bottom: 15px;
+      line-height: 19px; }
+    .dt-travel-card .card-body__excursion-description {
+      font-family: "Manrope Light";
+      font-size: 12px; }
+  .dt-travel-card .card-footer {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .dt-travel-card__action {
+    color: #222425;
+    font-family: "Manrope Bold";
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none; }
 
 @media screen and (max-width: 768px) {
   .dt-travel-card .dt-rating__star img {
     width: 14px;
-    height: 14px; } }
+    height: 14px; }
+  .dt-travel-card .card-header .card-img .dt-excursion-type {
+    font-size: 10px; }
+  .dt-travel-card .card-header .card-img .dt-price__sum {
+    font-size: 10px; }
+  .dt-travel-card .card-header .card-img .dt-price__time {
+    font-size: 10px; } }
 
 .dt-header__title {
   font-size: 30px;
@@ -5354,7 +5364,7 @@ template {
 .dt-page .dt-article__title {
   font-size: 30px;
   font-family: "Manrope Bold" !important;
-  margin-bottom: 50px; }
+  margin-bottom: 40px; }
 
 .dt-page .dt-paragraph {
   margin-top: 40px; }
@@ -5635,6 +5645,10 @@ template {
   .dt-reviews__header .dt-user__name {
     font-family: "Manrope Semibold";
     font-size: 14px; }
+  .dt-reviews__header .dt-rating-of {
+    font-size: 20px; }
+  .dt-reviews__header .dt-count-marks {
+    font-size: 14px; }
 
 .dt-reviews__rating .dt-rating__star {
   min-width: 106px; }
@@ -5726,6 +5740,10 @@ template {
 @media screen and (max-width: 768px) {
   .dt-reviews__sort-by {
     justify-content: space-between !important; }
+  .dt-reviews__header .dt-rating-of {
+    font-size: 16px; }
+  .dt-reviews__header .dt-count-marks {
+    font-size: 12px; }
   .dt-reviews__content .dt-review__item {
     flex-wrap: wrap !important; }
   .dt-reviews__content .dt-review__block {
@@ -5734,7 +5752,16 @@ template {
     min-width: 45px;
     width: 45px;
     min-height: 45px;
-    height: 45px; } }
+    height: 45px; }
+  .dt-reviews__content .dt-review__photos .dt-photos__item {
+    width: 50px;
+    height: 50px; }
+  .dt-reviews__content .dt-review__header .dt-user__date-ago {
+    font-size: 10px; }
+  .dt-reviews__content .dt-review__header .dt-user__name {
+    font-size: 12px; }
+  .dt-reviews__content button {
+    margin-bottom: 40px; } }
 
 .dt-page-booking .dt-page__content .dt-content__title {
   margin-top: 60px; }
@@ -6153,6 +6180,9 @@ template {
       padding: 0;
       border: 1px solid #e5e6e6; }
 
+.dt-page {
+  margin-top: -35px; }
+
 /*.dt-page-object {
   & .dt-header__detail {
     & .dt-input__wrapper {
@@ -6212,7 +6242,12 @@ template {
 .dt-bg-light-gray {
   background: #f6f6f6; }
 
+.dt-bg-red {
+  background: #f73637 !important; }
+
 @media screen and (max-width: 768px) {
+  .dt-page {
+    margin-top: -105px; }
   .dt-block-header {
     padding-top: 60px;
     padding-bottom: 30px; }
@@ -6304,7 +6339,7 @@ h6, .h6 {
       font-family: "Manrope Bold";
       color: #ffffff;
       text-align: center;
-      margin-bottom: 25px; }
+      line-height: 20pt; }
     .dt-page__preheader .dt-preheader__content .dt-preheader__tags .dt-tags__list li {
       display: inline;
       color: white;
@@ -6390,9 +6425,13 @@ h6, .h6 {
     .dt-page__preheader .dt-preheader__content .dt-preheader__tags .dt-tags__list {
       line-height: 40px;
       letter-spacing: 5px; }
-    .dt-page__preheader .dt-preheader__content .dt-preheader__photos .dt-photos__item {
-      width: 90px;
-      height: 90px; }
+    .dt-page__preheader .dt-preheader__content .dt-preheader__photos {
+      margin-bottom: 150px; }
+      .dt-page__preheader .dt-preheader__content .dt-preheader__photos .dt-photos__item {
+        width: 90px;
+        height: 90px; }
+    .dt-page__preheader .dt-preheader__content .dt-preheader__avatar {
+      margin-bottom: 150px; }
     .dt-page__preheader .dt-preheader__content .dt-preheader__view-reviews {
       flex-wrap: wrap-reverse; }
       .dt-page__preheader .dt-preheader__content .dt-preheader__view-reviews .dt-rating__star {
