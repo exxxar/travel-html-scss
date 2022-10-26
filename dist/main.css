@@ -5282,7 +5282,7 @@ h2 {
 h3 {
   font-size: 0.7rem; }
 
-.letter-spasing-3 {
+.letter-spacing-3 {
   letter-spacing: 3px; }
 
 .font-size-05 {
@@ -5304,9 +5304,18 @@ h3 {
   background-color: #65c350;
   color: #ffffff; }
 
+.bg-green:hover {
+  background-color: rgba(101, 195, 80, 0.9); }
+
 .bg-blue {
   background-color: #0071eb;
   color: #ffffff; }
+
+.bg-blue:hover {
+  background-color: rgba(0, 113, 235, 0.9); }
+
+.bg-white:hover {
+  color: #0071eb; }
 
 .black {
   color: #222425;
@@ -5315,6 +5324,14 @@ h3 {
 .blue {
   color: #0071eb;
   fill: #0071eb; }
+
+.blue-hover:hover {
+  fill: #0071eb;
+  color: #0071eb; }
+
+.blue-hover:hover * {
+  fill: #0071eb;
+  color: #0071eb; }
 
 .red {
   color: #f73637;
@@ -5383,6 +5400,9 @@ svg {
   height: 1px;
   background-color: rgba(247, 54, 55, 0.07); }
 
+.red-underline:hover::after {
+  background-color: #f73637; }
+
 .blue-underline::after {
   content: '';
   position: absolute;
@@ -5392,6 +5412,9 @@ svg {
   height: 1px;
   background-color: rgba(0, 113, 235, 0.07); }
 
+.blue-underline:hover::after {
+  background-color: #0071eb; }
+
 .black-underline::after {
   content: '';
   position: absolute;
@@ -5400,6 +5423,9 @@ svg {
   width: 100%;
   height: 1px;
   background-color: rgba(34, 36, 37, 0.07); }
+
+.black-underline:hover::after {
+  background-color: #222425; }
 
 .button {
   height: 50px; }
@@ -5432,13 +5458,23 @@ svg {
   height: 40px;
   object-fit: cover; }
 
-.active,
-.active > * {
+.active {
   background-color: #0071eb !important;
-  color: #ffffff;
   box-shadow: 0 10px 30px 7px rgba(0, 113, 235, 0.3);
-  z-index: 1;
+  color: #ffffff;
   fill: #ffffff; }
+
+.active:hover {
+  color: #ffffff !important;
+  fill: #ffffff !important; }
+
+.active * {
+  color: #ffffff;
+  fill: #ffffff; }
+
+.active:hover * {
+  color: #ffffff !important;
+  fill: #ffffff !important; }
 
 .inactive {
   background-color: #ffffff !important;
@@ -5546,6 +5582,12 @@ svg {
     .current-excursion__image {
       max-height: 100%; } }
 
+.current-excursion .dropdown {
+  background-color: transparent !important; }
+
+.current-excursion .dropdown-menu {
+  min-width: 130px; }
+
 .cover {
   object-fit: cover; }
 
@@ -5579,6 +5621,9 @@ svg {
   height: 7px;
   background-color: #f73637;
   border-radius: 50%; }
+
+.sms:hover svg {
+  fill: #0071eb; }
 
 .expand-img svg {
   transition: 0.3s;
@@ -5688,7 +5733,8 @@ svg {
 
 .img {
   transition: 0.3s;
-  cursor: pointer; }
+  cursor: pointer;
+  object-fit: cover; }
 
 .info-icon {
   top: -0.5rem;
@@ -5752,10 +5798,29 @@ svg {
 .multiselect_checkbox:checked ~ .expand-icon {
   transform: rotate(180deg); }
 
+.dropdown-toggle::after {
+  display: none; }
+
+.dropdown-menu {
+  box-shadow: 0 10px 30px 7px rgba(0, 113, 235, 0.1);
+  min-width: 0;
+  z-index: 2; }
+
+.dropdown-item * {
+  color: #222425;
+  fill: #0071eb; }
+
+.dropdown-item:hover {
+  color: #0071eb;
+  background-color: transparent; }
+
 .expand-icon {
   width: 25px;
   height: 25px;
-  transition: 0.3s; }
+  transition: 0.3s;
+  position: absolute;
+  top: 0;
+  right: 2rem; }
   @media (min-width: 992px) {
     .expand-icon {
       width: 20px;
@@ -5775,9 +5840,10 @@ svg {
   height: 100px;
   object-fit: cover; }
 
-.add-main-photo:hover > .img,
-.add-additional-photo:hover > .img {
-  filter: brightness(50%); }
+@media (min-width: 992px) {
+  .add-main-photo:hover > .img,
+  .add-additional-photo:hover > .img {
+    filter: brightness(50%); } }
 
 .add-main-photo:hover > .delete,
 .add-additional-photo:hover > .delete {
@@ -5787,11 +5853,16 @@ svg {
   width: 32px;
   height: 32px;
   background-color: #f73637;
-  display: none;
-  top: calc(50% - 16px);
-  left: calc(50% - 16px);
+  top: 0.5rem;
+  right: 0.5rem;
   z-index: 1;
-  cursor: pointer; }
+  cursor: pointer;
+  display: flex; }
+  @media (min-width: 992px) {
+    .delete {
+      top: calc(50% - 16px);
+      left: calc(50% - 16px);
+      display: none; } }
 
 input[type=checkbox] {
   display: none; }
@@ -5804,6 +5875,9 @@ input[type=checkbox] {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(34, 36, 37, 0.07); }
+
+.custom-checkbox:focus {
+  border: 1px solid #0071eb; }
 
 .dot {
   border: 1px solid #ffffff;
@@ -5854,8 +5928,7 @@ input:disabled + .category {
 .menu-dots {
   transition: 0.3s;
   width: 30px;
-  height: 30px;
-  z-index: 6; }
+  height: 30px; }
 
 .menu-dots:hover > .menu-dot {
   box-shadow: 0 2px 5px 1px rgba(0, 113, 235, 0.3); }
