@@ -5318,12 +5318,12 @@ h3 {
   color: #0071eb; }
 
 .black {
-  color: #222425;
-  fill: #222425; }
+  color: #222425 !important;
+  fill: #222425 !important; }
 
 .blue {
-  color: #0071eb;
-  fill: #0071eb; }
+  color: #0071eb !important;
+  fill: #0071eb !important; }
 
 .blue-hover:hover {
   fill: #0071eb;
@@ -5334,16 +5334,16 @@ h3 {
   color: #0071eb; }
 
 .red {
-  color: #f73637;
-  fill: #f73637; }
+  color: #f73637 !important;
+  fill: #f73637 !important; }
 
 .green {
-  color: #65c350;
-  fill: #65c350; }
+  color: #65c350 !important;
+  fill: #65c350 !important; }
 
 .white {
-  color: #ffffff;
-  fill: #ffffff; }
+  color: #ffffff !important;
+  fill: #ffffff !important; }
 
 a,
 button,
@@ -5586,7 +5586,13 @@ svg {
   background-color: transparent !important; }
 
 .current-excursion .dropdown-menu {
-  min-width: 130px; }
+  min-width: 220px; }
+
+.my-excursions .dropdown-menu {
+  min-width: 150px; }
+
+.my-objects .dropdown-menu {
+  min-width: 150px; }
 
 .cover {
   object-fit: cover; }

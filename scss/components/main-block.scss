@@ -321,13 +321,13 @@ h3 {
 }
 
 .black {
-    color: $color-black;
-    fill: $color-black;
+    color: $color-black !important;
+    fill: $color-black !important;
 }
 
 .blue {
-    color: $color-blue;
-    fill: $color-blue;
+    color: $color-blue !important;
+    fill: $color-blue !important;
 }
 
 .blue-hover:hover {
@@ -341,18 +341,18 @@ h3 {
 }
 
 .red {
-    color: $color-red;
-    fill: $color-red;
+    color: $color-red !important;
+    fill: $color-red !important;
 }
 
 .green {
-    color: $color-green;
-    fill: $color-green;
+    color: $color-green !important;
+    fill: $color-green !important;
 }
 
 .white {
-    color: $color-white;
-    fill: $color-white;
+    color: $color-white !important;
+    fill: $color-white !important;
 }
 
 a,
@@ -652,7 +652,15 @@ svg {
 }
 
 .current-excursion .dropdown-menu {
-    min-width: 130px;
+    min-width: 220px;
+}
+
+.my-excursions .dropdown-menu {
+    min-width: 150px;
+}
+
+.my-objects .dropdown-menu {
+    min-width: 150px;
 }
 
 .cover {
